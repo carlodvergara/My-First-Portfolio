@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;    
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+/*Light Mode*/
+:root{
+
+    /*General Fonts*/
+    --color-font-h1:#000000;
+    --color-font-h2:#242424;
+    --color-font-h3:#474747;
+    --color-font-p:#393939;
+    --color-font-p1:#000000;
+    --color-icons:#000000;  
+}   
+
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,35,1.25,5,3,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --step--3: clamp(0.65rem, calc(0.49rem + 0.82vw), 1.12rem);
+    --step--2: clamp(0.78rem, calc(0.57rem + 1.08vw), 1.40rem);
+    --step--1: clamp(0.94rem, calc(0.65rem + 1.41vw), 1.75rem);
+    --step-0: clamp(1.13rem, calc(0.76rem + 1.85vw), 2.19rem);
+    --step-1: clamp(1.35rem, calc(0.87rem + 2.41vw), 2.73rem);
+    --step-2: clamp(1.62rem, calc(0.99rem + 3.13vw), 3.42rem);
+    --step-3: clamp(1.94rem, calc(1.13rem + 4.05vw), 4.27rem);
+    --step-4: clamp(2.33rem, calc(1.29rem + 5.23vw), 5.34rem);
+    --step-5: clamp(2.80rem, calc(1.45rem + 6.74vw), 6.68rem);
+  }
+
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    min-width: 20rem;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+h1{
+    font-size: var(--step-5);
+    font-weight: 800;
+}
+
+h2{
+    font-size: var(--step-3);
+    font-weight: 800;
+}
+
+h3{
+    font-size: var(--step-0);
+    font-weight: 800;
+}
+
+p{
+    font-size: var(--step--1);
+    font-weight: 400;
+}
+
+a{
+    color:#000000;
+    text-decoration: none;
+}
+
+
+
+
+
+/*----------------------------------------- */
+/*----------  Frames structures   --------- */
+/*----------------------------------------- */
+
+.frame{
+    grid-column: 2 / 12;
+}
+
+
+.frame-especial{
+    display:grid;
+    grid-column:  2 / 13;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    grid-auto-flow: row reverse;
+    column-gap: 1.5rem;
+
+}
+
+
+
+
+
+
+
+/*----------------------------------------- */
+/*----------- Section About me  ----------- */
+/*----------------------------------------- */
+#about-me{
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    height: max-content;
+}
+
+
+/*-----------       who i am    ----------- */
+/*----------------------------------------- */
+.who-i-am{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-self: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.who-i-am>p{
+    max-width: auto;
+    min-width: 20rem;
+
+}
+
+.box-btns{
+    width: auto;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 3rem;
+}
+
+.box-btns>a{
+    color: initial;
+    text-decoration: none;
+}
+
+
+
+
+.fa-square-github{
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.btn-download-cv{
+    width:  max-content;
+    height: 5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(62, 62, 78);
+    border: solid 1px rgb(62, 62, 78);
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+.btn-download-cv>p{
+    width: max-content;
+    font-family: 'Montserrat';
+    color: white;
+    font-weight: 500;
+    font-size: var(--step--2);
+   
+    padding-right: 1rem;
+}
+
+.btn-download-cv>span{
+    padding: 1.5rem;
+    color: white;
+    border-left: solid 0.02rem white;
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+/*-----------       Hobies      ----------- */
+/*----------------------------------------- */
+.hobbies{
+    max-width: 65rem;
+    min-width: auto;
+    height: max-content;
+    margin-top: 2rem;
+    display: grid;
+    flex-direction: column;
+    row-gap: 2rem; 
+}
+
+.box-hobbies{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.box-hobbies>div{
+    width: max-content;
+    font-size: var(--step--2);
+    font-weight: 600;
+    border: solid 1px black;
+    border-radius: 0.4rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+
+/*-----------       imagen     ----------- */
+/*---------------------------------------- */
+
+.img-aboutme{  
+    display: flex;  
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%) contrast(130%); 
+}
+
