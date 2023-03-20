@@ -11,8 +11,10 @@ whoIAmTitle.classList.add('h1');
 whoIAmTitle.innerText = 'HOLA SOY CARLOS VERGARA';
 
 const welcomeTitle = document.createElement('h3');
-welcomeTitle.classList.add('h3');
-welcomeTitle.innerText = 'BIENVENIDOS A MI PORTAFOLIO COMO DESARROLLADOR TRAINEE';
+welcomeTitle.innerText = '';
+welcomeTitle.classList.add('typed-about-me')
+
+
 
 const sectionTitle = document.createElement('h2');
 sectionTitle.classList.add('h2');

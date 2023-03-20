@@ -117,7 +117,7 @@ const divs = {
   'COLOR 3': colores[0],
   'COLOR 4': colores[0],
   'COLOR 5': colores[1],
-  'COLOR 6': colores[0],
+  'JavasCript': colores[5],
   'COLOR 7': colores[0],
   'COLOR 8': colores[1],
   'COLOR 9': colores[0],
@@ -133,7 +133,6 @@ const divs = {
   'COLOR 18': colores[1],
   'COLOR 19': colores[0],
   'COLOR 20': colores[0],
-
 
   'COLOR 21': colores[0],
   'COLOR 22': colores[1],
@@ -194,6 +193,7 @@ const divs = {
 };
 
 const padres = [];
+
 for (let i = 0; i < 10; i++) {
   const padre = document.createElement('div');
   padre.classList.add('block-element');
