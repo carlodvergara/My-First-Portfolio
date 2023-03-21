@@ -15,7 +15,7 @@ const typedAboutMe = new Typed('.typed-about-me', {
     fadeOutDelay: 500,
     loop: false,
     loopCount: 1,
-    showCursor: true,
+    showCursor: false,
     cursorChar: '|',
     autoInsertCss: true,
     attr: null,
@@ -25,38 +25,25 @@ const typedAboutMe = new Typed('.typed-about-me', {
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // -------------------------------------------------------------// 
 // -----------   Animation Tyiped Area contact. ---------------// 
 // -------------------------------------------------------------// 
 
 const typed = new Typed('.typed' , {
     strings: [
-     
-    ' 🧠 48 Horas de trabajo', 
-    '💻 1.500 Lineas de JS  ',
-    '📚 800 Lineas de html ', 
-    '🧑‍🎨 250 Lineas de css ',
-    ' 1.000% DE MI 🫀 ' ,
-    ' 🧠 48 Horas de trabajo',
+    '💻 JavasCript ',
+    '📚 HTML ', 
+    '💻 JavasCript ',
+    '🎨 CSS',
+    '❤️',
+    '🧠 48HR',
+    '🐒 Imaginacion',
+    '☕ Mucho cafe',
+    '🔥 Pasion',
 ],
 
 stringElement: '#',
-typeSpeed: 75,
+typeSpeed: 120,
 startDelay: 300,
 backSpeed: 75,
 smartBackspace: true,
