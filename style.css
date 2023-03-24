@@ -141,8 +141,287 @@ a{
 
 
 /*----------------------------------------- */
-/*----------    Nav Horizontal    --------- */
+/*------     Nav Horizontal.Js     -------- */
 /*----------------------------------------- */
+#nav-horizontal{
+    width: 100%;
+    height: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+    display: flex;     
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid 0.5px rgb(196, 196, 196);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.container-logo-btn-icon-menu{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.container-logo-btn-icon-menu >.fa-bars{
+    display: flex;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.logo-portfolio{
+    display: flex;
+    height: 3rem;
+    width: auto;
+}
+
+.box-btns-menu-horizontal{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ul-menu-horizontal{
+    width: auto;
+    height: max-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.li-menu-horizontal{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    border-left: solid 0.5px rgb(231, 231, 231);
+}
+
+.li-menu-horizontal:last-child{
+
+    border-right: solid 0.5px rgb(231, 231, 231);
+}
+
+.li-menu-horizontal:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+.a-menu-horizontal{
+    min-width: 12rem;
+    height: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: var(--step--0);
+    font-weight: 700;
+    color: #616161;
+}
+
+.a-menu-horizontal:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+/*----------------------------------------- */
+/*--------   Toggle Dark Mode      -------- */
+/*----------------------------------------- */
+
+.toggle-darkmode{
+    width: 100%;
+    height: 100%;
+
+    align-self: center;
+    font-size: 2.5rem;
+    color: #818181;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.toggle-darkmode:hover{
+    color: #000000;
+}
+
+
+
+
+
+
+
+/*----------------------------------------- */
+/*-------      nav vertical.js      ------- */
+/*----------------------------------------- */
+
+.bg-wall{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 20;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.nav-vertical{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
+
+
+
+.container-logo-nav-vertical{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 0.5px rgb(196, 196, 196);
+}
+
+.logo-portfolio{
+    height: 3rem;
+    width: auto;
+}
+
+.img-nav-vertical{
+    max-width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.ul-menu-vertical{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.li-menu-vertical{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    border-top: solid 0.5px rgb(231, 231, 231);
+}
+
+.li-menu-vertical:last-child{
+
+    border-bottom: solid 0.5px rgb(231, 231, 231);
+}
+
+.li-menu-vertical:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+.a-menu-vertical{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: var(--step--0);
+    font-weight: 700;
+    color: #616161;
+}
+
+.a-menu-vertical:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------- */
+/*-------   Triggers of display     ------- */
+/*----------------------------------------- */
+
+.open-all{
+    display: flex;
+
+}
+
+.close-all{
+    display: none;
+    
+}
+
+
+.open-window{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -710,28 +989,237 @@ a{
 
 
 
+/*----------------------------------------- */
+/*-------         Records           ------- */
+/*----------------------------------------- */
+
+#bg-wall-record{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 30;
+
+    display: none;
+    justify-content: end;
+}
+
+/*--------------------------*/
+/*---- Nav Bar vertical --- */
+/*--------------------------*/
+.container-record{
+    width: clamp(25rem, 80%, 50rem);
+    height: 100vh;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+.header-record{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
 
 
+/*-------------------------*/
+/*----  Bloque Record  --- */
+/*-------------------------*/
+.record-list{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 0.5rem;
+    background-color: #ffffff;
+}
+
+.card-data-record{
+    background-color: #EFEFF1;
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+
+    row-gap: 0.5rem;
+    padding-top: 1.5rem;
+
+}
+
+.record-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    padding-left: 1rem;
+}
+
+.record-info>h3{
+    font-size: var(--step--2);
+
+}
+
+.record-info>p{
+    font-size: var(--step--2);
+    color: #798490;
+    font-weight: 800;
+
+}
+
+[class^="number-"]{
+    width: 100%;
+    background-color: #3a3a3a;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+}
 
 
+/*-------------------------------- */
+/*----    Area Certificados    --- */
+/*-------------------------------- */
+.header-certif{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.title-certif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-self: center;
+    height: 5rem;
+    border-bottom: 0.1rem solid gainsboro;
+    position: sticky;
+    top:0;
+}
+
+/*-------------------------------- */
+/*- Contenedor de lista Certific - */
+/*-------------------------------- */
+.certificate-list{
+    width: auto;
+    height: max-content;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 
+/*--------------------- */
+/*----    tarjeta   --- */
+/*--------------------- */
+.card-structure-cert{
+    width: 100%;
+
+    min-height: max-content;
+    max-height: max-content;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+    border-bottom: solid 1px rgb(199, 199, 199);
+    border-right: solid 1px rgb(199, 199, 199);
+
+}
 
 
+.card-structure-cert:hover {
+    background-color: #c2c2c2;
+}
 
 
+/*--------------------- */
+/*----   Imagen     --- */
+/*--------------------- */
+.box-image{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 5rem;
+    min-width: 6rem;
+    height: 100%;
+    
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: start;
+}
+
+.box-image>img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 
 
+/*--------------------- */
+/*----  Caja Texto ---- */
+/*--------------------- */
+.box-text{
+    min-width: 5rem;
+    width: 35rem;
+
+    min-height: 8rem;
+    height: max-content;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    
+    padding-right: 1.5rem;
+    border-right: solid 1px rgb(199, 199, 199); 
+
+}
+
+.title-card-course{    
+    font-size: var(--step--1);
+    font-weight: 700;  
+}
+
+.p-tech{
+    font-size: var(--step--2);
+    font-weight: 800;
+    color: #8a8f99;
+}
 
 
+/*--------------------- */
+/*----  Btn dwnload --- */
+/*--------------------- */
+.box-btn-download-cert{
+    width: max-content;
+    height: auto;
+    padding: 1rem;
 
+    display: flex;
+    justify-content: center;
+  
+}
 
-
-
-
-
-
-
+.box-btn-download-cert a>span{
+    padding: 1rem;
+    border-radius: 0.6rem;
+    width: auto;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    cursor: pointer;
+}
 
 
 

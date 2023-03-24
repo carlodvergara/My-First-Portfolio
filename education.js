@@ -248,5 +248,19 @@ myFormation.appendChild(btnRecord);
 
 
 
+bgWallRecord = document.getElementById('bg-wall-record');
+
+//Open
+btnRecord.addEventListener('click', () => {
+  bgWallRecord.classList.toggle('open-window'); console.log('Hola');;
+
+});
 
 
+
+//Close
+bgWallRecord.addEventListener('click', (event) => {
+  if (event.target === bgWallRecord) {
+    bgWallRecord.classList.remove('open-all');
+  } 
+});

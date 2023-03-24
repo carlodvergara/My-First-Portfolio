@@ -31,8 +31,9 @@ const redirectToMyGitHub = document.createElement('a');
 redirectToMyGitHub.setAttribute('href' , 'https://github.com/carlodvergara');
 redirectToMyGitHub.setAttribute('target' , '_blank')
 
+
 const iconGitHub = document.createElement('i');
-iconGitHub.classList.add('fa-brands' , 'fa-square-github' , 'github-aboutme');
+iconGitHub.classList.add('fa-brands' , 'fa-github', 'fa-shake' , 'github-aboutme');
 
 const redirectToMyCv = document.createElement('a');
 redirectToMyCv.setAttribute('href' , '#');
