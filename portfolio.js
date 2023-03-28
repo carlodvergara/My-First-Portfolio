@@ -144,7 +144,7 @@ const hrTwo = document.createElement('hr');
 hrTwo.classList.add('hr-two');
 
 const hrThree = document.createElement('hr');
-hrThree.classList.add('hr-three');;
+hrThree.classList.add('hr-three');
 
 const hrFour = document.createElement('hr');
 hrFour.classList.add('hr-four');

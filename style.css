@@ -20,8 +20,7 @@ html{
     --color-font-h2:#242424;
     --color-font-h3:#474747;
     --color-font-p:#393939;
-    --color-font-p1:#000000;
-    --color-icons:#000000;  
+
 }   
 
 
@@ -53,24 +52,28 @@ section{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
 }
 
+
 h1{
+    color: var(--color-font-h1);
     font-size: var(--step-5);
     font-weight: 800;
 }
 
 h2{
+    color: var(--color-font-h2);
     font-size: var(--step-3);
     font-weight: 800;
 }
 
-h3{
+h3{ color: var(--color-font-h3);
     font-size: var(--step-0);
     font-weight: 800;
 }
 
-p{
+p{ color: var(--color-font-p);
     font-size: var(--step--1);
     font-weight: 500;
 }
@@ -108,6 +111,7 @@ a{
 
 .frame{
     grid-column: 2 / 12;
+
 }
 
 .frame-1-13{
@@ -116,6 +120,7 @@ a{
     grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
     grid-auto-flow: row;
     column-gap: 1.5rem;
+
 }
 
 
@@ -158,6 +163,8 @@ a{
     position: sticky;
     top: 0;
     z-index: 9;
+
+    transition: background-color 0.5s ease-out;
 }
 
 .container-logo-btn-icon-menu{
@@ -235,18 +242,13 @@ a{
 
 
 
-
-
-
-
 /*----------------------------------------- */
 /*--------   Toggle Dark Mode      -------- */
 /*----------------------------------------- */
 
-.toggle-darkmode{
+.fa-circle-half-stroke{
     width: 100%;
     height: 100%;
-
     align-self: center;
     font-size: 2.5rem;
     color: #818181;
@@ -254,9 +256,426 @@ a{
     margin-left: 3rem;
 }
 
-.toggle-darkmode:hover{
+.fa-circle-half-stroke:hover{
     color: #000000;
 }
+
+
+
+
+
+/*----------------------------------------- */
+/*----   Cambios propios del Toggle   ----- */
+/*----------------------------------------- */
+
+.change-toggle-dm{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    font-size: 2.5rem;
+    color: #dfa800;
+    cursor: pointer;
+    margin-left: 3rem;
+
+}
+
+
+.change-toggle-dm:hover{
+    color: #d5d5d5;
+
+}
+
+
+
+.fade-in {
+    animation: fadeIn 0.75s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+
+/*----------------------- */
+/* Section Nav Horizontal*/
+/*----------------------- */
+
+#nav-horizontal.dark-mode {
+    background-color: #2A2B2F;
+    color: white;
+    border-bottom: solid 0.5px  rgb(75, 75, 75);
+    transition: background-color 0.75s ease, color 0.75s ease;
+  }
+
+
+ #nav-horizontal.dark-mode ul>.li-menu-horizontal {
+    border-left: solid 0.5px rgb(75, 75, 75);
+  }
+
+  #nav-horizontal.dark-mode ul>.li-menu-horizontal:hover {
+    background-color: #2F3237;
+  }
+
+
+  #nav-horizontal.dark-mode ul>.li-menu-horizontal:last-child {
+    border-right: solid 0.5px rgb(75, 75, 75);
+  }
+
+
+  #nav-horizontal.dark-mode ul>li>a{
+    color: white;    
+ }
+
+
+
+
+/*----------------------- */
+/* Section Nav Vertical   */
+/*----------------------- */
+
+
+.bg-wall.dark-mode .nav-vertical {
+    background-color: #2A2B2F;
+}
+
+.bg-wall.dark-mode .nav-vertical .container-logo-nav-vertical {
+    background-color: #2A2B2F;
+    border-bottom: solid 0.5px  rgb(75, 75, 75);
+}
+
+.bg-wall.dark-mode ul>.li-menu-vertical {
+    border-top: solid 0.5px rgb(75, 75, 75);
+}
+
+.bg-wall.dark-mode ul>.li-menu-vertical:last-child {
+    border-bottom: solid 0.5px rgb(75, 75, 75);
+}
+
+.bg-wall.dark-mode ul>.li-menu-vertical:hover {
+    background-color: #2F3237;
+}
+
+.bg-wall.dark-mode ul>.li-menu-vertical a {
+    color: white;
+}
+
+
+
+/*--------------------------------*/
+/*------- About Me DarK Mode  -----*/
+/*--------------------------------*/
+
+#about-me.dark-mode {
+    background-color: #2F3237;
+
+
+}
+
+  #about-me.dark-mode .frame-1-13 .who-i-am h1,
+  #about-me.dark-mode .frame-1-13 .who-i-am h2,
+  #about-me.dark-mode .frame-1-13 .who-i-am h3{
+    color: rgb(233, 233, 233);
+  }
+
+
+  #about-me.dark-mode .frame-1-13 .who-i-am p {
+    color: rgb(255, 255, 255);
+  }
+
+
+  #about-me.dark-mode .frame-1-13 .who-i-am a >i {
+    color: rgb(255, 255, 255);
+  }
+
+
+
+  #about-me.dark-mode .frame-1-13 .who-i-am .btn-download-cv {
+    background-color: #2F3237;
+    border: solid 0.02rem rgb(125, 125, 125);
+  }
+
+  #about-me.dark-mode .frame-1-13 .who-i-am .btn-download-cv span{
+    border-left: solid 0.02rem rgb(125, 125, 125);
+  }
+
+  #about-me.dark-mode .frame-1-13 .who-i-am .div-tag-interests{
+    background-color: #1c1c1e;
+    color: whitesmoke;
+    border: solid 0.01rem rgb(125, 125, 125);
+  }
+
+
+/*--------------------------------*/
+/*------- Portfolio Mode  --------*/
+/*--------------------------------*/
+
+#portfolio.dark-mode{
+    background-color: #3a3d43;
+
+
+}
+
+#portfolio.dark-mode .frame .frame-structure-portfolio h2 {
+    color: white;
+}
+
+#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card{
+    background-color: #2A2B2F;
+    border: solid 0.01rem rgb(94, 94, 94);
+}
+
+#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card .title-card{
+    color: white;
+}
+
+#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card p{
+    color: #9fa7b6;
+}
+
+
+#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card .box-level{
+    background-color: #32353A;
+}
+
+
+
+
+
+/*--------------------------------*/
+/*------- Education Mode  --------*/
+/*--------------------------------*/
+
+#education.dark-mode{
+    background-color: #2F3237;
+    color: white;
+}
+
+
+#education.dark-mode .frame .frame-structure-education .my-formation .title-education{
+    color: white;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .text-my-formation >h3{
+    color: white;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .text-my-formation >p{
+    color: white;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certified .title-certified >h3{
+    color: white;
+}
+
+
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education{
+    background-color: rgb(33, 34, 36);
+    border: solid 0.01rem rgb(94, 94, 94);
+}
+
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .title-card{
+    color: white;
+}
+
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .box-level-certicate-cards .box-btn-download-cert-ed {
+    border: solid 0.01rem rgb(94, 94, 94);
+    border-radius: 0.5rem;
+}
+
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .box-level-certicate-cards .btn-record{
+    border: solid 0.01rem rgb(94, 94, 94);
+    color: whitesmoke;
+    background-color:rgb(33, 34, 36);
+
+}
+
+
+
+
+/*--------------------------------*/
+/*--  My Record Dark Mode  ---*/
+/*--------------------------------*/
+
+#bg-wall-record.dark-mode .container-record{
+    border-left: solid 0.01rem rgb(118, 118, 118);
+
+}
+
+#bg-wall-record.dark-mode .container-record .card-structure-cert{
+    border-bottom: solid 0.01rem rgb(94, 94, 94);
+}
+
+
+
+#bg-wall-record.dark-mode .container-record .card-structure-cert:hover{
+    background-color: #16181D;
+}
+
+#bg-wall-record.dark-mode .container-record .card-structure-cert:hover .box-btn-download-cert a >span{
+    background-color: #ffffff;
+    color: black
+}
+
+
+#bg-wall-record.dark-mode .container-record .header-certif{
+    background-color:#000000 ;
+}
+
+#bg-wall-record.dark-mode .container-record .header-certif .title-certif{
+    border-bottom: solid 0.01rem rgb(94, 94, 94);
+}
+
+
+#bg-wall-record.dark-mode .container-record .header-certif .title-certif h3{
+    color:whitesmoke ;
+}
+
+
+#bg-wall-record.dark-mode .certificate-list .clase-impar-record{
+    background-color:#282B34;
+
+}
+
+#bg-wall-record.dark-mode .certificate-list .clase-par-record{
+    background-color:#2F353F ;
+}
+
+#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .title-card-course{
+    color: whitesmoke;
+}
+
+#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text {
+    border-right: solid 0.01rem rgb(94, 94, 94);
+}
+
+#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text:hover{
+    border-right: solid 0.01rem rgb(199, 199, 199);
+}
+
+#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .p-tech{
+    color: rgb(198, 198, 198);
+}
+
+
+
+
+.no-scroll{
+    overflow-y: hidden;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+/*------- Contact Mode  --------*/
+/*--------------------------------*/
+
+#contact.dark-mode{
+    background-color: #3a3d43;
+    color: white;
+    transition: background-color 0.5s ease-out;
+}
+
+
+#contact.dark-mode .frame .title-contact{
+    color: whitesmoke;
+}
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .container-form form p{
+    color: whitesmoke;
+}
+
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info .title-information-d{
+    color: whitesmoke;
+}
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  .data-contact-w i{
+    color: rgb(255, 255, 255);
+}
+
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  .data-contact-e i {
+    color: rgb(255, 255, 255);
+}
+
+
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  p{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -459,6 +878,7 @@ a{
     background-color: rgb(241, 241, 241);
     width: 100%;
     height: max-content;
+    transition: background-color 0.5s ease-out;
 }
 
 /*///////        who i am             ///////*/
@@ -507,7 +927,7 @@ a{
     align-items: center;
 
     background-color:rgb(255, 255, 255);
-    border: solid 3px rgb(0, 0, 0);
+    border: solid 0.02rem rgb(0, 0, 0);
     border-radius: 0.6rem;
     cursor: pointer;
 }
@@ -516,16 +936,18 @@ a{
     width: max-content;
     font-family: 'Montserrat';
     color: rgb(0, 0, 0);
-    font-weight: 700;
+    font-weight: 600;
     font-size: var(--step--2);
-   
-    padding-right: 1rem;
+    padding-right: 1.5rem;
+
 }
 
 .btn-download-cv>span{
-    padding: 1.5rem;
-    color: rgb(0, 0, 0);
-    border-left: solid 0.02rem rgb(240, 240, 240);
+    padding: 1.2rem;
+    color: rgb(255, 255, 255);
+    border-left: solid 0.02rem rgb(255, 255, 255);
+    background-color: #000000;
+    border-radius: 0px 6px 6px 0px;
 
 }
 
@@ -639,6 +1061,7 @@ a{
 #portfolio{
     height: max-content;
     padding-bottom: 3rem;
+    transition: background-color 0.5s ease-out;
 
 }
 
@@ -676,7 +1099,7 @@ a{
     row-gap: 1rem;
     padding: 1.5rem;
     border: solid 0.5px rgb(197, 197, 197);
-    border-radius: 0.6rem;
+    border-radius: 0.9rem;
     background-color: white;
     cursor:pointer;
 }
@@ -798,6 +1221,7 @@ a{
 #education{
     background-color: rgb(241, 241, 241);
     height: max-content;
+    transition: background-color 0.5s ease-out;
 
 }
 
@@ -805,7 +1229,7 @@ a{
     height: max-content;
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50.2rem,1fr));
     column-gap: 3rem;
     row-gap: 3rem;
 }
@@ -853,79 +1277,99 @@ a{
     display: grid;
     gap: 1rem;
     grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
     overflow: hidden;
 }
 
-.certificate-cards{
-    width: 100%;    
-    background-color: white;
-    padding: 1rem;
-    border: solid 0.5px rgb(206, 206, 206);
-    border-radius: 0.6rem;
-}
-
-.img-certicate{
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-/*----------- Foter  Card   ---------- */
-.footer-certificate-card{
+.card-education{
     width: 100%;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fafafa;
-}
-
-.footer-certificate-card>a{
-    display: flex;
-    width: 4rem;
-    height: 4rem;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    color: white;
-    border-radius: 0.4rem;
-}
-
-.container-tools{
-    width: 100%;
+    height: max-content;
+  
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 1rem;
+    padding: 1.5rem;
+    border: solid 0.5px rgb(197, 197, 197);
+    border-radius: 0.6rem;
+    background-color: white;
+
 }
 
-.btn-record{
-    margin-top: 1rem;
+
+.box-level-certicate-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    
+
+    height: max-content;
+}
+
+/*--------------------- */
+/*----  Btn dwnload --- */
+/*--------------------- */
+.box-btn-download-cert-ed{
     width: max-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.box-btn-download-cert-ed a>span{
+    padding: 1rem;
+    border-radius: 0.6rem;
+    width: auto;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    cursor: pointer;
+}
+
+
+
+.btn-record{
+
+    width: max-content;
+    height: 4.5rem;
     background-color: white;
     font-size: 1.5rem;
     font-weight: 700;
     padding: 1rem;
-    border: solid 3px black;
+    border: solid 0.5px rgb(128, 128, 128);
     border-radius: 0.6rem;
     cursor: pointer;
     align-self: center;
 }
+
+
+.fa-arrow-right{
+
+    margin-left: 1rem;
+
+}
+
+
+
+
+
 
 /*-------  Animation Card  ---------- */
 
 .animation-block{
     min-width: calc(100% - 2rem);
     max-width: 72rem;
-    height: 100%;
+    height: 75%;
     display: flex;
     flex-direction: column;
+    align-self: center;
     justify-content: center;
     align-items: center;
     align-content: center;
     overflow: hidden;
     row-gap: 0.5rem;
-    background-color: #000000;
+ 
 }
 
 .block-element{
@@ -939,7 +1383,7 @@ a{
     font-size: var(--step-5);
     font-weight: 800;
     border-radius: 0.6rem;
-    background-color: #ff0000;
+
 
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -951,19 +1395,19 @@ a{
     color:white;
     display: flex;
     min-width: max-content;
-    font-size: var(--step-5);
+    font-size: var(--step-3);
     font-weight: 800;
-    border: solid 3px rgb(0, 0, 0);
+
     padding: 1.5rem;
     border-radius: 0.6rem;
 }   
 
 .sliderright{
-    animation: sliderright 80s linear infinite;
+    animation: sliderright 140s linear infinite;
 }
 
 .sliderleft{
-    animation: sliderleft 40s linear infinite;  
+    animation: sliderleft 140s linear infinite;  
 }
 
 @keyframes sliderright {
@@ -1000,8 +1444,6 @@ a{
     top: 0;
     background-color: rgba(0, 0, 0, 0.85);
     z-index: 30;
-
-    display: none;
     justify-content: end;
 }
 
@@ -1013,68 +1455,6 @@ a{
     height: 100vh;
     background-color: whitesmoke;
     overflow: auto;
-}
-
-.header-record{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 0;
-    background-color: white;
-}
-
-
-/*-------------------------*/
-/*----  Bloque Record  --- */
-/*-------------------------*/
-.record-list{
-    width: 100%;
-    height: max-content;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 0.5rem;
-    background-color: #ffffff;
-}
-
-.card-data-record{
-    background-color: #EFEFF1;
-    display: flex;
-    height: max-content;
-    flex-direction: column;
-
-    row-gap: 0.5rem;
-    padding-top: 1.5rem;
-
-}
-
-.record-info{
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.2rem;
-    padding-left: 1rem;
-}
-
-.record-info>h3{
-    font-size: var(--step--2);
-
-}
-
-.record-info>p{
-    font-size: var(--step--2);
-    color: #798490;
-    font-weight: 800;
-
-}
-
-[class^="number-"]{
-    width: 100%;
-    background-color: #3a3a3a;
-    display: flex;
-    justify-content: center;
-    color: white;
-    padding: 1rem;
 }
 
 
@@ -1128,15 +1508,29 @@ a{
     flex-direction: row;
     align-items: start;
     justify-content: space-evenly;
-    border-bottom: solid 1px rgb(199, 199, 199);
-    border-right: solid 1px rgb(199, 199, 199);
+    border-bottom: solid 0.05rem rgb(218, 218, 218);
+
 
 }
-
 
 .card-structure-cert:hover {
     background-color: #c2c2c2;
 }
+
+.card-structure-cert:hover >.box-text{
+    border-right: solid 1px rgb(255, 255, 255); 
+}
+
+.clase-par-record{
+    background-color: #E2E2E2;
+    color: rgb(45, 45, 45);
+}
+
+.clase-impar-record{
+    background-color: #EFEFF1;
+    color: rgb(45, 45, 45);
+}
+
 
 
 /*--------------------- */
@@ -1188,13 +1582,13 @@ a{
 
 .title-card-course{    
     font-size: var(--step--1);
-    font-weight: 700;  
+    font-weight: 600;  
 }
 
 .p-tech{
     font-size: var(--step--2);
-    font-weight: 800;
-    color: #8a8f99;
+    font-weight: 500;
+    color: #656565;
 }
 
 
@@ -1234,6 +1628,7 @@ a{
     width: auto;
     height: max-content;
     padding-bottom: 5rem;
+    transition: background-color 0.5s ease-out;
 }
 
 .title-contact{
@@ -1329,17 +1724,17 @@ textarea{
 .btn-send-form{
     align-self:auto;
     width: clamp(100%, 6vw, 100%);
-    align-self: center;
+    align-self: start;
     max-width: 12rem;
     height: 5rem;
     font-family: 'Montserrat';
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 600;
     color: white;
-    background-color: blue;
-    border: solid 1px blue;
+    background-color: rgb(0, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
     border-radius: 0.6rem;
-    cursor: pointer;
+    cursor: pointer;    
     margin-top: 2rem;
 }
 
@@ -1368,12 +1763,12 @@ textarea{
 
 .fa-square-whatsapp{
     font-size: 3.5rem;
-    color: #43b800;
+    color: #000000;
 }
 
 .fa-square-envelope{
     font-size: 3.5rem;
-    color: #b800b8;
+    color: #000000;
 }
 
 [class^="data-contact"]i>p{
@@ -1393,14 +1788,14 @@ textarea{
 
 footer{
     width: 100%;
-    height: 8rem;
-    color: rgb(10, 10, 10);
+    height: 6rem;
+    color: rgb(197, 197, 197);
     display: flex;
-    row-gap: 1rem;
+    row-gap: 0.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #cacaca;
+    background-color: #000000;
     font-size: 1.4rem;
     font-weight: 600;
 }

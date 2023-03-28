@@ -1,87 +1,9 @@
 const bgWallRecord = document.getElementById('bg-wall-record');
 
-
-
 //CONTENEDOR GLOBAL
 const containerRecord = document.createElement('div');
 containerRecord.classList.add('container-record');
 
-
-//PRIMERA CABECERA "RECORD"
-    const headerRecord = document.createElement('div');
-    headerRecord.classList.add('header-record');
-
-    const titleRecord = document.createElement('div');
-    titleRecord.classList.add('title-certif');
-    
-    const h3TitleRecord= document.createElement('h3')
-    h3TitleRecord.innerText = 'RECORD';
-
-
- //lISTA 3 TARJETAS RECORD VERTICAL
-    const recordList = document.createElement('div');
-    recordList.classList.add('record-list');
-
-
- //PRIMERA INFO RECORD COURSE
-    const cardDataRecordCourse = document.createElement('div');
-    cardDataRecordCourse.classList.add('card-data-record');
-  
-      const recordInfoCourse = document.createElement('div');
-      recordInfoCourse.classList.add('record-info');
-
-      const h3RecordInfoCourse = document.createElement('h3');
-      h3RecordInfoCourse.innerText = 'CURSOS';
-
-      const pRecordInfoCourse = document.createElement('P');
-      pRecordInfoCourse.innerText = 'Platzi';
-
-      const numberCourse = document.createElement('div');
-      numberCourse.classList.add('number-course');
-
-      const h1NumberCourse = document.createElement('h1');
-      h1NumberCourse.innerText = '48';
-
-   
- //SEGUNDA INFO RECORD THEORY
- const cardDataRecordTheory = document.createElement('div');
- cardDataRecordTheory.classList.add('card-data-record');
-
-     const recordInfoTheory = document.createElement('div');
-     recordInfoTheory.classList.add('record-info');
-
-     const h3RecordInfoTheory = document.createElement('h3');
-     h3RecordInfoTheory.innerText = 'TEORIA';
-
-     const pRecordInfoTheory = document.createElement('P');
-     pRecordInfoTheory.innerText = 'Horas';
-
-     const numberTheory = document.createElement('div');
-     numberTheory.classList.add('number-theory');
-
-     const h1NumberTheory = document.createElement('h1');
-     h1NumberTheory.innerText = '124';
-
-
-
- //TERCERA INFO RECORD PRACTICE
- const cardDataRecordPractice = document.createElement('div');
- cardDataRecordPractice.classList.add('card-data-record');
-
-     const recordInfoPractice = document.createElement('div');
-     recordInfoPractice.classList.add('record-info');
-
-     const h3RecordInfoPractice = document.createElement('h3');
-     h3RecordInfoPractice.innerText = 'TEORIA';
-
-     const pRecordInfoPractice = document.createElement('P');
-     pRecordInfoPractice.innerText = 'Horas';
-
-     const numberPractice = document.createElement('div');
-     numberPractice.classList.add('number-practice');
-
-     const h1NumberPractice = document.createElement('h1');
-     h1NumberPractice.innerText = '124';
 
 
 // AREA CERTIFICADOS
@@ -228,7 +150,13 @@ arrListCertifcated.push({
 
 
 //CICLO FOR PARA CREACION AUTOMATICA DE TARJETAS
-for (let element of arrListCertifcated){
+for (let i = 0; i < arrListCertifcated.length; i++){
+   const element = arrListCertifcated[i];
+
+   // Crea una variable para rastrear el índice actual
+   const index = i;
+
+
 
 const cardStructureCert = document.createElement('div');
 cardStructureCert.classList.add('card-structure-cert');
@@ -258,10 +186,24 @@ boxBtnDownloadCert.classList.add('box-btn-download-cert');
 const anchorageBtnDownload = document.createElement('a');
 anchorageBtnDownload.setAttribute('href' , element.btndownloadcert);
 
-const spanBtnDownloadIcon = document.createElement('div');
+const spanBtnDownloadIcon = document.createElement('span');
 spanBtnDownloadIcon.classList.add('material-symbols-outlined');
 spanBtnDownloadIcon.innerText ='download';
 
+  
+
+  // Establece el color de fondo en función del índice actual
+  if (index % 2 === 0) {
+   cardStructureCert.classList.add('clase-par-record');
+ } else {
+   cardStructureCert.classList.add('clase-impar-record');
+ }
+ 
+
+ 
+
+
+ 
 
 // Inserciones Tarjetas Lista ciclo For
 certificateList.appendChild(cardStructureCert);
@@ -279,46 +221,6 @@ anchorageBtnDownload.appendChild(spanBtnDownloadIcon);
 
 // Insercion Global
 bgWallRecord.appendChild(containerRecord);
-
-// Insercion Cabecera Record
-containerRecord.appendChild(headerRecord);
-headerRecord.appendChild(titleRecord);
-titleRecord.appendChild(h3TitleRecord);
-
-
-// Record List
-containerRecord.appendChild(recordList);
-
-
-recordList.appendChild(cardDataRecordCourse);
-recordList.appendChild(cardDataRecordTheory);
-recordList.appendChild(cardDataRecordPractice);
-
-
-//cursos
-cardDataRecordCourse.appendChild(recordInfoCourse);
-recordInfoCourse.appendChild(h3RecordInfoCourse)
-recordInfoCourse.appendChild(pRecordInfoCourse)
-
-cardDataRecordCourse.appendChild(numberCourse);
-numberCourse.appendChild(h1NumberCourse)
-
-//Teoria
-cardDataRecordTheory.appendChild(recordInfoTheory);
-recordInfoTheory.appendChild(h3RecordInfoTheory)
-recordInfoTheory.appendChild(pRecordInfoTheory)
-
-cardDataRecordTheory.appendChild(numberTheory);
-numberTheory.appendChild(h1NumberTheory)
-
-//Practice
-cardDataRecordPractice.appendChild(recordInfoPractice);
-recordInfoPractice.appendChild(h3RecordInfoPractice)
-recordInfoPractice.appendChild(pRecordInfoPractice)
-
-cardDataRecordPractice.appendChild(numberPractice);
-numberPractice.appendChild(h1NumberPractice)
-
 
 // Insercion Cabecera Certificado
 containerRecord.appendChild(headerCertif);

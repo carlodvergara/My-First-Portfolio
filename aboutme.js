@@ -1,3 +1,5 @@
+
+
 const aboutMe = document.getElementById('about-me');
 
 const frameAb = document.createElement('div');
@@ -31,13 +33,9 @@ const redirectToMyGitHub = document.createElement('a');
 redirectToMyGitHub.setAttribute('href' , 'https://github.com/carlodvergara');
 redirectToMyGitHub.setAttribute('target' , '_blank')
 
-
 const iconGitHub = document.createElement('i');
 iconGitHub.classList.add('fa-brands' , 'fa-github', 'fa-shake' , 'github-aboutme');
 
-const redirectToMyCv = document.createElement('a');
-redirectToMyCv.setAttribute('href' , '#');
-redirectToMyCv.setAttribute('target' , '_blank');
 
 const btnDownloadCv = document.createElement('button');
 btnDownloadCv.classList.add('btn-download-cv');
@@ -62,12 +60,15 @@ containerInterests.classList.add('container-interests');
 
 const interestsList = [ '📒  Leer' , '🍜  Cocinar' , '⚽  Deportes en Equipo' , '💪  Gimnasio' , '♟️  Juegos de Estrategia' , '🗺️  Viajar' , '☕  Cafe' , '🐶  Perros', '🐱  Gatos' , '🌊  playa', '🎉  Start ups',  '🎉  Tecnologia'];
 
+
+
 for (let i = 0; i< interestsList.length; i++ ){
     const divTagInterests = document.createElement('div');
     divTagInterests.classList.add('div-tag-interests');
     divTagInterests.textContent = interestsList[i];
     containerInterests.appendChild(divTagInterests);
 }
+
 
 const imgSectionAboutMe = document.createElement('img');
 imgSectionAboutMe.classList.add('img-section-aboutme');
@@ -85,8 +86,7 @@ whoIAm.appendChild(paragraphWhoIam);
 whoIAm.appendChild(containerBtns);
 containerBtns.appendChild(redirectToMyGitHub);
 redirectToMyGitHub.appendChild(iconGitHub);
-containerBtns.appendChild(redirectToMyCv);
-redirectToMyCv.appendChild(btnDownloadCv);
+containerBtns.appendChild(btnDownloadCv);
 btnDownloadCv.appendChild(textBtnDownloadCv);
 btnDownloadCv.appendChild(iconDownload);
 whoIAm.appendChild(myInterests);
@@ -94,3 +94,8 @@ myInterests.appendChild(InterestsTitle);
 myInterests.appendChild(containerInterests);
 frameAb.appendChild(imgSectionAboutMe);
 
+
+
+btnDownloadCv.addEventListener('click', () => {
+    window.open('https://drive.google.com/uc?id=1wP144nEh0m7BiHkPpvNs3FB1_wxj7tvf');
+  });

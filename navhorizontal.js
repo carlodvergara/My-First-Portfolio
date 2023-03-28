@@ -18,8 +18,14 @@ logoPortfolioH.setAttribute('alt', 'Logo del Portafolio Web');
 const boxBtnsMenuhorizontal = document.createElement('div');
 boxBtnsMenuhorizontal.classList.add('box-btns-menu-horizontal');
 
+
+
+
+const divToggleDarkMode = document.createElement('div');
+divToggleDarkMode.classList.add('dark-mode');
+
 const toggleDarkMode = document.createElement('i');
-toggleDarkMode.classList.add('fa-solid' , 'fa-circle-half-stroke','toggle-darkmode');
+toggleDarkMode.classList.add('fa-solid' , 'fa-circle-half-stroke');
 
 // Crear un array con el nombre de cada sección del sitio web
 const sectionNavHorizontal = ['about-me', 'portfolio', 'education', 'contact'];
@@ -76,6 +82,7 @@ for (let i = 0; i < sectionNavHorizontal.length; i++) {
 
         btnIconMenu.addEventListener('click', () => {
           bgWall.classList.toggle('open-all');
+          return;
         });
 
 
@@ -84,7 +91,7 @@ for (let i = 0; i < sectionNavHorizontal.length; i++) {
         bgWall.addEventListener('click', (event) => {
             if (event.target === bgWall || event.target.classList.contains('a-menu-vertical')) {
               bgWall.classList.remove('open-all');
-            }
+            } return;
           });
 
 
@@ -96,6 +103,7 @@ for (let i = 0; i < sectionNavHorizontal.length; i++) {
             if (viewportWidth >= 920) {
               bgWall.classList.remove('open-all');
             }
+            return;
           }
           
           // Llamar a la función cuando se carga la página y cuando se redimensiona la ventana.
@@ -103,7 +111,5 @@ for (let i = 0; i < sectionNavHorizontal.length; i++) {
           window.addEventListener('resize', closeBgWallIfViewportWideEnough);
 
 
-        
 
-
-
+     

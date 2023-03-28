@@ -1,7 +1,7 @@
 const education = document.getElementById('education');
 
 const frameEd = document.createElement('div');
-frameEd.classList.add('frame-1-13');
+frameEd.classList.add('frame');
 
 
 const frameStructureEducation = document.createElement('div');
@@ -22,7 +22,7 @@ textMyformation.classList.add('text-my-formation');
 
 
 const h3Myformation = document.createElement('h3');
-h3Myformation.innerText = 'DESARROLLO WEB, DEL APRENDIZAJE AUTONOMO A LA PRACTICA PROFESIONAL';
+h3Myformation.innerText = 'DESARROLLO WEB';
 
 
 const p1Myformation = document.createElement('p');
@@ -47,148 +47,153 @@ const containerCertificateCards = document.createElement('div');
 containerCertificateCards.classList.add('container-certificate-cards');
 
 
-const btnRecord = document.createElement('p');
-btnRecord.classList.add('btn-record');
-btnRecord.innerText = '📊  Mi record';
-
-
 
 const listCardCertified = [];
 
 listCardCertified.push({
-    image:'https://i.ibb.co/3znC9J7/Curso-Definitivo-de-HTML-y-CSS.png',
-    altimage:'certificado de platzi',
-    bottonDownload:''
+  image:'https://devchallenges.io/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fdevchallenges-1234.appspot.com%2Fo%2FchallengesDesigns%252F404PageThumbnail.png%3Falt%3Dmedia%26token%3D81f7c567-c0bc-446f-a549-07eeda31c5ef&w=750&q=75',
+  title:'HTML y CSS', 
 });
 
 listCardCertified.push({
-    image:'https://i.ibb.co/3znC9J7/Curso-Definitivo-de-HTML-y-CSS.png',
-    altimage:'certificado de platzi',
-    bottonDownload:''
+  image:'https://devchallenges.io/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fdevchallenges-1234.appspot.com%2Fo%2FchallengesDesigns%252F404PageThumbnail.png%3Falt%3Dmedia%26token%3D81f7c567-c0bc-446f-a549-07eeda31c5ef&w=750&q=75',
+  title:'Javascript', 
+
+
 });
 
-listCardCertified.push({
-    image:'https://i.ibb.co/3znC9J7/Curso-Definitivo-de-HTML-y-CSS.png',
-    altimage:'certificado de platzi',
-    bottonDownload:''
-});
+
+
 
 
 for (element of listCardCertified){
 
-    const certificateCards = document.createElement('div');
-    certificateCards.classList.add('certificate-cards');
 
-    const imgCerticate = document.createElement('img');
-    imgCerticate.classList.add('img-certicate');
-    imgCerticate.setAttribute('src' , element.image);
-    imgCerticate.setAttribute('alt' , element.altimage);
+  
+  const card = document.createElement('div');
+  card.classList.add('card-education');
+  
+  const imgCard = document.createElement('img');
+  imgCard.classList.add('img-card');
+  imgCard.setAttribute('src', element.image);
+  
+  const titleCard = document.createElement('h3');
+  titleCard.classList.add('title-card');
+  titleCard.innerText = element.title;
+  
 
-    const footerCertificateCard= document.createElement('div');
-    footerCertificateCard.classList.add('footer-certificate-card');
+  const boxLevel = document.createElement('div');
+  boxLevel.classList.add('box-level-certicate-cards');
 
-    const ancDownloadCertified= document.createElement('a');
-    ancDownloadCertified.classList.add('a');
-    ancDownloadCertified.setAttribute('href' , element.bottonDownload);
 
-    const btnIconDownload = document.createElement('span');
-    btnIconDownload.classList.add('material-symbols-outlined');
-    btnIconDownload.innerText = 'download';
+  const boxBtnDownloadCert = document.createElement('div');
+  boxBtnDownloadCert.classList.add('box-btn-download-cert-ed');
 
-    containerCertificateCards.appendChild(certificateCards);
-    certificateCards.appendChild(imgCerticate);
-    certificateCards.appendChild(footerCertificateCard);
-    footerCertificateCard.appendChild(ancDownloadCertified)
-    ancDownloadCertified.appendChild(btnIconDownload);
+  const anchorageBtnDownload = document.createElement('a');
+  anchorageBtnDownload.setAttribute('href' , '#');
 
-    
+  const spanBtnDownloadIcon = document.createElement('span');
+  spanBtnDownloadIcon.classList.add('material-symbols-outlined');
+  spanBtnDownloadIcon.innerText ='download';
+
+  
+  const btnRecord = document.createElement('p');
+  btnRecord.classList.add('btn-record');
+  btnRecord.innerText = 'Record' ;
+  
+  const arrowIcon = document.createElement('i');
+  arrowIcon.classList.add('fa-solid' , 'fa-arrow-right' , 'fa-lg');
+
+
+  containerCertificateCards.appendChild(card);
+  card.appendChild(imgCard);
+  card.appendChild(titleCard);
+  card.appendChild(boxLevel);
+  boxLevel.appendChild(boxBtnDownloadCert);
+  boxBtnDownloadCert.appendChild(anchorageBtnDownload);
+  anchorageBtnDownload.appendChild(spanBtnDownloadIcon);
+  boxLevel.appendChild(btnRecord);
+  btnRecord.appendChild(arrowIcon);
+
+  windowMyRecord = document.getElementById('bg-wall-record');
+  windowMyRecord.classList.add('close-all');
+  
+  //Open
+  btnRecord.addEventListener('click', () => {
+    windowMyRecord.classList.toggle('open-window');
+    console.log('hola');
+  });
+  
+
+      //Close
+      windowMyRecord.addEventListener('click', (event) => {
+        if (event.target === windowMyRecord ) {
+          windowMyRecord.classList.remove('open-window');
+        }
+      });
+  
+
 }
-
 
 
 const animationBlock = document.createElement('div');
 animationBlock.classList.add('animation-block');
 
-const colores = ["#1C2331", "#263238", "#212121", "#303030", "#2C3E50", "#34495E", "#2C2C2C", "#424242", "#323232", "#2E4053", "#1F2D3D", "#394264", "#4E4E4E", "#424242", "#2B2B2B", "#333333", "#282828", "#1F1F1F", "#1E1E1E", "#000000"];
+const colores = ["#495D66", "#5E6F74", "#7D8D92", "#726B5B", "#2E3850", "#6D8788" , "#2E3850", "#30593E", "#436B7E", "#658D78", "#4D7581", "#A76A50", "#AF7E26"];
+
+ 
+
+
 
 const divs = {
-  'COLOR 1': colores[0],
-  'COLOR 2': colores[1],
-  'COLOR 3': colores[0],
-  'COLOR 4': colores[0],
-  'COLOR 5': colores[1],
-  'JavasCript': colores[5],
-  'COLOR 7': colores[0],
-  'COLOR 8': colores[1],
-  'COLOR 9': colores[0],
-  'COLOR 10': colores[0],
+  'flex-wrap: nowrap | wrap':colores[1],
+  'flex-grow: valor;': colores[2] ,
+  'setInterval(funcion, tiempo)':colores[3],
+  'Array.forEach()': colores[7],
+  'grid-template-columns': colores[8],
+  'addEventListener()': colores[9],
 
-  'COLOR 11': colores[0],
-  'COLOR 12': colores[1],
-  'COLOR 13': colores[0],
-  'COLOR 14': colores[0],
-  'COLOR 15': colores[1],
-  'COLOR 16': colores[0],
-  'COLOR 17': colores[0],
-  'COLOR 18': colores[1],
-  'COLOR 19': colores[0],
-  'COLOR 20': colores[0],
+  'document.querySelector()': colores[6],
+  'JSON.parse()': colores[11],
+  '(let i = 0; i < array.length; i++)': colores[12],
+  '<html></html>': colores[9],
+  'document.createElement(...)': colores[8],
+  'display: grid;': colores[7],
+  'margin: valor;': colores[6],
+  'font-family': colores[5],
+  'function () {...}': colores[4],
+  '<body></body>': colores[6],
 
-  'COLOR 21': colores[0],
-  'COLOR 22': colores[1],
-  'COLOR 23': colores[0],
-  'COLOR 24': colores[0],
-  'COLOR 25': colores[1],
-  'COLOR 26': colores[0],
-  'COLOR 27': colores[0],
-  'COLOR 28': colores[1],
-  'COLOR 29': colores[0],
-  'COLOR 30': colores[0],
+  '<a href="#"></a>': colores[2],
+  'selector': colores[1],
+  '<button type="tipo">Texto del botón</button>': colores[3],
+  '<form></form> ': colores[6],
+  '<section></section>': colores[8],
+  '<input>': colores[8],
+  'display: flex;': colores[9],
+  'position: static;': colores[7],
+  'git status': colores[6],
+  'flex-shrink: valor;': colores[5],
 
-  'COLOR 31': colores[0],
-  'COLOR 32': colores[1],
-  'COLOR 33': colores[0],
-  'COLOR 34': colores[0],
-  'COLOR 35': colores[1],
-  'COLOR 36': colores[0],
-  'COLOR 37': colores[0],
-  'COLOR 38': colores[1],
-  'COLOR 39': colores[0],
-  'COLOR 40': colores[0],
 
-  'COLOR 51': colores[0],
-  'COLOR 52': colores[1],
-  'COLOR 53': colores[0],
-  'COLOR 54': colores[0],
-  'COLOR 55': colores[1],
-  'COLOR 56': colores[0],
-  'COLOR 57': colores[0],
-  'COLOR 58': colores[1],
-  'COLOR 59': colores[0],
-  'COLOR 60': colores[0],
+  'visibility: hidden': colores[7],
+  'filter': colores[6],
+  'object-fit: contain;': colores[9],
+  'git add': colores[10],
+  'transition: 0.5s ease-in-out;': colores[1],
+  'git branch': colores[2],
 
-  'COLOR 71': colores[0],
-  'COLOR 72': colores[1],
-  'COLOR 73': colores[0],
-  'COLOR 74': colores[0],
-  'COLOR 75': colores[1],
-  'COLOR 76': colores[0],
-  'COLOR 77': colores[0],
-  'COLOR 78': colores[1],
-  'COLOR 79': colores[0],
-  'COLOR 80': colores[0],
+  '{display: block }': colores[3],
+  'git clone': colores[4],
+  'git merge': colores[5],
+  'git push': colores[6],
+  'mkdir': colores[7],
+  'git commit -m': colores[0],
+  'grep': colores[8],
+  'mv': colores[12],
+  'getElementById': colores[11],
+  'const suma = (a, b)': colores[5],
 
-  'COLOR 91': colores[0],
-  'COLOR 92': colores[1],
-  'COLOR 93': colores[0],
-  'COLOR 94': colores[0],
-  'COLOR 95': colores[1],
-  'COLOR 96': colores[0],
-  'COLOR 97': colores[0],
-  'COLOR 98': colores[1],
-  'COLOR 99': colores[0],
-  'COLOR 100': colores[0],
- 
 
 };
 
@@ -216,7 +221,7 @@ for (const texto in divs) {
   div.classList.add('div-style');
   div.textContent = texto;
   div.style.backgroundColor = color;
-  padres[Math.floor(i / 10)].appendChild(div);
+  padres[Math.floor(i / 6)].appendChild(div);
   i++;
 }
 
@@ -244,23 +249,31 @@ containerCertified.appendChild(titleCertified);
 titleCertified.appendChild(h3TitleCertified);
 
 myFormation.appendChild(containerCertificateCards);
-myFormation.appendChild(btnRecord);
+
+
+windowMyRecord = document.getElementById('bg-wall-record');
+windowMyRecord.classList.add('close-all');
+
+
+const body = document.querySelector('body');
+
+
+  //Open //PENDIENTE ARREGLAR EL OVERFLOW DEL BODY 
+  btnRecord.addEventListener('click', () => {
+    windowMyRecord.classList.toggle('open-window');
+    body.classList.toggle('no-scroll');
+    console.log('hola');
+  });
+
+
+    //Close
+    windowMyRecord.addEventListener('click', (event) => {
+      if (event.target === windowMyRecord ) {
+        windowMyRecord.classList.remove('open-window');
+      }
+    });
 
 
 
-bgWallRecord = document.getElementById('bg-wall-record');
-
-//Open
-btnRecord.addEventListener('click', () => {
-  bgWallRecord.classList.toggle('open-window'); console.log('Hola');;
-
-});
 
 
-
-//Close
-bgWallRecord.addEventListener('click', (event) => {
-  if (event.target === bgWallRecord) {
-    bgWallRecord.classList.remove('open-all');
-  } 
-});
