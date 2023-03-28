@@ -1059,6 +1059,7 @@ a{
 /*----------- Section Portfolio  ---------- */
 /*----------------------------------------- */
 #portfolio{
+    background-color: #e1e3e9;
     height: max-content;
     padding-bottom: 3rem;
     transition: background-color 0.5s ease-out;
@@ -1624,7 +1625,7 @@ a{
 /*----------------------------------------- */
 
 #contact{
-    background-color: rgb(255, 255, 255);
+    background-color: #d8d8d8;
     width: auto;
     height: max-content;
     padding-bottom: 5rem;
