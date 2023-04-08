@@ -1,0 +1,467 @@
+
+/*----------------------------------------- */
+/*--------   Toggle Dark Mode      -------- */
+/*----------------------------------------- */
+
+.fa-circle-half-stroke{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    font-size: 2.5rem;
+    color: #818181;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.fa-circle-half-stroke:hover{
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------- */
+/*----   Cambios propios del Toggle   ----- */
+/*----------------------------------------- */
+
+.change-toggle-dm{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    font-size: 2.5rem;
+    color: #dfa800;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.change-toggle-dm:hover{
+    color: #d5d5d5;
+}
+
+.fade-in {
+    animation: fadeIn 0.75s ease-in;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------- */
+/*----       Estilos Dark Mode        ----- */
+/*----------------------------------------- */
+
+
+
+
+
+
+/*---------------------------*/
+/*  Nav Horizontal Dark-Mode */
+/*---------------------------*/
+
+#nav-horizontal.dark-mode {
+    background-color: #2A2B2F;
+    color: white;
+    border-bottom: solid 0.5px  rgb(75, 75, 75);
+    transition: background-color 0.75s ease, color 0.75s ease;
+}
+
+#nav-horizontal.dark-mode ul>.li-menu-horizontal {
+    border-left: solid 0.5px rgb(75, 75, 75);
+}
+
+#nav-horizontal.dark-mode ul>.li-menu-horizontal:hover {
+    background-color: #2F3237;
+}
+
+#nav-horizontal.dark-mode ul>.li-menu-horizontal:last-child {
+    border-right: solid 0.5px rgb(75, 75, 75);
+}
+
+#nav-horizontal.dark-mode ul>li>a{
+    color: white;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------- */
+/* Nav Vertical -DarkMode */
+/*----------------------- */
+
+
+.bg-wall.dark-mode .nav-vertical {
+    background-color: #2A2B2F;
+}
+
+.bg-wall.dark-mode .nav-vertical .container-logo-nav-vertical {
+    background-color: #2A2B2F;
+    border-bottom: solid 0.5px  rgb(75, 75, 75);
+}
+
+.bg-wall.dark-mode ul>.li-menu-vertical {
+    border-top: solid 0.5px rgb(75, 75, 75);
+}
+
+.bg-wall.dark-mode ul>.li-menu-vertical:last-child {
+    border-bottom: solid 0.5px rgb(75, 75, 75);
+}
+
+.bg-wall.dark-mode ul>.li-menu-vertical:hover {
+    background-color: #2F3237;
+}
+
+.bg-wall.dark-mode ul>.li-menu-vertical a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+/*------ Sobre mi Dark Mode  -----*/
+/*--------------------------------*/
+
+#about-me.dark-mode {
+    background-color: #2F3237;
+}
+
+#about-me.dark-mode .frame-1-13 .who-i-am h1,
+#about-me.dark-mode .frame-1-13 .who-i-am h2,
+#about-me.dark-mode .frame-1-13 .who-i-am h3{
+    color: rgb(233, 233, 233);
+}
+
+#about-me.dark-mode .frame-1-13 .who-i-am p {
+    color: rgb(255, 255, 255);
+}
+
+#about-me.dark-mode .frame-1-13 .who-i-am a >i {
+    color: rgb(255, 255, 255);}
+
+#about-me.dark-mode .frame-1-13 .who-i-am .btn-download-cv{
+    background-color: #2F3237;
+    border: solid 0.02rem rgb(125, 125, 125);
+}
+
+#about-me.dark-mode .frame-1-13 .who-i-am .btn-download-cv span{
+    border-left: solid 0.02rem rgb(125, 125, 125);
+}
+
+#about-me.dark-mode .frame-1-13 .who-i-am .div-tag-interests{
+    background-color: #1c1c1e;
+    color: whitesmoke;
+    border: solid 0.01rem rgb(125, 125, 125);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+/*-----  Portfolio Dark Mode -----*/
+/*--------------------------------*/
+
+#portfolio.dark-mode{
+    background-color: #3a3d43;
+}
+
+#portfolio.dark-mode .frame .frame-structure-portfolio h2 {
+    color: white;
+}
+
+#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card{
+    background-color: #2A2B2F;
+    border: solid 0.01rem rgb(94, 94, 94);
+}
+
+#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card .title-card{
+    color: white;
+}
+
+#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card p{
+    color: #9fa7b6;
+}
+
+#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card .box-level{
+    background-color: #32353A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+/*---    Education Dark Mode   ---*/
+/*--------------------------------*/
+
+#education.dark-mode{
+    background-color: #2F3237;
+    color: white;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .title-education{
+    color: white;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .text-my-formation >h3{
+    color: white;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .text-my-formation >p{
+    color: white;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certified .title-certified >h3{
+    color: white;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education{
+    background-color: rgb(33, 34, 36);
+    border: solid 0.01rem rgb(94, 94, 94);
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .title-card{
+    color: white;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .box-level-certicate-cards .box-btn-download-cert-ed {
+    border: solid 0.01rem rgb(94, 94, 94);
+    border-radius: 0.5rem;
+}
+
+#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .box-level-certicate-cards .btn-record{
+    border: solid 0.01rem rgb(94, 94, 94);
+    color: whitesmoke;
+    background-color:rgb(33, 34, 36);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+/*----  My Record Dark Mode  -----*/
+/*--------------------------------*/
+
+#bg-wall-record.dark-mode .container-record{
+    border-left: solid 0.01rem rgb(118, 118, 118);
+
+}
+
+#bg-wall-record.dark-mode .container-record .card-structure-cert{
+    border-bottom: solid 0.01rem rgb(94, 94, 94);
+}
+
+#bg-wall-record.dark-mode .container-record .card-structure-cert:hover{
+    background-color: #16181D;
+}
+
+#bg-wall-record.dark-mode .container-record .card-structure-cert:hover .box-btn-download-cert a >span{
+    background-color: #ffffff;
+    color: black
+}
+
+#bg-wall-record.dark-mode .container-record .header-certif{
+    background-color:#000000 ;
+}
+
+#bg-wall-record.dark-mode .container-record .header-certif .title-certif{
+    border-bottom: solid 0.01rem rgb(94, 94, 94);
+}
+
+#bg-wall-record.dark-mode .container-record .header-certif .title-certif h3{
+    color:whitesmoke ;
+}
+
+#bg-wall-record.dark-mode .certificate-list .clase-impar-record{
+    background-color:#282B34;
+
+}
+
+#bg-wall-record.dark-mode .certificate-list .clase-par-record{
+    background-color:#2F353F ;
+}
+
+#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .title-card-course{
+    color: whitesmoke;
+}
+
+#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text {
+    border-right: solid 0.01rem rgb(94, 94, 94);
+}
+
+#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text:hover{
+    border-right: solid 0.01rem rgb(199, 199, 199);
+}
+
+#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .p-tech{
+    color: rgb(198, 198, 198);
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------*/
+/*----   Contact Dark Mode   -----*/
+/*--------------------------------*/
+
+#contact.dark-mode{
+    background-color: #3a3d43;
+    color: white;
+    transition: background-color 0.5s ease-out;
+}
+
+#contact.dark-mode .frame .title-contact{
+    color: whitesmoke;
+}
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .container-form form p{
+    color: whitesmoke;
+}
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info .title-information-d{
+    color: whitesmoke;
+}
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  .data-contact-w i{
+    color: rgb(255, 255, 255);
+}
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  .data-contact-e i {
+    color: rgb(255, 255, 255);
+}
+
+#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  p{
+    color: rgb(255, 255, 255);
+}
+

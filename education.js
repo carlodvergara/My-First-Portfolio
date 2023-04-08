@@ -58,9 +58,13 @@ listCardCertified.push({
 listCardCertified.push({
   image:'https://devchallenges.io/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fdevchallenges-1234.appspot.com%2Fo%2FchallengesDesigns%252F404PageThumbnail.png%3Falt%3Dmedia%26token%3D81f7c567-c0bc-446f-a549-07eeda31c5ef&w=750&q=75',
   title:'Javascript', 
-
-
 });
+
+listCardCertified.push({
+  image:'https://devchallenges.io/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fdevchallenges-1234.appspot.com%2Fo%2FchallengesDesigns%252F404PageThumbnail.png%3Falt%3Dmedia%26token%3D81f7c567-c0bc-446f-a549-07eeda31c5ef&w=750&q=75',
+  title:'Javascript', 
+});
+
 
 
 
@@ -68,17 +72,15 @@ listCardCertified.push({
 
 for (element of listCardCertified){
 
-
-  
   const card = document.createElement('div');
   card.classList.add('card-education');
   
   const imgCard = document.createElement('img');
-  imgCard.classList.add('img-card');
+  imgCard.classList.add('img-card-ed');
   imgCard.setAttribute('src', element.image);
   
   const titleCard = document.createElement('h3');
-  titleCard.classList.add('title-card');
+  titleCard.classList.add('title-card-ceert');
   titleCard.innerText = element.title;
   
 
@@ -96,44 +98,158 @@ for (element of listCardCertified){
   spanBtnDownloadIcon.classList.add('material-symbols-outlined');
   spanBtnDownloadIcon.innerText ='download';
 
-  
-  const btnRecord = document.createElement('p');
-  btnRecord.classList.add('btn-record');
-  btnRecord.innerText = 'Record' ;
-  
-  const arrowIcon = document.createElement('i');
-  arrowIcon.classList.add('fa-solid' , 'fa-arrow-right' , 'fa-lg');
 
 
   containerCertificateCards.appendChild(card);
   card.appendChild(imgCard);
-  card.appendChild(titleCard);
   card.appendChild(boxLevel);
+  boxLevel.appendChild(titleCard);
   boxLevel.appendChild(boxBtnDownloadCert);
   boxBtnDownloadCert.appendChild(anchorageBtnDownload);
   anchorageBtnDownload.appendChild(spanBtnDownloadIcon);
-  boxLevel.appendChild(btnRecord);
-  btnRecord.appendChild(arrowIcon);
-
-  windowMyRecord = document.getElementById('bg-wall-record');
-  windowMyRecord.classList.add('close-all');
-  
-  //Open
-  btnRecord.addEventListener('click', () => {
-    windowMyRecord.classList.toggle('open-window');
-    console.log('hola');
-  });
-  
-
-      //Close
-      windowMyRecord.addEventListener('click', (event) => {
-        if (event.target === windowMyRecord ) {
-          windowMyRecord.classList.remove('open-window');
-        }
-      });
-  
 
 }
+
+
+
+
+const containerOpenRecords = document.createElement('div');
+containerOpenRecords.classList.add('container-open-records');
+
+const btnRecord = document.createElement('p');
+btnRecord.classList.add('btn-record');
+btnRecord.innerText = 'Record' ;
+
+
+
+
+
+
+const galleryImage = document.createElement('div');
+galleryImage.classList.add('gallery-image');
+
+// Galleria #1 //
+const boxGalleryOne = document.createElement('div');
+boxGalleryOne.classList.add('box-gallery');
+
+const imgGalleryOne = document.createElement('img');
+imgGalleryOne.classList.add('img-gallery');
+imgGalleryOne.setAttribute('src' , 'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/07/Midjourney-IA-fotos.jpg?fit=1664%2C935&quality=50&strip=all&ssl=1');
+imgGalleryOne.setAttribute('alt' , '#');
+
+const containertextGalleryOne = document.createElement('div');
+containertextGalleryOne.classList.add('container-text-gallery');
+
+const textGalleryOneA = document.createElement('h1');
+textGalleryOneA.classList.add('text-gallery');
+textGalleryOneA.innerText = '+ 48'
+
+const textGalleryOneB = document.createElement('h2');
+textGalleryOneB.classList.add('text-gallery');
+textGalleryOneB.innerText = 'Cursos'
+
+
+// Galleria #2 //
+const boxGalleryTwo = document.createElement('div');
+boxGalleryTwo.classList.add('box-gallery');
+
+const imgGalleryTwo = document.createElement('img');
+imgGalleryTwo.classList.add('img-gallery');
+imgGalleryTwo.setAttribute('src' , 'https://www.cined.com/content/uploads/2023/03/Midjourney_v5_out_now-feature_image_2.jpg');
+imgGalleryTwo.setAttribute('alt' , '#');
+
+const containertextGalleryTwo = document.createElement('div');
+containertextGalleryTwo.classList.add('container-text-gallery');
+
+const textGalleryTwoA = document.createElement('h1');
+textGalleryTwoA.classList.add('text-gallery');
+textGalleryTwoA.innerText = '+132 H'
+
+const textGalleryTwoB = document.createElement('h2');
+textGalleryTwoB.classList.add('text-gallery');
+textGalleryTwoB.innerText = 'TEORIA';
+
+
+// Galleria #3 //
+const boxGalleryThree = document.createElement('div');
+boxGalleryThree.classList.add('box-gallery');
+
+const imgGalleryThree = document.createElement('img');
+imgGalleryThree.classList.add('img-gallery');
+imgGalleryThree.setAttribute('src' , 'https://futurism.com/_next/image?url=https%3A%2F%2Fwp-assets.futurism.com%2F2023%2F01%2Fartists-sue-stabile-diffusion-midjourney.jpg&w=2048&q=75');
+imgGalleryThree.setAttribute('alt' , '#');
+
+const containertextGalleryThree = document.createElement('div');
+containertextGalleryThree.classList.add('container-text-gallery');
+
+const textGalleryThreeA = document.createElement('h1');
+textGalleryThreeA.classList.add('text-gallery');
+textGalleryThreeA.innerText = '+250 H'
+
+const textGalleryThreeB = document.createElement('h2');
+textGalleryThreeB.classList.add('text-gallery');
+textGalleryThreeB.innerText = 'Practica';
+
+
+
+// Galleria #4 //
+const boxGalleryFour = document.createElement('div');
+boxGalleryFour.classList.add('box-gallery');
+
+const imgGalleryFour = document.createElement('img');
+imgGalleryFour.classList.add('img-gallery');
+imgGalleryFour.setAttribute('src' , 'https://www.tododigital.com/__export/1680196341961/sites/elimparcial/img/2023/03/30/como-usar-midjourney-desde-un-celular.jpg_1148972820.jpg');
+imgGalleryFour.setAttribute('alt' , '#');
+
+const containertextGalleryFour = document.createElement('div');
+containertextGalleryFour.classList.add('container-text-gallery');
+
+const textGalleryFourA = document.createElement('h1');
+textGalleryFourA.classList.add('text-gallery');
+textGalleryFourA.innerText = '+ 1k H'
+
+const textGalleryFourB = document.createElement('h2');
+textGalleryFourB.classList.add('text-gallery');
+textGalleryFourB.innerText = 'Busqueda';
+
+
+
+// Insercion Galleria
+
+
+galleryImage.appendChild(boxGalleryOne);
+boxGalleryOne.appendChild(imgGalleryOne);
+boxGalleryOne.appendChild(containertextGalleryOne);
+containertextGalleryOne.appendChild(textGalleryOneA)
+containertextGalleryOne.appendChild(textGalleryOneB)
+
+galleryImage.appendChild(boxGalleryTwo);
+boxGalleryTwo.appendChild(imgGalleryTwo);
+boxGalleryTwo.appendChild(containertextGalleryTwo);
+containertextGalleryTwo.appendChild(textGalleryTwoA);
+containertextGalleryTwo.appendChild(textGalleryTwoB);
+
+galleryImage.appendChild(boxGalleryThree);
+boxGalleryThree.appendChild(imgGalleryThree);
+boxGalleryThree.appendChild(containertextGalleryThree);
+containertextGalleryThree.appendChild(textGalleryThreeA);
+containertextGalleryThree.appendChild(textGalleryThreeB);
+
+galleryImage.appendChild(boxGalleryFour);
+boxGalleryFour.appendChild(imgGalleryFour);
+boxGalleryFour.appendChild(containertextGalleryFour);
+containertextGalleryFour.appendChild(textGalleryFourA);
+containertextGalleryFour.appendChild(textGalleryFourB);
+
+
+
+
+const containerTools = document.createElement('div');
+containerTools.classList.add('container-tools');
+
+const titleTools = document.createElement('h3');
+titleTools.classList.add('title-tools')
+titleTools.innerText = 'MIS HERRAMIENTAS'
 
 
 const animationBlock = document.createElement('div');
@@ -142,64 +258,43 @@ animationBlock.classList.add('animation-block');
 const colores = ["#495D66", "#5E6F74", "#7D8D92", "#726B5B", "#2E3850", "#6D8788" , "#2E3850", "#30593E", "#436B7E", "#658D78", "#4D7581", "#A76A50", "#AF7E26"];
 
  
-
-
-
 const divs = {
-  'flex-wrap: nowrap | wrap':colores[1],
-  'flex-grow: valor;': colores[2] ,
-  'setInterval(funcion, tiempo)':colores[3],
-  'Array.forEach()': colores[7],
-  'grid-template-columns': colores[8],
-  'addEventListener()': colores[9],
-
-  'document.querySelector()': colores[6],
-  'JSON.parse()': colores[11],
-  '(let i = 0; i < array.length; i++)': colores[12],
-  '<html></html>': colores[9],
-  'document.createElement(...)': colores[8],
-  'display: grid;': colores[7],
-  'margin: valor;': colores[6],
-  'font-family': colores[5],
-  'function () {...}': colores[4],
-  '<body></body>': colores[6],
-
-  '<a href="#"></a>': colores[2],
-  'selector': colores[1],
-  '<button type="tipo">Texto del botón</button>': colores[3],
-  '<form></form> ': colores[6],
-  '<section></section>': colores[8],
-  '<input>': colores[8],
-  'display: flex;': colores[9],
-  'position: static;': colores[7],
-  'git status': colores[6],
-  'flex-shrink: valor;': colores[5],
+  'Visual studio code':colores[1],
+  'Cloudinary;': colores[2] ,
+  'Pandao':colores[3],
+  'Versel': colores[7],
+  'Flaticons': colores[8],
+  'Bash': colores[9],
+  'Notion': colores[6],
+  'Git': colores[11],
+  'Tini Images': colores[12],
+  'GitHub': colores[9],
 
 
-  'visibility: hidden': colores[7],
-  'filter': colores[6],
-  'object-fit: contain;': colores[9],
-  'git add': colores[10],
-  'transition: 0.5s ease-in-out;': colores[1],
-  'git branch': colores[2],
 
-  '{display: block }': colores[3],
-  'git clone': colores[4],
-  'git merge': colores[5],
-  'git push': colores[6],
-  'mkdir': colores[7],
-  'git commit -m': colores[0],
-  'grep': colores[8],
-  'mv': colores[12],
-  'getElementById': colores[11],
-  'const suma = (a, b)': colores[5],
+
+  'Git': colores[11],
+  'Tini Images': colores[12],
+  'GitHub': colores[9],
+  'Figma': colores[8],
+  'Asana;': colores[7],
+  'Jira': colores[8],
+  'Google Fonts': colores[7],
+  'Cloudinary;': colores[2] ,
+  'Pandao':colores[3],
+  'Versel': colores[7],
+
+
+
+
+
 
 
 };
 
 const padres = [];
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 2; i++) {
   const padre = document.createElement('div');
   padre.classList.add('block-element');
   if (i % 2 === 0) {
@@ -221,34 +316,36 @@ for (const texto in divs) {
   div.classList.add('div-style');
   div.textContent = texto;
   div.style.backgroundColor = color;
-  padres[Math.floor(i / 6)].appendChild(div);
+  padres[Math.floor(i / 7)].appendChild(div);
   i++;
 }
 
 
-
 // Insercion Global
 education.appendChild(frameEd);
-
 frameEd.appendChild(frameStructureEducation);
-
 frameStructureEducation.appendChild(myFormation);
 
-frameStructureEducation.appendChild(animationBlock);
+frameStructureEducation.appendChild(galleryImage);
 
 myFormation.appendChild(titleEducation);
 myFormation.appendChild(textMyformation);
-
 textMyformation.appendChild(h3Myformation);
 textMyformation.appendChild(p1Myformation);
 textMyformation.appendChild(p2Myformation);
-
 myFormation.appendChild(containerCertified);
+
 
 containerCertified.appendChild(titleCertified);
 titleCertified.appendChild(h3TitleCertified);
-
 myFormation.appendChild(containerCertificateCards);
+myFormation.appendChild(containerTools);
+containerTools.appendChild(titleTools);
+myFormation.appendChild(containerTools);
+containerTools.appendChild(animationBlock);
+
+
+
 
 
 windowMyRecord = document.getElementById('bg-wall-record');

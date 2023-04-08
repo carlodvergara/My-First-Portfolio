@@ -46,7 +46,7 @@ stringElement: '#',
 typeSpeed: 120,
 startDelay: 300,
 backSpeed: 75,
-smartBackspace: true,
+smartBackspace: false,
 shuffle: false,
 backDelay: 1500,
 fadeOut: false,
@@ -63,4 +63,5 @@ contentType: 'html',
 
 
 })
+
 

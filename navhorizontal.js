@@ -82,6 +82,7 @@ for (let i = 0; i < sectionNavHorizontal.length; i++) {
 
         btnIconMenu.addEventListener('click', () => {
           bgWall.classList.toggle('open-all');
+          body.style.overflow = 'hidden';
           return;
         });
 
@@ -91,6 +92,8 @@ for (let i = 0; i < sectionNavHorizontal.length; i++) {
         bgWall.addEventListener('click', (event) => {
             if (event.target === bgWall || event.target.classList.contains('a-menu-vertical')) {
               bgWall.classList.remove('open-all');
+              body.style.overflow = 'auto';
+
             } return;
           });
 
@@ -100,8 +103,9 @@ for (let i = 0; i < sectionNavHorizontal.length; i++) {
         function closeBgWallIfViewportWideEnough() {
             const viewportWidth = window.innerWidth;
             const bgWall = document.querySelector('.bg-wall');
-            if (viewportWidth >= 920) {
+            if (viewportWidth >= 800) {
               bgWall.classList.remove('open-all');
+              body.style.overflow = 'auto';
             }
             return;
           }

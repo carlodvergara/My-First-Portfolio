@@ -175,7 +175,7 @@ a{
 }
 
 .container-logo-btn-icon-menu >.fa-bars{
-    display: flex;
+    display: none;
     font-size: 2.5rem;
     cursor: pointer;
 }
@@ -241,439 +241,18 @@ a{
 }
 
 
-
-/*----------------------------------------- */
-/*--------   Toggle Dark Mode      -------- */
-/*----------------------------------------- */
-
-.fa-circle-half-stroke{
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    font-size: 2.5rem;
-    color: #818181;
-    cursor: pointer;
-    margin-left: 3rem;
-}
-
-.fa-circle-half-stroke:hover{
-    color: #000000;
-}
-
-
-
-
-
-/*----------------------------------------- */
-/*----   Cambios propios del Toggle   ----- */
-/*----------------------------------------- */
-
-.change-toggle-dm{
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    font-size: 2.5rem;
-    color: #dfa800;
-    cursor: pointer;
-    margin-left: 3rem;
-
-}
-
-
-.change-toggle-dm:hover{
-    color: #d5d5d5;
-
-}
-
-
-
-.fade-in {
-    animation: fadeIn 0.75s ease-in;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
+@media (max-width: 800px){
+    .ul-menu-horizontal{
+        display: none;
     }
-    to {
-      opacity: 1;
+
+    .container-logo-btn-icon-menu >.fa-bars{
+        display: flex;
+        font-size: 2.5rem;
+        cursor: pointer;
     }
-  }
-
-
-
-
-/*----------------------- */
-/* Section Nav Horizontal*/
-/*----------------------- */
-
-#nav-horizontal.dark-mode {
-    background-color: #2A2B2F;
-    color: white;
-    border-bottom: solid 0.5px  rgb(75, 75, 75);
-    transition: background-color 0.75s ease, color 0.75s ease;
-  }
-
-
- #nav-horizontal.dark-mode ul>.li-menu-horizontal {
-    border-left: solid 0.5px rgb(75, 75, 75);
-  }
-
-  #nav-horizontal.dark-mode ul>.li-menu-horizontal:hover {
-    background-color: #2F3237;
-  }
-
-
-  #nav-horizontal.dark-mode ul>.li-menu-horizontal:last-child {
-    border-right: solid 0.5px rgb(75, 75, 75);
-  }
-
-
-  #nav-horizontal.dark-mode ul>li>a{
-    color: white;    
- }
-
-
-
-
-/*----------------------- */
-/* Section Nav Vertical   */
-/*----------------------- */
-
-
-.bg-wall.dark-mode .nav-vertical {
-    background-color: #2A2B2F;
-}
-
-.bg-wall.dark-mode .nav-vertical .container-logo-nav-vertical {
-    background-color: #2A2B2F;
-    border-bottom: solid 0.5px  rgb(75, 75, 75);
-}
-
-.bg-wall.dark-mode ul>.li-menu-vertical {
-    border-top: solid 0.5px rgb(75, 75, 75);
-}
-
-.bg-wall.dark-mode ul>.li-menu-vertical:last-child {
-    border-bottom: solid 0.5px rgb(75, 75, 75);
-}
-
-.bg-wall.dark-mode ul>.li-menu-vertical:hover {
-    background-color: #2F3237;
-}
-
-.bg-wall.dark-mode ul>.li-menu-vertical a {
-    color: white;
-}
-
-
-
-/*--------------------------------*/
-/*------- About Me DarK Mode  -----*/
-/*--------------------------------*/
-
-#about-me.dark-mode {
-    background-color: #2F3237;
-
 
 }
-
-  #about-me.dark-mode .frame-1-13 .who-i-am h1,
-  #about-me.dark-mode .frame-1-13 .who-i-am h2,
-  #about-me.dark-mode .frame-1-13 .who-i-am h3{
-    color: rgb(233, 233, 233);
-  }
-
-
-  #about-me.dark-mode .frame-1-13 .who-i-am p {
-    color: rgb(255, 255, 255);
-  }
-
-
-  #about-me.dark-mode .frame-1-13 .who-i-am a >i {
-    color: rgb(255, 255, 255);
-  }
-
-
-
-  #about-me.dark-mode .frame-1-13 .who-i-am .btn-download-cv {
-    background-color: #2F3237;
-    border: solid 0.02rem rgb(125, 125, 125);
-  }
-
-  #about-me.dark-mode .frame-1-13 .who-i-am .btn-download-cv span{
-    border-left: solid 0.02rem rgb(125, 125, 125);
-  }
-
-  #about-me.dark-mode .frame-1-13 .who-i-am .div-tag-interests{
-    background-color: #1c1c1e;
-    color: whitesmoke;
-    border: solid 0.01rem rgb(125, 125, 125);
-  }
-
-
-/*--------------------------------*/
-/*------- Portfolio Mode  --------*/
-/*--------------------------------*/
-
-#portfolio.dark-mode{
-    background-color: #3a3d43;
-
-
-}
-
-#portfolio.dark-mode .frame .frame-structure-portfolio h2 {
-    color: white;
-}
-
-#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card{
-    background-color: #2A2B2F;
-    border: solid 0.01rem rgb(94, 94, 94);
-}
-
-#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card .title-card{
-    color: white;
-}
-
-#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card p{
-    color: #9fa7b6;
-}
-
-
-#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card .box-level{
-    background-color: #32353A;
-}
-
-
-
-
-
-/*--------------------------------*/
-/*------- Education Mode  --------*/
-/*--------------------------------*/
-
-#education.dark-mode{
-    background-color: #2F3237;
-    color: white;
-}
-
-
-#education.dark-mode .frame .frame-structure-education .my-formation .title-education{
-    color: white;
-}
-
-#education.dark-mode .frame .frame-structure-education .my-formation .text-my-formation >h3{
-    color: white;
-}
-
-#education.dark-mode .frame .frame-structure-education .my-formation .text-my-formation >p{
-    color: white;
-}
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certified .title-certified >h3{
-    color: white;
-}
-
-
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education{
-    background-color: rgb(33, 34, 36);
-    border: solid 0.01rem rgb(94, 94, 94);
-}
-
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .title-card{
-    color: white;
-}
-
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .box-level-certicate-cards .box-btn-download-cert-ed {
-    border: solid 0.01rem rgb(94, 94, 94);
-    border-radius: 0.5rem;
-}
-
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .box-level-certicate-cards .btn-record{
-    border: solid 0.01rem rgb(94, 94, 94);
-    color: whitesmoke;
-    background-color:rgb(33, 34, 36);
-
-}
-
-
-
-
-/*--------------------------------*/
-/*--  My Record Dark Mode  ---*/
-/*--------------------------------*/
-
-#bg-wall-record.dark-mode .container-record{
-    border-left: solid 0.01rem rgb(118, 118, 118);
-
-}
-
-#bg-wall-record.dark-mode .container-record .card-structure-cert{
-    border-bottom: solid 0.01rem rgb(94, 94, 94);
-}
-
-
-
-#bg-wall-record.dark-mode .container-record .card-structure-cert:hover{
-    background-color: #16181D;
-}
-
-#bg-wall-record.dark-mode .container-record .card-structure-cert:hover .box-btn-download-cert a >span{
-    background-color: #ffffff;
-    color: black
-}
-
-
-#bg-wall-record.dark-mode .container-record .header-certif{
-    background-color:#000000 ;
-}
-
-#bg-wall-record.dark-mode .container-record .header-certif .title-certif{
-    border-bottom: solid 0.01rem rgb(94, 94, 94);
-}
-
-
-#bg-wall-record.dark-mode .container-record .header-certif .title-certif h3{
-    color:whitesmoke ;
-}
-
-
-#bg-wall-record.dark-mode .certificate-list .clase-impar-record{
-    background-color:#282B34;
-
-}
-
-#bg-wall-record.dark-mode .certificate-list .clase-par-record{
-    background-color:#2F353F ;
-}
-
-#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .title-card-course{
-    color: whitesmoke;
-}
-
-#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text {
-    border-right: solid 0.01rem rgb(94, 94, 94);
-}
-
-#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text:hover{
-    border-right: solid 0.01rem rgb(199, 199, 199);
-}
-
-#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .p-tech{
-    color: rgb(198, 198, 198);
-}
-
-
-
-
-.no-scroll{
-    overflow-y: hidden;
-}
-
-
-
-
-
-
-
-
-
-/*--------------------------------*/
-/*------- Contact Mode  --------*/
-/*--------------------------------*/
-
-#contact.dark-mode{
-    background-color: #3a3d43;
-    color: white;
-    transition: background-color 0.5s ease-out;
-}
-
-
-#contact.dark-mode .frame .title-contact{
-    color: whitesmoke;
-}
-
-#contact.dark-mode .frame .frame-structure-contact .container-contact .container-form form p{
-    color: whitesmoke;
-}
-
-
-#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info .title-information-d{
-    color: whitesmoke;
-}
-
-#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  .data-contact-w i{
-    color: rgb(255, 255, 255);
-}
-
-
-#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  .data-contact-e i {
-    color: rgb(255, 255, 255);
-}
-
-
-
-#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  p{
-    color: rgb(255, 255, 255);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -704,7 +283,7 @@ a{
     100% {
       transform: translateX(0);
     }
-  }
+}
 
 .nav-vertical{
     width: 70%;
@@ -714,9 +293,6 @@ a{
     flex-direction: column;
     animation: slideInFromLeft 0.5s ease-out;
 }
-
-
-
 
 .container-logo-nav-vertical{
     width: 100%;
@@ -795,14 +371,11 @@ a{
 
 .open-all{
     display: flex;
-
 }
 
 .close-all{
-    display: none;
-    
+    display: none;  
 }
-
 
 .open-window{
     display: flex;
@@ -872,7 +445,7 @@ a{
 
 
 /*----------------------------------------- */
-/*-------   Section About mee.js   -------- */
+/*-------    Section Aboutme.js    -------- */
 /*----------------------------------------- */
 #about-me{
     background-color: rgb(241, 241, 241);
@@ -881,7 +454,8 @@ a{
     transition: background-color 0.5s ease-out;
 }
 
-/*///////        who i am             ///////*/
+/*----------------------------------------- */
+/*-----      Divs My Interest       ------- */
 /*----------------------------------------- */
 .who-i-am{
     width: auto;
@@ -896,7 +470,6 @@ a{
 .paragraph{
     max-width: auto;
     min-width: 20rem;
-
 }
 
 .container-btns{
@@ -939,7 +512,6 @@ a{
     font-weight: 600;
     font-size: var(--step--2);
     padding-right: 1.5rem;
-
 }
 
 .btn-download-cv>span{
@@ -948,7 +520,6 @@ a{
     border-left: solid 0.02rem rgb(255, 255, 255);
     background-color: #000000;
     border-radius: 0px 6px 6px 0px;
-
 }
 
 .material-symbols-outlined {
@@ -959,7 +530,8 @@ a{
   'opsz' 48
 }
 
-/*///////       My interest          ///////*/
+/*----------------------------------------- */
+/*-----      Divs My Interest       ------- */
 /*----------------------------------------- */
 .my-interests{
     max-width: 65rem;
@@ -992,7 +564,8 @@ a{
     padding: 1rem;
 }
 
-/*///////          Image              ///////*/
+/*----------------------------------------- */
+/*-----------       Image        ---------- */
 /*----------------------------------------- */
 .img-section-aboutme{  
     display: flex;  
@@ -1061,16 +634,16 @@ a{
 #portfolio{
     background-color: #e1e3e9;
     height: max-content;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     transition: background-color 0.5s ease-out;
-
 }
 
-/*-----------       Projects   ----------- */
-/*---------------------------------------- */
+/*----------------------------------------- */
+/*-----------       Frame        ---------- */
+/*----------------------------------------- */
 
 .frame-structure-portfolio{ 
-    min-width: 25rem;
+    min-width: 20rem;
     display: grid;
     grid-template-rows: max-content auto;
     row-gap: 1rem;
@@ -1081,19 +654,102 @@ a{
     padding-top: 5rem;
 }
 
+
+
+
+
+
+
+
+.container-expore-themes{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-explore{
+    width: max-content;
+    color: #000000;
+}
+
+.box-btns-nav-explore{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    column-gap: 2rem;
+    justify-self: end;
+
+}
+
+.btn-div-nav-explore{
+    width: max-content;
+    height: auto;
+    column-gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+/*
+.btn-div-nav-explore >:first-child::after {
+    content: "";
+    display: block;
+    border-bottom: solid 4px rgb(36, 36, 36);
+    width: 100%;
+    margin: 5px auto;
+}*/
+
+
+
+.p-btn-explore{
+    height: 90%;
+    font-weight: 600;
+}
+
+.p-btn-explore:first-child{
+    color: #000000;
+    cursor: pointer;
+}
+
+.p-btn-explore:nth-child(2){
+    color: #aaaaaa;  
+}
+
+.typing-dots {
+    content: "";
+    animation: typing 2s infinite;
+    color: #282828;
+}
+  
+@keyframes typing {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+  
+
+
+
+
+
 .container-cards{
     width: 100%;
     height: max-content;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 2rem;
+    padding-bottom: 3rem;
 }
 
-/*-----------       Cards       ----------- */
+/*----------------------------------------- */
+/*-----   Cards - aboute.js [loop]   ------ */
 /*----------------------------------------- */
 
 .card{
-    width: 100%;
+    width: auto;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -1113,23 +769,16 @@ a{
 
 .title-card{
     width: auto;
-    height: max-content;
+    margin-top: 0.5rem;
+    height: 5rem;
     white-space:wrap;
     overflow: hidden;
     text-overflow:ellipsis;
 }
 
-.paragraph-card{
-    width: 100%;
-    height: 9rem;
-    font-size: var(--step--2);
-    color: #5f5f5f;
-    padding-bottom: 6rem;
-    font-weight: 600;
 
-}
-
-/*----------  box level         ----------- */
+/*----------------------------------------- */
+/*-----    Box level Experience    -------- */
 /*----------------------------------------- */
 
 .box-level{
@@ -1166,6 +815,61 @@ a{
 }
 
 
+/*----------------------------------------- */
+/*-----         MEDIA QUERIE       -------- */
+/*----------------------------------------- */
+@media (max-width: 720px) {
+
+
+    .container-expore-themes{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+    
+   .title-explore{
+    align-self: start;
+   }
+
+
+    .box-btns-nav-explore{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        column-gap: 2rem;   
+    }
+
+
+
+
+    .container-cards{
+        width: 100%;
+        height: max-content;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+        grid-auto-flow: column;
+        grid-template-rows:1fr;
+        overflow-x: auto;
+     
+    }
+
+
+
+    .card{
+        width: 28rem;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 1.5rem;
+        border: solid 0.5px rgb(197, 197, 197);
+        border-radius: 0.9rem;
+        background-color: white;
+        cursor:pointer;
+    }
+
+
+}
 
 
 
@@ -1230,17 +934,16 @@ a{
     height: max-content;
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, minmax(50.2rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50rem,1fr));
     column-gap: 3rem;
-    row-gap: 3rem;
+    justify-content: center;
 }
 
 .my-formation{
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
-    padding-bottom: 5rem;
+    row-gap: 1.5rem;
 }
 
 .title-education{
@@ -1251,7 +954,7 @@ a{
     width: auto;
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 2rem;  
 }
 
 .container-certified{
@@ -1271,29 +974,45 @@ a{
 }
 
 
-/*---------- Card Education  ---------- */
+/*----------------------------------------- */
+/*-----   Container card certified   ------ */
+/*----------------------------------------- */
 .container-certificate-cards{
-    width: auto;
+    max-width: 100%;
     height: max-content;
     display: grid;
-    gap: 1rem;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
-    overflow: hidden;
+    column-gap: 1rem;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    justify-content: start;
+
+
 }
 
 .card-education{
-    width: 100%;
+    min-width: 28rem;
     height: max-content;
-  
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
-    padding: 1.5rem;
     border: solid 0.5px rgb(197, 197, 197);
-    border-radius: 0.6rem;
+    border-radius: 1rem;
     background-color: white;
 
+}
+
+.img-card-ed{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.title-card-ceert{
+    width: auto;
+    height: 3rem;
+    white-space:wrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
 }
 
 
@@ -1301,21 +1020,22 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5rem;
-    
-
     height: max-content;
+    padding: 1rem;
+
 }
 
-/*--------------------- */
-/*----  Btn dwnload --- */
-/*--------------------- */
+
+
+
+/*----------------------------------------- */
+/*---         btn Download             ---- */
+/*----------------------------------------- */
 .box-btn-download-cert-ed{
     width: max-content;
     height: auto;
     display: flex;
     justify-content: center;
-  
 }
 
 .box-btn-download-cert-ed a>span{
@@ -1328,23 +1048,6 @@ a{
     cursor: pointer;
 }
 
-
-
-.btn-record{
-
-    width: max-content;
-    height: 4.5rem;
-    background-color: white;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 1rem;
-    border: solid 0.5px rgb(128, 128, 128);
-    border-radius: 0.6rem;
-    cursor: pointer;
-    align-self: center;
-}
-
-
 .fa-arrow-right{
 
     margin-left: 1rem;
@@ -1352,25 +1055,129 @@ a{
 }
 
 
+/*----------------------------------------- */
+/*---      Trigger Open Nav Record     ---- */
+/*----------------------------------------- */
+
+.container-open-records{
+    width: 100%; 
+    border: solid white 3px;
+}
+
+.btn-record{
+
+    width: max-content;
+    height: 3.5rem;
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    border: solid 0.5px rgb(128, 128, 128);
+    border-radius: 0.6rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
 
 
 
 
-/*-------  Animation Card  ---------- */
+/*----------------------------------------- */
+/*---         Galleria de Imagenes     ---- */
+/*----------------------------------------- */
 
-.animation-block{
-    min-width: calc(100% - 2rem);
-    max-width: 72rem;
-    height: 75%;
+.gallery-image{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    align-self: center;
+    padding: 4% 2%;
+}
+
+.box-gallery{
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.20);
+    line-height: 0;
+    transition: all 600ms;  
+}
+
+.img-gallery{
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 300ms;
+    filter:linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0)) 100%;
+}
+
+.box-gallery:hover{
+    flex: 50%;
+}
+
+.box-gallery:hover > .img-gallery{
+    width: 100%;
+    height: 100%;
+}
+
+.container-text-gallery{
+    background-color: #393939;
+    position: relative;
+    bottom: 200px;
+    left: -0px;
+    height: 20rem;
     display: flex;
     flex-direction: column;
-    align-self: center;
     justify-content: center;
+    row-gap: 5rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+
+.text-gallery{
+    position: relative;
+    left: 155px;
+    color: white;
+    white-space: nowrap;
+}
+
+
+
+
+/*----------------------------------------- */
+/*---         Container Tools           ---- */
+/*----------------------------------------- */
+
+.container-tools{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    width: 100%; 
+    height: max-content;
+}
+
+.title-tools{
+    color: var(--color-font-h3);
+}
+
+
+
+
+
+/*----------------------------------------- */
+/*---         Animation card           ---- */
+/*----------------------------------------- */
+.animation-block{
+    min-width: 100%;
+    max-width: 30rem;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: start;
     align-items: center;
     align-content: center;
     overflow: hidden;
     row-gap: 0.5rem;
- 
 }
 
 .block-element{
@@ -1380,7 +1187,7 @@ a{
     flex-wrap: nowrap;   
     flex-direction: row;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 0.5rem;
     font-size: var(--step-5);
     font-weight: 800;
     border-radius: 0.6rem;
@@ -1396,7 +1203,7 @@ a{
     color:white;
     display: flex;
     min-width: max-content;
-    font-size: var(--step-3);
+    font-size: var(--step--2);
     font-weight: 800;
 
     padding: 1.5rem;
@@ -1404,11 +1211,11 @@ a{
 }   
 
 .sliderright{
-    animation: sliderright 140s linear infinite;
+    animation: sliderright 50s linear infinite;
 }
 
 .sliderleft{
-    animation: sliderleft 140s linear infinite;  
+    animation: sliderleft 50s linear infinite;  
 }
 
 @keyframes sliderright {
@@ -1416,7 +1223,7 @@ a{
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-40%);
+    transform: translateX(-30%);
   }
 }
 
@@ -1428,7 +1235,80 @@ a{
       transform: translateX(0%);
     }
 }
-  
+   
+
+
+/*----------------------------------------- */
+/*---       MEDIA QUERIE EDUCATION     ---- */
+/*----------------------------------------- */
+
+
+
+@media (max-width: 720px) {
+
+
+    .frame-structure-education{
+        height: max-content;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+        column-gap: 3rem;
+        justify-content: center;
+    }
+
+    .container-certificate-cards{
+        width: 100%;
+        height: max-content;
+        display: grid;
+        column-gap: 2rem;
+        grid-auto-flow: column;
+        grid-template-rows:1fr;
+        overflow-x: auto;
+    }
+
+
+
+    .card-education{
+        width: 28rem;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 1.5rem;
+        border: solid 0.5px rgb(197, 197, 197);
+        border-radius: 0.9rem;
+        background-color: white;
+        cursor:pointer;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1448,9 +1328,9 @@ a{
     justify-content: end;
 }
 
-/*--------------------------*/
-/*---- Nav Bar vertical --- */
-/*--------------------------*/
+/*-------------------------------- */
+/*----   Nav Bar Vertical      --- */
+/*-------------------------------- */
 .container-record{
     width: clamp(25rem, 80%, 50rem);
     height: 100vh;
@@ -1496,12 +1376,11 @@ a{
 }
 
 
-/*--------------------- */
-/*----    tarjeta   --- */
-/*--------------------- */
+/*-------------------------------- */
+/*----   Card List Record      --- */
+/*-------------------------------- */
 .card-structure-cert{
     width: 100%;
-
     min-height: max-content;
     max-height: max-content;
     
@@ -1510,8 +1389,6 @@ a{
     align-items: start;
     justify-content: space-evenly;
     border-bottom: solid 0.05rem rgb(218, 218, 218);
-
-
 }
 
 .card-structure-cert:hover {
@@ -1534,9 +1411,9 @@ a{
 
 
 
-/*--------------------- */
-/*----   Imagen     --- */
-/*--------------------- */
+/*-------------------------------- */
+/*----   Imagen Circular       --- */
+/*-------------------------------- */
 .box-image{
     display: flex;
     flex-direction: column;
@@ -1558,9 +1435,9 @@ a{
 }
 
 
-/*--------------------- */
-/*----  Caja Texto ---- */
-/*--------------------- */
+/*-------------------------------- */
+/*----     Tecto Records       --- */
+/*-------------------------------- */
 .box-text{
     min-width: 5rem;
     width: 35rem;
@@ -1578,7 +1455,6 @@ a{
     
     padding-right: 1.5rem;
     border-right: solid 1px rgb(199, 199, 199); 
-
 }
 
 .title-card-course{    
@@ -1593,9 +1469,9 @@ a{
 }
 
 
-/*--------------------- */
-/*----  Btn dwnload --- */
-/*--------------------- */
+/*-------------------------------- */
+/*--  Btn Download Certificado  -- */
+/*-------------------------------- */
 .box-btn-download-cert{
     width: max-content;
     height: auto;
@@ -1603,7 +1479,6 @@ a{
 
     display: flex;
     justify-content: center;
-  
 }
 
 .box-btn-download-cert a>span{
@@ -1668,7 +1543,6 @@ a{
     align-content: center;
 }
 
-
 .input-name{
     font-family: 'Montserrat';
     font-size: 1.4rem;
@@ -1721,7 +1595,6 @@ textarea{
     background-color: #f3f3f3;
 }
 
-
 .btn-send-form{
     align-self:auto;
     width: clamp(100%, 6vw, 100%);
@@ -1740,6 +1613,8 @@ textarea{
 }
 
 
+
+
 .extra-info{
     display: flex;
     flex-direction: column;
@@ -1753,6 +1628,7 @@ textarea{
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    
 }
 
 [class^="data-contact"]{
@@ -1760,6 +1636,10 @@ textarea{
     align-items: center;
     column-gap: 1rem;
     padding-top: 1.5rem;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    
 }
 
 .fa-square-whatsapp{
@@ -1778,6 +1658,22 @@ textarea{
     font-weight: 700;
     color: #6b6b6b;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
