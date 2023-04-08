@@ -70,6 +70,7 @@ listCardCertified.push({
 
 
 
+
 for (element of listCardCertified){
 
   const card = document.createElement('div');
@@ -111,14 +112,18 @@ for (element of listCardCertified){
 }
 
 
+// Secction Trigger Bottons Record and Tools
 
-
-const containerOpenRecords = document.createElement('div');
-containerOpenRecords.classList.add('container-open-records');
+const containerToolsRecord = document.createElement('div');
+containerToolsRecord.classList.add('container-tools');
 
 const btnRecord = document.createElement('p');
 btnRecord.classList.add('btn-record');
-btnRecord.innerText = 'Record' ;
+btnRecord.innerText = '🎓 Certificados' ;
+
+const btnTools = document.createElement('p');
+btnTools.classList.add('btn-tools');
+btnTools.innerText = ' 💻 Herramientas' ;
 
 
 
@@ -244,81 +249,11 @@ containertextGalleryFour.appendChild(textGalleryFourB);
 
 
 
-const containerTools = document.createElement('div');
-containerTools.classList.add('container-tools');
-
-const titleTools = document.createElement('h3');
-titleTools.classList.add('title-tools')
-titleTools.innerText = 'MIS HERRAMIENTAS'
-
-
-const animationBlock = document.createElement('div');
-animationBlock.classList.add('animation-block');
-
-const colores = ["#495D66", "#5E6F74", "#7D8D92", "#726B5B", "#2E3850", "#6D8788" , "#2E3850", "#30593E", "#436B7E", "#658D78", "#4D7581", "#A76A50", "#AF7E26"];
-
- 
-const divs = {
-  'Visual studio code':colores[1],
-  'Cloudinary;': colores[2] ,
-  'Pandao':colores[3],
-  'Versel': colores[7],
-  'Flaticons': colores[8],
-  'Bash': colores[9],
-  'Notion': colores[6],
-  'Git': colores[11],
-  'Tini Images': colores[12],
-  'GitHub': colores[9],
-
-
-
-
-  'Git': colores[11],
-  'Tini Images': colores[12],
-  'GitHub': colores[9],
-  'Figma': colores[8],
-  'Asana;': colores[7],
-  'Jira': colores[8],
-  'Google Fonts': colores[7],
-  'Cloudinary;': colores[2] ,
-  'Pandao':colores[3],
-  'Versel': colores[7],
 
 
 
 
 
-
-
-};
-
-const padres = [];
-
-for (let i = 0; i < 2; i++) {
-  const padre = document.createElement('div');
-  padre.classList.add('block-element');
-  if (i % 2 === 0) {
-    padre.classList.add('sliderright');
-  } else {
-    padre.classList.add('sliderleft');
-  }
-  padres.push(padre);
-  animationBlock.appendChild(padre);
-}
-
-let i = 0;
-
-const divStyleElems = document.querySelectorAll('.div-style');
-
-for (const texto in divs) {
-  const color = divs[texto];
-  const div = document.createElement('div');
-  div.classList.add('div-style');
-  div.textContent = texto;
-  div.style.backgroundColor = color;
-  padres[Math.floor(i / 7)].appendChild(div);
-  i++;
-}
 
 
 // Insercion Global
@@ -339,10 +274,11 @@ myFormation.appendChild(containerCertified);
 containerCertified.appendChild(titleCertified);
 titleCertified.appendChild(h3TitleCertified);
 myFormation.appendChild(containerCertificateCards);
-myFormation.appendChild(containerTools);
-containerTools.appendChild(titleTools);
-myFormation.appendChild(containerTools);
-containerTools.appendChild(animationBlock);
+myFormation.appendChild(containerToolsRecord);
+containerToolsRecord.appendChild(btnRecord);
+containerToolsRecord.appendChild(btnTools);
+
+
 
 
 

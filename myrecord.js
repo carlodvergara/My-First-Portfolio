@@ -16,7 +16,7 @@ const titleCertif = document.createElement('div');
 titleCertif.classList.add('title-certif');
 
 const h3TitleCertif = document.createElement('h3')
-h3TitleCertif.innerText = 'CERTIFICADOS';
+h3TitleCertif.innerText = '✅ CERTIFICADOS';
 
 
 

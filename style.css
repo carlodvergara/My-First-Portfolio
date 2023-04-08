@@ -978,19 +978,22 @@ a{
 /*-----   Container card certified   ------ */
 /*----------------------------------------- */
 .container-certificate-cards{
-    max-width: 100%;
+    max-width: 60rem;
     height: max-content;
     display: grid;
-    column-gap: 1rem;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+      
     grid-auto-flow: column;
-    overflow-x: scroll;
+    overflow-x: auto;
+    align-items: start;
     justify-content: start;
-
+    padding-bottom: 3rem;
 
 }
 
 .card-education{
-    min-width: 28rem;
+    width: 28rem;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -1014,7 +1017,6 @@ a{
     overflow: hidden;
     text-overflow:ellipsis;
 }
-
 
 .box-level-certicate-cards{
     display: flex;
@@ -1064,20 +1066,49 @@ a{
     border: solid white 3px;
 }
 
+
+
+/*----------------------------------------- */
+/*-- Trigger Open Nav Record & Tools   ---- */
+/*----------------------------------------- */
+
+.container-tools{
+    display: flex;
+    height: 10rem;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3rem;
+    width: 100%; 
+
+}
+
+
 .btn-record{
 
     width: max-content;
-    height: 3.5rem;
-    background-color: white;
-    font-size: 1.5rem;
+    height: max-content;
+    font-size: var(--step--2);
     font-weight: 700;
+    border: solid 1px black;
+    border-radius: 0.4rem;
+    background-color: white;
     padding: 1rem;
-    border: solid 0.5px rgb(128, 128, 128);
-    border-radius: 0.6rem;
+    align-items: center;
     cursor: pointer;
-    align-self: flex-start;
 }
 
+.btn-tools{
+    width: max-content;
+    height: max-content;
+    font-size: var(--step--2);
+    font-weight: 700;
+    border: solid 1px black;
+    border-radius: 0.4rem;
+    background-color: white;
+    padding: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
 
 
 
@@ -1143,99 +1174,7 @@ a{
 
 
 
-/*----------------------------------------- */
-/*---         Container Tools           ---- */
-/*----------------------------------------- */
 
-.container-tools{
-    display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
-    width: 100%; 
-    height: max-content;
-}
-
-.title-tools{
-    color: var(--color-font-h3);
-}
-
-
-
-
-
-/*----------------------------------------- */
-/*---         Animation card           ---- */
-/*----------------------------------------- */
-.animation-block{
-    min-width: 100%;
-    max-width: 30rem;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    align-self: start;
-    justify-content: start;
-    align-items: center;
-    align-content: center;
-    overflow: hidden;
-    row-gap: 0.5rem;
-}
-
-.block-element{
-    width: max-content;
-    height: max-content;
-    display: flex;
-    flex-wrap: nowrap;   
-    flex-direction: row;
-    align-items: center;
-    column-gap: 0.5rem;
-    font-size: var(--step-5);
-    font-weight: 800;
-    border-radius: 0.6rem;
-
-
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    white-space: nowrap;
-}   
-
-.div-style{
-    color:white;
-    display: flex;
-    min-width: max-content;
-    font-size: var(--step--2);
-    font-weight: 800;
-
-    padding: 1.5rem;
-    border-radius: 0.6rem;
-}   
-
-.sliderright{
-    animation: sliderright 50s linear infinite;
-}
-
-.sliderleft{
-    animation: sliderleft 50s linear infinite;  
-}
-
-@keyframes sliderright {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-30%);
-  }
-}
-
-@keyframes sliderleft {
-    0% {
-      transform: translateX(-10%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-}
-   
 
 
 /*----------------------------------------- */
@@ -1344,24 +1283,25 @@ a{
 /*-------------------------------- */
 .header-certif{
     width: 100%;
-    height: auto;
+    height: 7rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding-left: 2rem;
+
     position: sticky;
     top: 0;
     background-color: white;
+    border-bottom: 0.1rem solid gainsboro;
 }
 
 .title-certif{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
-    align-self: center;
-    height: 5rem;
-    border-bottom: 0.1rem solid gainsboro;
     position: sticky;
     top:0;
+
 }
 
 /*-------------------------------- */
@@ -1388,16 +1328,13 @@ a{
     flex-direction: row;
     align-items: start;
     justify-content: space-evenly;
-    border-bottom: solid 0.05rem rgb(218, 218, 218);
+    border: solid 0.2px transparent;
 }
 
 .card-structure-cert:hover {
-    background-color: #c2c2c2;
+    border: solid 0.2px rgb(193, 193, 193);
 }
 
-.card-structure-cert:hover >.box-text{
-    border-right: solid 1px rgb(255, 255, 255); 
-}
 
 .clase-par-record{
     background-color: #E2E2E2;
@@ -1454,7 +1391,7 @@ a{
     padding-left: 1.5rem;
     
     padding-right: 1.5rem;
-    border-right: solid 1px rgb(199, 199, 199); 
+    
 }
 
 .title-card-course{    
@@ -1482,8 +1419,8 @@ a{
 }
 
 .box-btn-download-cert a>span{
-    padding: 1rem;
-    border-radius: 0.6rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
     width: auto;
     background-color: #000000;
     color: rgb(255, 255, 255);

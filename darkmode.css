@@ -353,55 +353,49 @@
 /*----  My Record Dark Mode  -----*/
 /*--------------------------------*/
 
-#bg-wall-record.dark-mode .container-record{
-    border-left: solid 0.01rem rgb(118, 118, 118);
-
-}
-
 #bg-wall-record.dark-mode .container-record .card-structure-cert{
-    border-bottom: solid 0.01rem rgb(94, 94, 94);
+    border: solid 1px transparent;
 }
+
+
+
 
 #bg-wall-record.dark-mode .container-record .card-structure-cert:hover{
     background-color: #16181D;
+    border: solid 1px #222326 ;
 }
 
+#bg-wall-record.dark-mode .container-record .card-structure-cert .box-btn-download-cert a >span{
+    border: solid 1px transparent;
+}
+
+
+
 #bg-wall-record.dark-mode .container-record .card-structure-cert:hover .box-btn-download-cert a >span{
-    background-color: #ffffff;
-    color: black
+    border: solid 1px rgb(132, 132, 132);
 }
 
 #bg-wall-record.dark-mode .container-record .header-certif{
-    background-color:#000000 ;
+    background-color:#222326 ;
+    border-bottom: #16181D;
 }
 
-#bg-wall-record.dark-mode .container-record .header-certif .title-certif{
-    border-bottom: solid 0.01rem rgb(94, 94, 94);
-}
 
 #bg-wall-record.dark-mode .container-record .header-certif .title-certif h3{
     color:whitesmoke ;
 }
 
 #bg-wall-record.dark-mode .certificate-list .clase-impar-record{
-    background-color:#282B34;
+    background-color:#2F3237;
 
 }
 
 #bg-wall-record.dark-mode .certificate-list .clase-par-record{
-    background-color:#2F353F ;
+    background-color:#3A3D43;
 }
 
 #bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .title-card-course{
     color: whitesmoke;
-}
-
-#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text {
-    border-right: solid 0.01rem rgb(94, 94, 94);
-}
-
-#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text:hover{
-    border-right: solid 0.01rem rgb(199, 199, 199);
 }
 
 #bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .p-tech{
