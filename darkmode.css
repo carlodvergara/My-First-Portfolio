@@ -358,8 +358,6 @@
 }
 
 
-
-
 #bg-wall-record.dark-mode .container-record .card-structure-cert:hover{
     background-color: #16181D;
     border: solid 1px #222326 ;
@@ -402,6 +400,8 @@
     color: rgb(198, 198, 198);
 }
 
+
+/*????*/
 .no-scroll{
     overflow-y: hidden;
 }
@@ -409,6 +409,54 @@
 
 
 
+
+
+
+/*--------------------------------*/
+/*----  My Tools Dark Mode  -----*/
+/*--------------------------------*/
+
+#bg-wall-tool.dark-mode .container-tool {
+    background-color: #2F3237;
+}
+
+
+#bg-wall-tool.dark-mode .card-header-tool{
+    background-color: #2F3237;
+}
+
+#bg-wall-tool.dark-mode .card-header-tool .container-title-card-tool{
+    background-color: #2F3237;
+}
+
+#bg-wall-tool.dark-mode .card-header-tool .container-title-card-tool >h3{
+    color: #d3d3d3;
+}
+
+#bg-wall-tool.dark-mode .card-header-tool .box-area-tool  .fa-folder{
+    color:  #7e7e7e;
+}
+
+
+#bg-wall-tool.dark-mode .card-header-tool .box-area-tool  .fa-folder {
+    color:  #7e7e7e;
+}
+
+#bg-wall-tool.dark-mode .card-header-tool .box-area-tool p{
+    color:  #a5a5a5;
+}
+
+
+#bg-wall-tool.dark-mode .container-tool .body-tools >p{
+    color:  #ebebeb;
+}
+
+
+#bg-wall-tool.dark-mode .container-tool .body-tools .tools-dev .div-tools{
+    background-color: #1c1c1e;
+    color: whitesmoke;
+    border: solid 0.01rem rgb(125, 125, 125);
+}
 
 
 

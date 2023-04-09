@@ -5,6 +5,7 @@ const toggleMode = document.querySelector('.fa-circle-half-stroke');
 const navH = document.getElementById('nav-horizontal');
 const bgWaNav = document.querySelector('.bg-wall'); 
 const bgWaReco = document.getElementById('bg-wall-record');
+const bgwallTool = document.getElementById('bg-wall-tool')
 const abtMe = document.getElementById('about-me');
 const portf = document.getElementById('portfolio');
 const educat = document.getElementById('education');
@@ -19,6 +20,7 @@ const activateDarkMode = () => {
     navH.classList.add('dark-mode');
     bgWaNav.classList.add('dark-mode');
     bgWaReco.classList.add('dark-mode');
+    bgwallTool.classList.add('dark-mode');
     abtMe.classList.add('dark-mode');
     portf.classList.add('dark-mode');
     educat.classList.add('dark-mode');
@@ -36,6 +38,7 @@ const deactivateDarkMode = () => {
   navH.classList.remove('dark-mode');
   bgWaNav.classList.remove('dark-mode');
   bgWaReco.classList.remove('dark-mode');
+  bgwallTool.classList.remove('dark-mode');
   abtMe.classList.remove('dark-mode');
   portf.classList.remove('dark-mode');
   educat.classList.remove('dark-mode');

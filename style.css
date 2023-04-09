@@ -1084,7 +1084,6 @@ a{
 
 
 .btn-record{
-
     width: max-content;
     height: max-content;
     font-size: var(--step--2);
@@ -1096,6 +1095,8 @@ a{
     align-items: center;
     cursor: pointer;
 }
+
+
 
 .btn-tools{
     width: max-content;
@@ -1275,6 +1276,7 @@ a{
     height: 100vh;
     background-color: whitesmoke;
     overflow: auto;
+    animation: slideInFromRight 0.5s ease-in-out;
 }
 
 
@@ -1437,12 +1439,6 @@ a{
 
 
 
-
-
-
-
-
-
 /*----------------------------------------- */
 /*-------      Card Tools           ------- */
 /*----------------------------------------- */
@@ -1457,19 +1453,39 @@ a{
     justify-content: end;
 }
 
+
+
+
+
 /*-------------------------------- */
 /*----   Nav Bar Vertical      --- */
 /*-------------------------------- */
 .container-tool{
-    width: clamp(25rem, 80%, 50rem);
+    width: clamp(25rem, 70%, 50rem);
     height: 100vh;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(239, 239, 239);
     overflow: auto;
     padding-top: 0;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    animation: slideInFromRight 0.5s ease-in-out;
 }
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%); /* Inicia desde la derecha */
+    }
+    100% {
+      transform: translateX(0%); /* Llega hasta el borde izquierdo */
+    }
+  }
+
+
+
+
+
+
 
 /*-------------------------------- */
 /*----    Card Strcture        --- */
@@ -1522,8 +1538,6 @@ a{
 }
 
 
-
-
 .fa-folder{
     font-size: var(--step--1);
     color: #575757;
@@ -1542,11 +1556,6 @@ a{
     padding-left: 1.5rem;
     padding-right: 2rem;
 }
-
-
-
-
-
 
 
 .container-text-tools{
