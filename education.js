@@ -246,31 +246,17 @@ boxGalleryFour.appendChild(containertextGalleryFour);
 containertextGalleryFour.appendChild(textGalleryFourA);
 containertextGalleryFour.appendChild(textGalleryFourB);
 
-
-
-
-
-
-
-
-
-
-
 // Insercion Global
 education.appendChild(frameEd);
 frameEd.appendChild(frameStructureEducation);
 frameStructureEducation.appendChild(myFormation);
-
 frameStructureEducation.appendChild(galleryImage);
-
 myFormation.appendChild(titleEducation);
 myFormation.appendChild(textMyformation);
 textMyformation.appendChild(h3Myformation);
 textMyformation.appendChild(p1Myformation);
 textMyformation.appendChild(p2Myformation);
 myFormation.appendChild(containerCertified);
-
-
 containerCertified.appendChild(titleCertified);
 titleCertified.appendChild(h3TitleCertified);
 myFormation.appendChild(containerCertificateCards);
@@ -282,7 +268,7 @@ containerToolsRecord.appendChild(btnTools);
 
 
 
-
+// Evento click open record
 
 windowMyRecord = document.getElementById('bg-wall-record');
 windowMyRecord.classList.add('close-all');
@@ -294,8 +280,8 @@ const body = document.querySelector('body');
   //Open //PENDIENTE ARREGLAR EL OVERFLOW DEL BODY 
   btnRecord.addEventListener('click', () => {
     windowMyRecord.classList.toggle('open-window');
-    body.classList.toggle('no-scroll');
-    console.log('hola');
+    document.body.style.overflow = 'hidden';
+    return;
   });
 
 
@@ -303,10 +289,32 @@ const body = document.querySelector('body');
     windowMyRecord.addEventListener('click', (event) => {
       if (event.target === windowMyRecord ) {
         windowMyRecord.classList.remove('open-window');
+        document.body.style.overflow = 'auto';
+        return;
       }
     });
 
 
 
 
+// Evento click open Tools
+windowMyTool = document.getElementById('bg-wall-tool');
+windowMyTool.classList.add('close-all');
 
+//Open
+btnTools.addEventListener('click', () => {
+  windowMyTool.classList.remove('close-all');
+  windowMyTool.classList.add('open-all');
+  document.body.style.overflow = 'hidden';
+  return;
+});
+
+//Close
+windowMyTool.addEventListener('click', (event) => {
+  if (event.target === windowMyTool) {
+    windowMyTool.classList.remove('open-all');
+    windowMyTool.classList.add('close-all');
+    document.body.style.overflow = 'auto';
+  } 
+  return;
+});

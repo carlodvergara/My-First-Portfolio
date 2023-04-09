@@ -1432,6 +1432,188 @@ a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------- */
+/*-------      Card Tools           ------- */
+/*----------------------------------------- */
+
+#bg-wall-tool{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 30;
+    justify-content: end;
+}
+
+/*-------------------------------- */
+/*----   Nav Bar Vertical      --- */
+/*-------------------------------- */
+.container-tool{
+    width: clamp(25rem, 80%, 50rem);
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+    overflow: auto;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+/*-------------------------------- */
+/*----    Card Strcture        --- */
+/*-------------------------------- */
+.card-header-tool{
+    width: 100%;
+    height: max-content;
+    position: sticky;
+    top:0;
+    background-color:  rgb(241, 241, 241);
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+   
+}
+
+.image-card-header{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1rem 1rem 1rem 1rem;
+
+}
+
+
+.container-title-card-tool{
+    width: 100%;
+    height: max-content;
+    padding-top: 1rem;
+   
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: rgb(241, 241, 241);
+    position: sticky;
+    top:0;
+
+}
+
+.container-title-card-tool>h3{
+    color: black;
+    font-weight: 700;
+}
+
+.box-area-tool{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+
+
+
+.fa-folder{
+    font-size: var(--step--1);
+    color: #575757;
+}
+
+.box-area-tool>p{
+    color:#575757;
+    font-weight: 600;
+}
+
+
+.body-tools{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+}
+
+
+
+
+
+
+
+.container-text-tools{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.body-tools>p{
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+
+.tools-dev{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.div-tools{
+    width: max-content;
+    height: max-content;
+    font-size: var(--step--2);
+    font-weight: 700;
+    border: solid 1px black;
+    border-radius: 0.4rem;
+    background-color: white;
+    padding: 1rem;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------- */
 /*----------- Section Contact   ----------- */
 /*----------------------------------------- */
