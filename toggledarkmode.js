@@ -4,7 +4,7 @@ const toggleMode = document.querySelector('.fa-circle-half-stroke');
 // Seleccionar los elementos que se desean modificar con el dark mode
 const navH = document.getElementById('nav-horizontal');
 const bgWaNav = document.querySelector('.bg-wall'); 
-const bgWaReco = document.getElementById('bg-wall-record');
+const bgWaCertif = document.getElementById('bg-wall-certificate');
 const bgwallTool = document.getElementById('bg-wall-tool')
 const abtMe = document.getElementById('about-me');
 const portf = document.getElementById('portfolio');
@@ -19,7 +19,7 @@ const activateDarkMode = () => {
     // Agregar la clase 'dark-mode' a los elementos seleccionados
     navH.classList.add('dark-mode');
     bgWaNav.classList.add('dark-mode');
-    bgWaReco.classList.add('dark-mode');
+    bgWaCertif.classList.add('dark-mode');
     bgwallTool.classList.add('dark-mode');
     abtMe.classList.add('dark-mode');
     portf.classList.add('dark-mode');
@@ -37,7 +37,7 @@ const deactivateDarkMode = () => {
   // Eliminar la clase 'dark-mode' de los elementos seleccionados
   navH.classList.remove('dark-mode');
   bgWaNav.classList.remove('dark-mode');
-  bgWaReco.classList.remove('dark-mode');
+  bgWaCertif.classList.remove('dark-mode');
   bgwallTool.classList.remove('dark-mode');
   abtMe.classList.remove('dark-mode');
   portf.classList.remove('dark-mode');
