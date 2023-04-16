@@ -3,7 +3,7 @@
 const aboutMe = document.getElementById('about-me');
 
 const frameAb = document.createElement('div');
-frameAb.classList.add('frame-1-13');
+frameAb.classList.add('frame-3-13');
 
 const whoIAm = document.createElement('div');
 whoIAm.classList.add('who-i-am');

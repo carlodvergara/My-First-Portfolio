@@ -110,18 +110,19 @@ a{
 /*----------------------------------------- */
 
 .frame{
-    grid-column: 2 / 12;
+    grid-column: 3 / 11;
 
 }
 
-.frame-1-13{
+.frame-3-13{
     display:grid;
-    grid-column:  2 / 13;
+    grid-column:  3 / 13;
     grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
     grid-auto-flow: row;
     column-gap: 1.5rem;
 
 }
+
 
 
 
@@ -632,9 +633,9 @@ a{
 /*----------- Section Portfolio  ---------- */
 /*----------------------------------------- */
 #portfolio{
-    background-color: #e1e3e9;
+    background-color: #ffffff;
     height: max-content;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
     transition: background-color 0.5s ease-out;
 }
 
@@ -655,102 +656,137 @@ a{
 }
 
 
+.container-ship-portfolio{
+width: 100%;
+height: max-content;
+display: grid;
+grid-template-columns: auto 1fr;
+column-gap: 3rem;
+justify-content: space-between;
+
+}
 
 
+/*----------------------------------------- */
+/*-----       Navs and Buttons       ------ */
+/*----------------------------------------- */
 
 
+.container-explorer-nav{
+width: max-content;
+height: 100%;
+display: flex;
+flex-direction: column;
+margin-top: 5rem;
 
-
-.container-expore-themes{
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .title-explore{
-    width: max-content;
     color: #000000;
+    font-size: var(--step-2);
 }
 
-.box-btns-nav-explore{
-    width: max-content;
-    height: max-content;
-    display: flex;
-    column-gap: 2rem;
-    justify-self: end;
 
+.nav-bar-portfolio {
+margin-top: 5rem;
+
+align-self: center;
+width: 13rem;
+height: 13rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: start;
+direction: rtl;
+overflow-y: scroll;
 }
 
-.btn-div-nav-explore{
-    width: max-content;
-    height: auto;
-    column-gap: 2rem;
+
+
+
+
+
+
+.btn-nav-portfolio{
+    width: 100%;
+    height: 5rem;
     display: flex;
     align-items: center;
-}
-
-/*
-.btn-div-nav-explore >:first-child::after {
-    content: "";
-    display: block;
-    border-bottom: solid 4px rgb(36, 36, 36);
-    width: 100%;
-    margin: 5px auto;
-}*/
-
-
-
-.p-btn-explore{
-    height: 90%;
+    padding-left: 1rem;
+    border: 0.02rem solid transparent;
+    font-size: var(--step--1);
     font-weight: 600;
-}
-
-.p-btn-explore:first-child{
     color: #000000;
     cursor: pointer;
 }
 
-.p-btn-explore:nth-child(2){
-    color: #aaaaaa;  
+.btn-nav-portfolio:hover{
+    border-bottom: 0.02rem solid rgb(181, 181, 181);
 }
 
-.typing-dots {
-    content: "";
-    animation: typing 2s infinite;
-    color: #282828;
-}
-  
-@keyframes typing {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-}
-  
+/*----------------------------------------- */
+/*-----      Containers Generados     ----- */
+/*----------------------------------------- */
 
-
-
-
-
-.container-cards{
-    width: 100%;
-    height: max-content;
+.new-container-cards{
+    max-width: 70rem;
+    height: 63rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 2rem;
-    padding-bottom: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem , 1fr));
+    grid-auto-flow: row;
+
+    gap: 1rem;
+
+    padding-right:2rem;
+    justify-self: end;
+    align-items: center;
+    overflow-y: auto;
 }
+
+
+#mi-contenedor {
+    scrollbar-width: thin; /* establece el ancho de la barra de desplazamiento */
+    scrollbar-color: #444 #eee; /* establece el color del thumb y la barra de seguimiento */
+  }
+  
+  #mi-contenedor::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 100%;
+  }
+  
+  #mi-contenedor::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+  }
+  
+
+
+
+
+
+
 
 /*----------------------------------------- */
 /*-----   Cards - aboute.js [loop]   ------ */
 /*----------------------------------------- */
-
-.card{
+.card-empty{
     width: auto;
-    height: max-content;
+    max-height: 40rem;
+    display: flex;
+    justify-content: center;
+    background-color: #d8d8d8;
+}
+
+.img-empty-card{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  
+}
+
+
+.card-content{
+    width: auto;
+    height: 31rem;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -761,64 +797,83 @@ a{
     cursor:pointer;
 }
 
-.img-card{
+
+
+
+
+
+
+
+.box-content-card{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-text-card-c{
+    width: 100%;
+    height: max-content;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-tags-card-c{
+    width: 100%;
+    height: max-content;
+    border: solid 0.2rem rgb(182, 182, 182);
+    padding: 1rem;
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+.img-card-content{
     max-width:100%;
     height: auto;
     object-fit: contain;
 }
 
-.title-card{
+.title-card-content{
     width: auto;
-    margin-top: 0.5rem;
-    height: 5rem;
+    height: max-content;
+    color: #000000;
+    font-size: var(--step-0);
     white-space:wrap;
     overflow: hidden;
     text-overflow:ellipsis;
 }
 
+.icon-level-content{
+    width: auto;
+    height: max-content;
+    color: #000000;
+    font-size: var(--step-0);
+}
 
-/*----------------------------------------- */
-/*-----    Box level Experience    -------- */
-/*----------------------------------------- */
 
-.box-level{
+.tags-card-content{
+    width: max-content;
+    height: max-content;
     padding: 1rem;
-    background-color: #F6F7FB;
-    height: 6rem;
-    border-radius: 0.6rem;
 }
 
-.name-level{
-    color: #798490;
-    font-size: var(--step--2);
-    font-weight: 600;
-}
 
-.line-level{
-    height: 2rem;    
-    display: flex;
-    column-gap: 0.5rem;
-    align-items: center;
-}
 
-[class^="hr"]{
-    width: 100%;
-    background-color: black;
-    height: 0.6rem;
-    border: none;
-    border-radius: 50rem;
-    background-color: #E5EAF0;   
-}
 
-.line-level>hr:first-child{
-    background-color: #BBA9FB;  
-}
+
 
 
 /*----------------------------------------- */
 /*-----         MEDIA QUERIE       -------- */
 /*----------------------------------------- */
-@media (max-width: 720px) {
+ @media (max-width: 720px) {
 
 
     .container-expore-themes{
@@ -869,7 +924,7 @@ a{
     }
 
 
-}
+} 
 
 
 
@@ -1175,9 +1230,6 @@ a{
 
 
 
-
-
-
 /*----------------------------------------- */
 /*---       MEDIA QUERIE EDUCATION     ---- */
 /*----------------------------------------- */
@@ -1266,14 +1318,14 @@ a{
     background-color: rgba(0, 0, 0, 0.85);
     z-index: 30;
     justify-content: end;
-    display: flex;
+    display: none;
 }
 
 /*-------------------------------- */
 /*----   Nav Bar Vertical      --- */
 /*-------------------------------- */
 .container-certificate{
-    width: clamp(25rem, 80%, 43rem);
+    width: clamp(25rem, 80%, 35rem);
     height: 100vh;
     background-color: whitesmoke;
     overflow: auto;
@@ -1356,8 +1408,6 @@ a{
 }
 
 
-
-
 /*Overflow auto de institutos*/
 .institutes-cert{
     width: 100%;
@@ -1398,12 +1448,7 @@ a{
 }
 
 
-
-
-
-
 /*Lista de certificados*/
-
 
 .list-certificard{
     width: 100%;
@@ -1436,7 +1481,6 @@ a{
     row-gap: 1rem;
 }
 
-
 .info-institute{
     width: 100%;
     height: max-content;
@@ -1452,7 +1496,7 @@ a{
 }
 
 .name-card-institute{
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     color: black;
     font-weight: 700;
 }
@@ -1498,13 +1542,13 @@ a{
 }
 
 .h3-text-course{
-    font-size: var(--step-0);
+    font-size: var(--step--1);
     color: black;
     font-weight: 700;
 }
 
 .p-area-course{
-    font-size: var(--step--1);
+    font-size: var(--step--2);
     color: rgb(87, 87, 87);
     font-weight: 700;
 }
@@ -1515,7 +1559,7 @@ a{
 }
 
 .btn-dwnload>span{
-    padding: clamp(0.6rem, 0.5vw, 1rem);
+    padding: clamp(0.2rem, 0.5vw, 0.8rem);
     background-color: #000000;
     color: white;
     border-radius: 0.6rem;
