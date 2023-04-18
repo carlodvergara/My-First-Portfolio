@@ -183,15 +183,12 @@ cardListPortfolio.push({
 )
 
 
-let btnNavP;
+
 
 
 const arrCategories = [];
 const objNewCard = {};
 const objNewContainer = {};
-
-
-
 
 let categoryCard;
 
@@ -328,23 +325,26 @@ function createCards(){
 
 
 
-        let containerCounter = 0;
+      let containerCounter = 0;
 
         function createNewContainer(categoryCard) {
 
             let exist = false;
 
             for (const containerId in objNewContainer) {
+    
+                console.log("funciona el exist al principio")
 
                 const container = objNewContainer[containerId];
                 const containerCategory = container.dataset.category;
 
                 if (containerCategory) {
                 exist = true;
+
+                console.log("funciona el exist al final")
                 break; }     
 
             }
-            
 
             console.log('sirve la funcion crear nuevo container');
 
@@ -354,9 +354,8 @@ function createCards(){
                 cardContainerCounter.classList.add('new-container-cards');
                 cardContainerCounter.style.display = 'grid';
             
-                const newId = "containerId-" + containerCounter;
+                const newId = "containerId-" + containerCounter + categoryCard;
                 cardContainerCounter.setAttribute('id', newId);
-                cardContainerCounter.setAttribute('id', 'stylocompa');
                 cardContainerCounter.setAttribute('data-category', categoryCard);     
 
             
@@ -368,7 +367,15 @@ function createCards(){
 
                 objNewContainer[newId] = cardContainerCounter;
                 
+
+
                 containerCounter++;
+
+
+                
+
+
+ 
             }     
 
         }
@@ -376,7 +383,7 @@ function createCards(){
         createNewContainer(categoryCard);
 
 
-
+     
 
 
 
@@ -426,7 +433,10 @@ for (let i = 0; i < navBarPortfolio.children.length; i++) {
     const btnNavP = navBarPortfolio.children[i];
     btnNavP.addEventListener('click', function() {
       const category = this.textContent;
+      console.log(objNewContainer)
       for (let container in objNewContainer) {
+        console.log(`Categoría del contenedor: ${objNewContainer[container].dataset.category}`);
+        console.log(`Categoría seleccionada: ${category}`);
         if (objNewContainer[container].dataset.category === category) {
           objNewContainer[container].style.display = 'grid';
         } else {

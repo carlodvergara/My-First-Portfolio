@@ -799,7 +799,7 @@ overflow-y: scroll;
     flex-direction: column;
     row-gap: 1rem;
     padding: 1.5rem;
-    border: solid 0.5px rgb(197, 197, 197);
+    border: solid 0.5px rgb(173, 173, 173);
     border-radius: 0.9rem;
     background-color: white;
     cursor:pointer;
