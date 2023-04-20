@@ -1,3 +1,4 @@
+
 //------------------------------------------------//
 //------------  Section Portfolio ----------------//
 //------------------------------------------------//
@@ -14,6 +15,10 @@ const titlePortfolio = document.createElement('h2');
 titlePortfolio.classList.add('title-portfolio');
 titlePortfolio.innerText = 'MI PORTAFOLIO'; 
 
+
+const containerShipPortfolio = document.createElement('div');
+containerShipPortfolio.classList.add('container-ship-portfolio');
+
 const containerExplorerNav = document.createElement('div');
 containerExplorerNav.classList.add('container-explorer-nav');
 
@@ -25,8 +30,8 @@ const navBarPortfolio = document.createElement('div');
 navBarPortfolio.classList.add('nav-bar-portfolio');
 navBarPortfolio.setAttribute('id', 'mi-contenedor');
 
-const containerShipPortfolio = document.createElement('div');
-containerShipPortfolio.classList.add('container-ship-portfolio');
+
+
 
 portfolio.appendChild(frame);
 frame.appendChild(frameStructurePortfolio);
@@ -129,226 +134,3 @@ cardListPortfolio.push({
 
 
 
-
-
-
-let btnNavP;
-
-
-
-// Agregar un eventListener al navBarPortfolio
-navBarPortfolio.addEventListener("click", (event) => {
-    // Verificar si el elemento clickeado es un botón
-    if (event.target.classList.contains("btnNavP")) {
-      // Obtener el id del contenedor correspondiente al botón
-        const containerId = event.target.dataset.id;
-
-      // Ocultar todos los contenedores
-        cardListPortfolio.forEach((card) => {
-            card.style.display = "none";
-        });
-
-      // Mostrar el contenedor correspondiente al botón presionado    
-        const containerToShow = containers[containerId];
-        containerToShow.style.display = "grid";
-
-        console.log('funciona')
-
-    }
-});
-
-
-
-
-
-//Almacenara {newContainerCards: nombre ID}
-let containers = {};
-
-//Almacena los id de cada contendor creado
-const containerExist = []
-
-//Genera alcance a las variables
-let newContainerCards 
-
-// Función para crear un nuevo container de tarjetas y agregarlo al contenedor principal
-    function addNewCardContainer(id) {
-        newContainerCards = document.createElement('div')
-        newContainerCards.classList.add('new-container-cards');
-        newContainerCards.setAttribute('id', id);
-        
-          // Verificar si estamos en la primera posición de la lista
-            // Ocultar el contenedor si no es el primero
-        if (containerExist.length > 1) {
-        newContainerCards.style.display = 'none';
-        }
-
-        containerShipPortfolio.appendChild(newContainerCards);
-        containers[id] = newContainerCards;
-        containerExist.push(id);
-
-
-
-        
-
-
-
-    };
-
-
-// Ciclo para crear y vincular tarjetas y botones del nav de cada newContainerCards de acuerdo a su tipo.
-for (let card of cardListPortfolio) {
-
-// Ciclo para crear las tarjetas vacias
-if (Object.keys(card).length === 2) { 
-    
-    addNewCardContainer(card.id)
-
-    // Crear botón de navbar para el nuevo contenedor
-    btnNavP = document.createElement('div');
-    btnNavP.setAttribute('id', card.id);
-    btnNavP.textContent = card.id;
-    btnNavP.classList.add('btn-nav-portfolio');
-    navBarPortfolio.appendChild(btnNavP);
-
-    // Crear una tarjeta sin contenido
-    const emptyCard = document.createElement('div');
-    emptyCard.classList.add('card-empty');
-    
-    const imgEmptyCard = document.createElement('img');
-    imgEmptyCard.classList.add('img-empty-card')
-    imgEmptyCard.setAttribute('src', card.background);
-
-    newContainerCards.appendChild(emptyCard);
-    emptyCard.appendChild(imgEmptyCard);
-    } 
-    
-    else {
-
-        // Si el objeto tiene más keys, agregar la tarjeta al contenedor correspondiente
-
-        if (!containerExist.includes(card.id)) {
-
-            addNewCardContainer(card.id)
-
-            btnNavP = document.createElement('div');
-            btnNavP.setAttribute('id', card.id);
-            btnNavP.textContent = card.id;
-            btnNavP.classList.add('btn-nav-portfolio');
-            navBarPortfolio.appendChild(btnNavP);
-
-            // Crear una tarjeta con contenido
-            const contentCard = document.createElement('div');
-            contentCard.classList.add('card-content');
-    
-            const imgCard = document.createElement('img');
-            imgCard.classList.add('img-card-content');
-            imgCard.setAttribute('src', card.image);
-
-            const boxContentCard = document.createElement('div');
-            boxContentCard.classList.add('box-content-card');
-
-            const boxTextCard = document.createElement('div');
-            boxTextCard.classList.add('box-text-card-c');
-    
-            const boxTagsCards = document.createElement('div');
-            boxTagsCards.classList.add('box-tags-card');
-
-            const titleCard = document.createElement('h3');
-            titleCard.classList.add('title-card-content');
-            titleCard.innerText = card.title;
-
-            const tagsCardContent = document.createElement('div');
-            tagsCardContent.classList.add('tags-card-content');
-            tagsCardContent.innerText = card.tags.join(',');
-
-            const iconL = document.createElement('h3');
-            iconL.classList.add('icon-level-content');
-            iconL.innerText = card.icon; 
-
-
-            //Inserciones
-            newContainerCards.appendChild(contentCard);            
-            contentCard.appendChild(imgCard);
-            contentCard.appendChild(boxContentCard);
-            boxContentCard.appendChild(boxTextCard);
-            boxContentCard.appendChild(boxTagsCards)
-            boxTextCard.appendChild(titleCard);
-            boxTextCard.appendChild(iconL); 
-            boxTagsCards.appendChild(tagsCardContent);
-            
-
-            
-        } else if (containerExist.includes(card.id)) { 
-
-            const insertDirect = containers[card.id];
-
-            // Crear una tarjeta con contenido
-            const contentCard = document.createElement('div');
-            contentCard.classList.add('card-content');
-    
-            const imgCard = document.createElement('img');
-            imgCard.classList.add('img-card-content');
-            imgCard.setAttribute('src', card.image);
-
-            const boxContentCard = document.createElement('div');
-            boxContentCard.classList.add('box-content-card');
-
-            const boxTextCard = document.createElement('div');
-            boxTextCard.classList.add('box-text-card-c');
-    
-            const boxTagsCards = document.createElement('div');
-            boxTagsCards.classList.add('box-tags-card');
-
-            const titleCard = document.createElement('h3');
-            titleCard.classList.add('title-card-content');
-            titleCard.innerText = card.title;
-
-            const tagsCardContent = document.createElement('div');
-            tagsCardContent.classList.add('tags-card-content');
-            tagsCardContent.innerText = card.tags.join(',');
-
-            const iconL = document.createElement('h3');
-            iconL.classList.add('icon-level-content');
-            iconL.innerText = card.icon; 
-
-            insertDirect.appendChild(contentCard);
-            contentCard.appendChild(imgCard);
-            contentCard.appendChild(boxContentCard);
-            boxContentCard.appendChild(boxTextCard);
-            boxContentCard.appendChild(boxTagsCards)
-            boxTextCard.appendChild(titleCard);
-            boxTextCard.appendChild(iconL); 
-            boxTagsCards.appendChild(tagsCardContent);
-
-            
-
-        }
-
-
-    }
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-let containersList = {};
-// {  "container-1-frontend": <div id="container-1-frontend" data-category="frontend" class="new-container-cards" style="display: grid;"></div> //  }
-
-//para acceder al valor de los objetos utiliza este enfoque 
-
-// for (let containerId in containersList) {
-//     let container = containersList[containerId];
-//     if (container.getAttribute('data-category') === category) {
-//     Hacer algo con el contenedor que tiene el atributo data-category igual a category
-//     console.log(`Se encontró un contenedor con data-category="${category}":`,    container);
-//     }
-//   }
