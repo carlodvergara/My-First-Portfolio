@@ -148,10 +148,8 @@ boxBtnsNavHeader.appendChild(anchorageOpenWeb);
 anchorageOpenWeb.appendChild(boxIconWeb);
 boxIconWeb.appendChild(iconOpenWeb);
 
-
 headerPortfolio.appendChild(dataProject);
 dataProject.appendChild(titleProject);
-
 
 headerPortfolio.appendChild(boxDate);
 boxDate.appendChild(iconDate)

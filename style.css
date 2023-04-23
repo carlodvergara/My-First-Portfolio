@@ -906,7 +906,6 @@ overflow-y: scroll;
         cursor:pointer;
 }
 
-
 } 
 
 
@@ -927,7 +926,7 @@ overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.85);
     z-index: 30;
     justify-content: end;
-    display: flex;
+    display: none;
 }
 
 /*-------------------------------- */
