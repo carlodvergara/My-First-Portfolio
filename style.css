@@ -110,7 +110,7 @@ a{
 /*----------------------------------------- */
 
 .frame{
-    grid-column: 3 / 12;
+    grid-column: 3 / 11;
 
 }
 
@@ -686,7 +686,6 @@ margin-top: 5rem;
     font-size: var(--step-2);
 }
 
-
 .nav-bar-portfolio {
 margin-top: 5rem;
 
@@ -700,7 +699,6 @@ justify-content: start;
 direction: rtl;
 overflow-y: scroll;
 }
-
 
 .btn-nav-portfolio{
     width: 100%;
@@ -751,21 +749,16 @@ overflow-y: scroll;
 #mi-contenedor {
     scrollbar-width: thin; /* establece el ancho de la barra de desplazamiento */
     scrollbar-color: #444 #eee; /* establece el color del thumb y la barra de seguimiento */
-  }
-  
-  #mi-contenedor::-webkit-scrollbar-thumb {
+}
+
+#mi-contenedor::-webkit-scrollbar-thumb {
     background-color: #444;
     border-radius: 100%;
-  }
-  
-  #mi-contenedor::-webkit-scrollbar-thumb:hover {
+}
+
+#mi-contenedor::-webkit-scrollbar-thumb:hover {
     background-color: #666;
-  }
-  
-
-
-
-
+}
 
 
 
@@ -785,8 +778,6 @@ overflow-y: scroll;
     object-fit: cover;
 }
 
-
-
 .card-content{
     width: auto;
     height: 30rem;
@@ -798,17 +789,12 @@ overflow-y: scroll;
 
 }
 
-
-
 .img-card-content{
     max-width:100%;
     height: 100%;
     object-fit: cover;
     object-position: right;
 }
-
-
-
 
 .box-content-card{
     width: 100%;
@@ -821,8 +807,6 @@ overflow-y: scroll;
     backdrop-filter: blur(4px);
     justify-content: center;
 }
-
-
 
 .box-text-card-c{
     width: 100%;
@@ -852,20 +836,19 @@ overflow-y: scroll;
     border-radius: 100%;
 }
 
-
-.box-tags-card{
+.box-stack-card{
     display: flex;
     column-gap: 0.5rem;
     padding-left: 1rem;
 
 }
 
-.tags-card-content{
+.stack-card-content{
     width: max-content;
     font-size: var(--step--2);
     font-weight: 800;
     padding: 0.5rem;
-    color: #777777;
+    color: #a5a5a5;
 
     display: flex;
     flex-direction: row;
@@ -876,50 +859,41 @@ overflow-y: scroll;
 
 
 
-
-
-
 /*----------------------------------------- */
 /*-----         MEDIA QUERIE       -------- */
 /*----------------------------------------- */
- @media (max-width: 720px) {
+@media (max-width: 720px) {
 
-
-    .container-expore-themes{
+.container-expore-themes{
         height: max-content;
         display: flex;
         flex-direction: column;
-    }
-    
-   .title-explore{
+}
+
+.title-explore{
     align-self: start;
-   }
+}
 
 
-    .box-btns-nav-explore{
+.box-btns-nav-explore{
         width: 100%;
         height: 4rem;
         display: flex;
         column-gap: 2rem;   
-    }
+}
+
+.container-cards{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-auto-flow: column;
+    grid-template-rows:1fr;
+    overflow-x: auto;
+}
 
 
-
-
-    .container-cards{
-        width: 100%;
-        height: max-content;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-        grid-auto-flow: column;
-        grid-template-rows:1fr;
-        overflow-x: auto;
-     
-    }
-
-
-
-    .card{
+.card{
         width: 28rem;
         height: max-content;
         display: flex;
@@ -928,9 +902,9 @@ overflow-y: scroll;
         padding: 1.5rem;
         border: solid 0.5px rgb(197, 197, 197);
         border-radius: 0.9rem;
-        background-color: rgb(214, 111, 111);
+        background-color: rgb(255, 255, 255);
         cursor:pointer;
-    }
+}
 
 
 } 
@@ -940,6 +914,239 @@ overflow-y: scroll;
 
 
 
+
+/*----------------------------------------- */
+/*----  Records   / certificates   ------- */
+/*----------------------------------------- */
+
+#bg-wallPortfolio{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 30;
+    justify-content: end;
+    display: flex;
+}
+
+/*-------------------------------- */
+/*----   Nav Bar Vertical      --- */
+/*-------------------------------- */
+.container-portfolio{
+    width: clamp(25rem, 80%, 45rem);
+    height: 100vh;
+    background-color: whitesmoke;
+    overflow: auto;
+    animation: slideInFromRight 0.5s ease-in-out;
+    position: relative;
+}
+
+
+/*-----------------*/
+/*-----------------*/   
+.header-portfolio{
+    width: 100%;
+    height: max-content;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+/*-----------------*/
+/*-----------------*/
+.box-img-portfolio{
+
+    width: 100%;
+    height: 100%;    
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.img-portfolio{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: left;
+}
+
+.box-nav-header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: whitesmoke;
+    border-bottom: 0.2rem solid rgb(234, 234, 234);
+}
+
+.box-btns-nav-header{
+    width: max-content;
+    height: 100%;
+    display: flex;
+}
+
+
+
+.box-icon-repo{
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: solid 0.02rem rgb(219, 219, 219);
+    border-right: solid 0.02rem rgb(219, 219, 219);
+}
+
+.icongithub-portfolio{
+    font-size: var(--step-1);
+    color: #000000;
+}
+
+
+
+
+
+.box-icon-web{
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 0.02rem rgb(219, 219, 219);
+}
+
+.fa-arrow-up-right-from-square{
+    font-size: var(--step-1);
+    color: #000000;
+}
+
+
+
+
+
+/*-----------------*/
+/*-----------------*/
+.data-project{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    column-gap: 2rem;
+
+
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+    row-gap: 0.5rem;
+}
+
+.title-project{
+    font-size: var(--step-1);
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+/*-----------------*/
+/*-----------------*/
+.box-date{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    column-gap: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-content: start;
+}
+
+.fa-calendar{
+    font-size: var(--step--2);
+    color: #6c6c6c;
+}
+
+.date-project{
+    font-size: var(--step--2);
+    color: #6c6c6c;
+    font-weight: 600;
+}
+
+
+
+
+
+/*-----------------*/
+/*-----------------*/
+.body-project{
+    width: 100%;
+    height: max-content;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.text-body-project{
+    font-size: var(--step--1);
+    color: #000000;
+    font-weight: 400;
+}
+
+
+
+/*-----------------*/
+/*-----------------*/
+.project-box{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.title-area{
+    font-size: var(--step-1);
+    width: max-content;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container-tags{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag{
+    width: max-content;
+    font-size: var(--step--2);
+    font-weight: 600;
+    border: solid 1px black;
+    border-radius: 0.4rem;
+    background-color: white;
+    padding: 0.6rem;
+}
 
 
 
@@ -1130,7 +1337,6 @@ overflow-y: scroll;
 }
 
 
-
 /*----------------------------------------- */
 /*-- Trigger Open Nav Record & Tools   ---- */
 /*----------------------------------------- */
@@ -1145,7 +1351,6 @@ overflow-y: scroll;
 
 }
 
-
 .btn-record{
     width: max-content;
     height: max-content;
@@ -1159,8 +1364,6 @@ overflow-y: scroll;
     cursor: pointer;
 }
 
-
-
 .btn-tools{
     width: max-content;
     height: max-content;
@@ -1173,7 +1376,6 @@ overflow-y: scroll;
     align-items: center;
     cursor: pointer;
 }
-
 
 
 /*----------------------------------------- */
@@ -1236,13 +1438,9 @@ overflow-y: scroll;
 }
 
 
-
-
 /*----------------------------------------- */
 /*---       MEDIA QUERIE EDUCATION     ---- */
 /*----------------------------------------- */
-
-
 
 @media (max-width: 720px) {
 

@@ -66,7 +66,9 @@ cardListPortfolio.push({
     urlweb:'https://404-not-found-gules.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/404-Not-Found',
     date:'23 agosto 2023',
-    text: 'Este es un proyecto que tiene como objetivo brindar una experiencia de usuario más agradable y personalizada al momento de mostrar el error 404 de un sitio web. En lugar de mostrar la página de error genérica, este proyecto ofrece una página personalizada y atractiva que hará que los usuarios se sientan más cómodos al momento de encontrar una página que no existe en tu sitio web.'
+    text: 'Este es un proyecto que tiene como objetivo brindar una experiencia de usuario más agradable y personalizada al momento de mostrar el error 404 de un sitio web. En lugar de mostrar la página de error genérica, este proyecto ofrece una página personalizada y atractiva que hará que los usuarios se sientan más cómodos al momento de encontrar una página que no existe en tu sitio web.',
+    stack: ['css', 'html'],
+    tools: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -80,7 +82,9 @@ cardListPortfolio.push({
     urlweb:'https://team-page-nine.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/Team-Page',
     date:'23 agosto 2023',
-    text:'Este proyecto es una página web que presenta información sobre un equipo de trabajo. Está desarrollado con HTML y CSS, tiene como objetivo proporcionar una plantilla de página de equipo que pueda ser utilizada como punto de partida para proyectos similares; La página está diseñada para ser fácil de usar y entender para el usuario. Cada miembro del equipo tiene su propia sección con información relevante como su nombre y rol. Además, la página es completamente responsive, lo que significa que se adapta a la perfección a cualquier dispositivo, ya sea un ordenador de escritorio, un teléfono móvil o una tableta.'
+    text:'Este proyecto es una página web que presenta información sobre un equipo de trabajo. Está desarrollado con HTML y CSS, tiene como objetivo proporcionar una plantilla de página de equipo que pueda ser utilizada como punto de partida para proyectos similares; La página está diseñada para ser fácil de usar y entender para el usuario. Cada miembro del equipo tiene su propia sección con información relevante como su nombre y rol. Además, la página es completamente responsive, lo que significa que se adapta a la perfección a cualquier dispositivo, ya sea un ordenador de escritorio, un teléfono móvil o una tableta.',
+    stack: ['css', 'html'],
+    tools: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -94,7 +98,9 @@ cardListPortfolio.push({
     urlweb:'https://interior-consultant-beta.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/Interior-Consultant',
     date:'23 agosto 2023' ,
-    text:'Este proyecto tiene como objetivo crear una página web para una empresa de consultoría de diseño de interiores. La página cuenta con un diseño moderno y minimalista que se adapta a diferentes tamaños de pantalla, desde dispositivos móviles hasta monitores de escritorio; Además de su diseño atractivo y responsivo, la página cuenta con funcionalidades que la hacen fácil de usar y navegar. Por ejemplo, en la versión móvil de la página, se ha implementado un botón de menú que abre y cierra una ventana de navegación, permitiendo al usuario navegar entre las distintas secciones de la página de manera sencilla y organizada, aunque por el momento no existan secciones en la página.'
+    text:'Este proyecto tiene como objetivo crear una página web para una empresa de consultoría de diseño de interiores. La página cuenta con un diseño moderno y minimalista que se adapta a diferentes tamaños de pantalla, desde dispositivos móviles hasta monitores de escritorio; Además de su diseño atractivo y responsivo, la página cuenta con funcionalidades que la hacen fácil de usar y navegar. Por ejemplo, en la versión móvil de la página, se ha implementado un botón de menú que abre y cierra una ventana de navegación, permitiendo al usuario navegar entre las distintas secciones de la página de manera sencilla y organizada, aunque por el momento no existan secciones en la página.',
+    stack: ['css', 'html'],
+    tools: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -108,7 +114,9 @@ cardListPortfolio.push({
     urlweb:'https://recipe-page-bice.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/Recipe-Page',
     date:'23 agosto 2023',
-    text: 'Este es un proyecto de una página de recetas simple que utiliza HTML y CSS El objetivo de este proyecto es proporcionar una plantilla de página de recetas que se pueda utilizar como punto de partida para proyectos relacionados con la gastronomía; La página incluye una sección para la imagen de la receta, una sección para los ingredientes, una sección para las instrucciones de preparación y un area donde se muestran los tiempos de elaboración. Cada sección está diseñada para ser fácil de navegar y de seguir para el usuario. Además, la página es completamente responsive, por lo que se adapta perfectamente a cualquier dispositivo.'
+    text: 'Este es un proyecto de una página de recetas simple que utiliza HTML y CSS El objetivo de este proyecto es proporcionar una plantilla de página de recetas que se pueda utilizar como punto de partida para proyectos relacionados con la gastronomía; La página incluye una sección para la imagen de la receta, una sección para los ingredientes, una sección para las instrucciones de preparación y un area donde se muestran los tiempos de elaboración. Cada sección está diseñada para ser fácil de navegar y de seguir para el usuario. Además, la página es completamente responsive, por lo que se adapta perfectamente a cualquier dispositivo.',
+    stack: ['css', 'html'],
+    tools: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -122,7 +130,9 @@ cardListPortfolio.push({
     urlweb:'https://my-gallery-challenge-nine.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/My-Gallery-Challenge',
     date:'23 agosto 2023',
-    text: 'Es un proyecto web que tiene como proposito plasmar las obras de una galeria de arte, enseñando, informacion del artista como su imagen y record personal, la página no cuenta con funcionalidades, pero la galleria cuenta con un diseño minimalista que se adapta a diferentes tamaños de pantalla, desde dispositivos móviles hasta monitores de escritorio.'
+    text: 'Es un proyecto web que tiene como proposito plasmar las obras de una galeria de arte, enseñando, informacion del artista como su imagen y record personal, la página no cuenta con funcionalidades, pero la galleria cuenta con un diseño minimalista que se adapta a diferentes tamaños de pantalla, desde dispositivos móviles hasta monitores de escritorio.',
+    stack: ['css', 'html'],
+    tools: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -136,17 +146,36 @@ cardListPortfolio.push({
     urlweb:'https://checkout-page-topaz-three.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/Checkout-Page',
     date:'23 agosto 2023',
-    text: 'Este es un ejemplo de una página de checkout simple utilizando HTML, CSS, el objetivo de este proyecto es proporcionar una plantilla de página de checkout básica que se pueda usar como punto de partida para proyectos de comercio electrónico; La página de verificación consta de tres secciones principales: Información de envío, resumen del pedido (productos) e información del pago.'
+    text: 'Este es un ejemplo de una página de checkout simple utilizando HTML, CSS, el objetivo de este proyecto es proporcionar una plantilla de página de checkout básica que se pueda usar como punto de partida para proyectos de comercio electrónico; La página de verificación consta de tres secciones principales: Información de envío, resumen del pedido (productos) e información del pago.',
+    stack: ['css', 'html'],
+    tools: ['css', 'html']
 }
 )
 
 cardListPortfolio.push({  
-    category:'BlockChain',
+    category:'Backend',
     typeCard: 'empty',
     background:'https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?w=2000',
     title:'', 
 }
 )
+
+cardListPortfolio.push({  
+    category:'Apis',
+    typeCard: 'empty',
+    background:'https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?w=2000',
+    title:'', 
+}
+)
+
+cardListPortfolio.push({  
+    category:'Fulls Stack',
+    typeCard: 'empty',
+    background:'https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?w=2000',
+    title:'', 
+}
+)
+
 
 
 
@@ -211,11 +240,13 @@ function portfolioConstructor(){
                 newCard.setAttribute('data-title', card.title);
                 newCard.setAttribute('data-level', card.level);
                 newCard.setAttribute('data-icon', card.icon);
-                newCard.setAttribute('data-tags', card.tags);
+                newCard.setAttribute('data-stack', card.stack);
                 newCard.setAttribute('data-urlweb', card.urlweb);
                 newCard.setAttribute('data-urlgithub', card.urlgithub);
                 newCard.setAttribute('data-date', card.date);
-                newCard.setAttribute('data-text', card.text);           
+                newCard.setAttribute('data-text', card.text);    
+                newCard.setAttribute('data-tag', card.tag);  
+                newCard.setAttribute('data-tools', card.tools);          
         
                 const imgCard = document.createElement('img');
                 imgCard.classList.add('img-card-content');
@@ -231,14 +262,14 @@ function portfolioConstructor(){
                 titleCard.classList.add('title-card-content');
                 titleCard.textContent = card.title;
                         
-                const boxTagsCards = document.createElement('div');
-                boxTagsCards.classList.add('box-tags-card');
+                const boxStackCards = document.createElement('div');
+                boxStackCards.classList.add('box-stack-card');
         
-                    for (let tag of card.tags) {
-                        const tagContent = document.createElement('div');
-                        tagContent.classList.add('tags-card-content');
-                        tagContent.textContent = tag;
-                        boxTagsCards.appendChild(tagContent);
+                    for (let stack of card.stack) {
+                        const stackContent = document.createElement('div');
+                        stackContent.classList.add('stack-card-content');
+                        stackContent.textContent = stack;
+                        boxStackCards.appendChild(stackContent);
                     }            
                     
                 const iconL = document.createElement('h3');
@@ -249,7 +280,7 @@ function portfolioConstructor(){
                 newCard.appendChild(imgCard);
                 newCard.appendChild(boxContentCard);
                 boxContentCard.appendChild(boxTextCard);
-                boxContentCard.appendChild(boxTagsCards)
+                boxContentCard.appendChild(boxStackCards)
                 boxTextCard.appendChild(titleCard);
                 boxTextCard.appendChild(iconL); 
                     
