@@ -62,13 +62,11 @@ cardListPortfolio.push({
     title:'404 NotFound', 
     level: 'aprendiz',
     icon: iconLevel[0],
-    tags: ['css', 'html'],
     urlweb:'https://404-not-found-gules.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/404-Not-Found',
     date:'23 agosto 2023',
     text: 'Este es un proyecto que tiene como objetivo brindar una experiencia de usuario más agradable y personalizada al momento de mostrar el error 404 de un sitio web. En lugar de mostrar la página de error genérica, este proyecto ofrece una página personalizada y atractiva que hará que los usuarios se sientan más cómodos al momento de encontrar una página que no existe en tu sitio web.',
-    stack: ['css', 'html'],
-    tools: ['css', 'html']
+    stack: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -78,13 +76,11 @@ cardListPortfolio.push({
     title:'My team page', 
     level: 'aprendiz' ,
     icon: iconLevel[1],
-    tags: ['css', 'html'],
     urlweb:'https://team-page-nine.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/Team-Page',
     date:'23 agosto 2023',
     text:'Este proyecto es una página web que presenta información sobre un equipo de trabajo. Está desarrollado con HTML y CSS, tiene como objetivo proporcionar una plantilla de página de equipo que pueda ser utilizada como punto de partida para proyectos similares; La página está diseñada para ser fácil de usar y entender para el usuario. Cada miembro del equipo tiene su propia sección con información relevante como su nombre y rol. Además, la página es completamente responsive, lo que significa que se adapta a la perfección a cualquier dispositivo, ya sea un ordenador de escritorio, un teléfono móvil o una tableta.',
-    stack: ['css', 'html'],
-    tools: ['css', 'html']
+    stack: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -94,13 +90,11 @@ cardListPortfolio.push({
     title:'Interior Consultant', 
     level: 'aprendiz' ,
     icon: iconLevel[2],
-    tags: ['css', 'html'],
     urlweb:'https://interior-consultant-beta.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/Interior-Consultant',
     date:'23 agosto 2023' ,
     text:'Este proyecto tiene como objetivo crear una página web para una empresa de consultoría de diseño de interiores. La página cuenta con un diseño moderno y minimalista que se adapta a diferentes tamaños de pantalla, desde dispositivos móviles hasta monitores de escritorio; Además de su diseño atractivo y responsivo, la página cuenta con funcionalidades que la hacen fácil de usar y navegar. Por ejemplo, en la versión móvil de la página, se ha implementado un botón de menú que abre y cierra una ventana de navegación, permitiendo al usuario navegar entre las distintas secciones de la página de manera sencilla y organizada, aunque por el momento no existan secciones en la página.',
-    stack: ['css', 'html'],
-    tools: ['css', 'html']
+    stack: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -110,13 +104,11 @@ cardListPortfolio.push({
     title:'Recipe Page', 
     level: 'aprendiz' ,
     icon: iconLevel[0],
-    tags: ['css', 'html'],
     urlweb:'https://recipe-page-bice.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/Recipe-Page',
     date:'23 agosto 2023',
     text: 'Este es un proyecto de una página de recetas simple que utiliza HTML y CSS El objetivo de este proyecto es proporcionar una plantilla de página de recetas que se pueda utilizar como punto de partida para proyectos relacionados con la gastronomía; La página incluye una sección para la imagen de la receta, una sección para los ingredientes, una sección para las instrucciones de preparación y un area donde se muestran los tiempos de elaboración. Cada sección está diseñada para ser fácil de navegar y de seguir para el usuario. Además, la página es completamente responsive, por lo que se adapta perfectamente a cualquier dispositivo.',
-    stack: ['css', 'html'],
-    tools: ['css', 'html']
+    stack: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -126,13 +118,11 @@ cardListPortfolio.push({
     title:'My Gallery', 
     level: 'aprendiz' ,
     icon: iconLevel[1],
-    tags: ['css', 'html'],
     urlweb:'https://my-gallery-challenge-nine.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/My-Gallery-Challenge',
     date:'23 agosto 2023',
     text: 'Es un proyecto web que tiene como proposito plasmar las obras de una galeria de arte, enseñando, informacion del artista como su imagen y record personal, la página no cuenta con funcionalidades, pero la galleria cuenta con un diseño minimalista que se adapta a diferentes tamaños de pantalla, desde dispositivos móviles hasta monitores de escritorio.',
-    stack: ['css', 'html'],
-    tools: ['css', 'html']
+    stack: ['css', 'html']
 }
 )
 cardListPortfolio.push({  
@@ -142,41 +132,34 @@ cardListPortfolio.push({
     title:'Checkout Page', 
     level: 'aprendiz',
     icon: iconLevel[2],
-    tags: ['css', 'html'],
     urlweb:'https://checkout-page-topaz-three.vercel.app/',
     urlgithub:'https://github.com/carlodvergara/Checkout-Page',
     date:'23 agosto 2023',
     text: 'Este es un ejemplo de una página de checkout simple utilizando HTML, CSS, el objetivo de este proyecto es proporcionar una plantilla de página de checkout básica que se pueda usar como punto de partida para proyectos de comercio electrónico; La página de verificación consta de tres secciones principales: Información de envío, resumen del pedido (productos) e información del pago.',
-    stack: ['css', 'html'],
-    tools: ['css', 'html']
+    stack: ['css', 'html']
 }
 )
-
 cardListPortfolio.push({  
     category:'Backend',
     typeCard: 'empty',
     background:'https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?w=2000',
-    title:'', 
+    title:''
 }
 )
-
 cardListPortfolio.push({  
     category:'Apis',
     typeCard: 'empty',
     background:'https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?w=2000',
-    title:'', 
+    title:''
 }
 )
-
 cardListPortfolio.push({  
     category:'Fulls Stack',
     typeCard: 'empty',
     background:'https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?w=2000',
-    title:'', 
+    title:''
 }
 )
-
-
 
 
 
@@ -245,9 +228,7 @@ function portfolioConstructor(){
                 newCard.setAttribute('data-urlgithub', card.urlgithub);
                 newCard.setAttribute('data-date', card.date);
                 newCard.setAttribute('data-text', card.text);    
-                newCard.setAttribute('data-tag', card.tag);  
-                newCard.setAttribute('data-tools', card.tools);          
-        
+                
                 const imgCard = document.createElement('img');
                 imgCard.classList.add('img-card-content');
                 imgCard.setAttribute('src', card.image);
@@ -419,6 +400,7 @@ portfolioConstructor()
 
 // Seleccionar el primer botón y aplicarle la clase por defecto
 navBarPortfolio.children[0].classList.add('border-btn-portfolio');
+
 for (let i = 0; i < navBarPortfolio.children.length; i++) {
     const btnNavP = navBarPortfolio.children[i];
     btnNavP.addEventListener('click', function() {
@@ -446,5 +428,239 @@ for (let i = 0; i < navBarPortfolio.children.length; i++) {
       }
       console.log(`Funciona Mostrando la categoría ${category}`);
     });
-  }
-  
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    
+    const explorerContainers = document.getElementById('explorer-containers');
+
+    for (let i = 0; i < explorerContainers.children.length; i++) {
+    const container = explorerContainers.children[i];
+
+    for (let j = 0; j < container.children.length; j++) {
+        const card = container.children[j];
+        
+
+        if (!card.classList.contains('empty-card')) {
+            
+
+            card.addEventListener('click', (event) => {
+            const image = event.target.dataset.image;
+            const category = event.target.dataset.category;
+            const title = event.target.dataset.title;
+            const openRepo = event.target.dataset.urlgithub;
+            const openWeb = event.target.dataset.urlweb;
+            const date = event.target.dataset.date;
+            const text = event.target.dataset.text;
+            const icon = event.target.dataset.icon;
+            const level = event.target.dataset.level;
+            const stack = event.target.dataset.stack.split(',');
+
+            
+            const selectedCard = { image, category, title, openRepo, openWeb, date, text, icon, level, stack,};
+
+            // Almacenar en localStorage
+            localStorage.setItem('selectedCard', JSON.stringify(selectedCard));
+            
+            mostrarModal();
+        });
+        }
+    }
+    }
+});
+
+
+
+function mostrarModal(){
+    
+    const modal = document.querySelector('.bg-wallPortfolio');
+    modal.classList.contains('close-all');
+
+    modal.classList.remove('close-all');
+    modal.classList.add('open-all');
+    
+
+// Obtener la información de localStorage
+selectedCard = JSON.parse(localStorage.getItem('selectedCard'));
+
+
+
+const image = localStorage.getItem('image');
+const category = localStorage.getItem('category');
+const title = localStorage.getItem('title');
+const urlgithub = localStorage.getItem('urlgithub');
+const urlweb = localStorage.getItem('urlweb');
+const date = localStorage.getItem('date');
+const text = localStorage.getItem('text');
+const icon = localStorage.getItem('icon')
+const level = localStorage.getItem('level');
+const stack = localStorage.getItem('stack').split(',');
+
+const bgWallPortFolio = document.querySelector('.bg-wallPortfolio');
+
+const containerPortfolio = document.createElement('div');
+containerPortfolio.classList.add('container-portfolio');
+
+
+//--------------------------------------
+const headerPortfolio = document.createElement('div');
+headerPortfolio.classList.add('header-portfolio');
+
+const boxImgPortfolio = document.createElement('div');
+boxImgPortfolio.classList.add('box-img-portfolio');
+
+const imgPortfolio = document.createElement('img');
+imgPortfolio.classList.add('img-portfolio');
+imgPortfolio.setAttribute('src' , image );
+
+
+//--------------------------------------
+const boxNavHeader = document.createElement('div');
+boxNavHeader.classList.add('box-nav-header');
+
+const tagCategory = document.createElement('div');
+tagCategory.classList.add('tag');
+tagCategory.textContent = category;
+
+const tagIconAndLevel = document.createElement('div');
+tagIconAndLevel.classList.add('tag');
+tagIconAndLevel.textContent = icon + '' + level;
+
+const boxBtnsNavHeader = document.createElement('div');
+boxBtnsNavHeader.classList.add('box-btns-nav-header');
+
+const anchorageRepo = document.createElement('a');
+anchorageRepo.setAttribute('href' , urlgithub);
+anchorageRepo.setAttribute('target' , '_blank');
+
+const boxIconRepo = document.createElement('div');
+boxIconRepo.classList.add('box-icon-repo');
+
+const iconGitHubPortFolio = document.createElement('i');
+iconGitHubPortFolio.classList.add('fa-brands' , 'fa-github' , 'icongithub-portfolio');
+
+
+
+//--------------------------------------------
+const anchorageOpenWeb = document.createElement('a');
+anchorageOpenWeb.classList.add('anchorage-web');
+anchorageOpenWeb.setAttribute('href' , urlweb);
+
+const boxIconWeb = document.createElement('div');
+boxIconWeb.classList.add('box-icon-web');
+
+const iconOpenWeb = document.createElement('i');
+iconOpenWeb.classList.add('fa-solid' , 'fa-arrow-up-right-from-square');
+
+
+
+//--------------------------------------
+const dataProject = document.createElement('div');
+dataProject.classList.add('data-project');
+
+const titleProject = document.createElement('h3');
+titleProject.classList.add('title-project');
+titleProject.textContent = title;
+
+
+
+//--------------------------------------
+const boxDate = document.createElement('div');
+boxDate.classList.add('box-date');
+
+const iconDate = document.createElement('i');
+iconDate.classList.add('fa-regular' , 'fa-calendar');
+
+const dateProject = document.createElement('p');
+dateProject.classList.add('date-project');
+dateProject.textContent = date;
+
+
+
+//--------------------------------------
+const bodyProject = document.createElement('div');
+bodyProject.classList.add('body-project');
+
+const textBodyProject = document.createElement('p');
+textBodyProject.classList.add('text-body-project');
+textBodyProject.textContent = text;
+
+
+
+
+//--------------------------------------
+// Aqui creo que tengo que crear u nciclo for que haga recorrido de todos los tag y los incluya
+const projectStack = document.createElement('div');
+projectStack.classList.add('project-box');
+
+const titleStack = document.createElement('h3');
+titleStack.classList.add('title-area');
+titleStack.textContent = stack;
+
+const containerStack = document.createElement('div');
+containerStack.classList.add('container-tags');
+
+
+
+
+stack.forEach(function(stack) {
+    const tagStack = document.createElement('div');
+    tagStack.classList.add('tag');
+    tagStack.textContent = stack;
+    containerStack.appendChild(tagStack);
+});
+
+
+
+//--------------------------------------
+bgWallPortFolio.appendChild(containerPortfolio);
+containerPortfolio.appendChild(headerPortfolio);
+headerPortfolio.appendChild(boxImgPortfolio);
+boxImgPortfolio.appendChild(imgPortfolio);
+
+boxImgPortfolio.appendChild(boxNavHeader);
+boxNavHeader.appendChild(tagCategory);
+
+boxNavHeader.appendChild(boxBtnsNavHeader);
+boxBtnsNavHeader.appendChild(anchorageRepo);
+anchorageRepo.appendChild(boxIconRepo);
+boxIconRepo.append(iconGitHubPortFolio)
+
+boxBtnsNavHeader.appendChild(anchorageOpenWeb);
+anchorageOpenWeb.appendChild(boxIconWeb);
+boxIconWeb.appendChild(iconOpenWeb);
+
+headerPortfolio.appendChild(dataProject);
+dataProject.appendChild(titleProject);
+
+headerPortfolio.appendChild(boxDate);
+boxDate.appendChild(iconDate)
+boxDate.appendChild(dateProject)
+
+containerPortfolio.appendChild(bodyProject);
+
+bodyProject.appendChild(textBodyProject)
+
+bodyProject.appendChild(projectStack);
+projectStack.appendChild(titleStack);
+bodyProject.appendChild(containerStack);
+
+bodyProject.appendChild(tagIconAndLevel);
+
+}
+
+
+//--------------------------------------------
+const bgWallPortFolio = document.querySelector('.bg-WallPortFolio')
+
+bgWallPortFolio.addEventListener('click', () => {
+    const modal = bgWallPortFolio;
+    if (modal.classList.contains('open-all')) {
+        modal.classList.remove('open-all');
+        modal.classList.add('close-all');
+    }
+    localStorage.removeItem('selectedCard');
+});

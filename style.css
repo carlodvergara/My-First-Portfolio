@@ -383,6 +383,10 @@ a{
 }
 
 
+.open-grid{
+    display:grid;
+}
+
 
 
 
@@ -918,7 +922,7 @@ overflow-y: scroll;
 /*----  Records   / certificates   ------- */
 /*----------------------------------------- */
 
-#bg-wallPortfolio{
+.bg-wallPortfolio{
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -939,6 +943,8 @@ overflow-y: scroll;
     overflow: auto;
     animation: slideInFromRight 0.5s ease-in-out;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 
