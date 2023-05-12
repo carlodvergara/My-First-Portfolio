@@ -1,0 +1,32 @@
+explorerNav.appendChild(boxExplorerProjects);
+
+boxExplorerProjects.appendChild(anchorageExploreProjects);
+anchorageExploreProjects.appendChild(openWebProjects);
+openWebProjects.appendChild(iconExploreEmojie);
+openWebProjects.appendChild(titleExploreProjects);
+openWebProjects.appendChild(iconSvgExploreProjects);
+boxExplorerProjects.appendChild(numberProjects);
+
+
+const boxExplorerProjects = document.createElement('div');
+boxExplorerProjects.classList.add('box-explorer-projects');
+
+const anchorageExploreProjects = document.createElement('a');
+anchorageExploreProjects.setAttribute('href' , '#');
+
+const openWebProjects = document.createElement('div');
+openWebProjects.classList.add('open-web-projects');
+
+const iconExploreEmojie = '🖱';
+iconExploreEmojie.classList.add('icon-explore-emojie');
+
+const titleExploreProjects = document.createElement('p');
+titleExploreProjects.classList.add('title-explore-projects');
+titleExploreProjects.textContent = 'Explora';
+
+const iconSvgExploreProjects = document.createElement('i');
+iconSvgExploreProjects.classList.add('svg-arrow-right-circle');
+
+const numberProjects = document.createElement('p');
+numberProjects.classList.add('number-projects')
+numberProjects.textContent = '+ 30 Proyectos'

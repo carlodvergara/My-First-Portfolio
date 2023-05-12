@@ -4,9 +4,10 @@ const toggleMode = document.querySelector('.fa-circle-half-stroke');
 // Seleccionar los elementos que se desean modificar con el dark mode
 const navH = document.getElementById('nav-horizontal');
 const bgWaNav = document.querySelector('.bg-wall'); 
-const bgWaCertif = document.getElementById('bg-wall-certificate');
-const bgwallTool = document.getElementById('bg-wall-tool')
+const bgWaCertif = document.getElementById('bg-wall-modal-certificates');
+const bgwallTool = document.getElementById('bg-wall-modal-hard-skill')
 const abtMe = document.getElementById('about-me');
+const inTerest = document.querySelector('.interests');
 const portf = document.getElementById('portfolio');
 const educat = document.getElementById('education');
 const contac = document.getElementById('contact');
@@ -22,6 +23,7 @@ const activateDarkMode = () => {
     bgWaCertif.classList.add('dark-mode');
     bgwallTool.classList.add('dark-mode');
     abtMe.classList.add('dark-mode');
+    inTerest.classList.add('dark-mode');
     portf.classList.add('dark-mode');
     educat.classList.add('dark-mode');
     contac.classList.add('dark-mode');
@@ -40,6 +42,7 @@ const deactivateDarkMode = () => {
   bgWaCertif.classList.remove('dark-mode');
   bgwallTool.classList.remove('dark-mode');
   abtMe.classList.remove('dark-mode');
+  inTerest.classList.remove('dark-mode');
   portf.classList.remove('dark-mode');
   educat.classList.remove('dark-mode');
   contac.classList.remove('dark-mode');

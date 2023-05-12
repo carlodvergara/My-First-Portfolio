@@ -9,7 +9,7 @@ const whoIAm = document.createElement('div');
 whoIAm.classList.add('who-i-am');
 
 const whoIAmTitle = document.createElement('h1');
-whoIAmTitle.classList.add('h1');
+whoIAmTitle.classList.add('who-iam-title');
 whoIAmTitle.innerText = 'HOLA SOY CARLOS VERGARA';
 
 const welcomeTitle = document.createElement('h3');
@@ -23,7 +23,8 @@ sectionTitle.classList.add('h2');
 sectionTitle.innerText = 'SOBRE MI';
 
 const paragraphWhoIam = document.createElement('p');
-paragraphWhoIam.classList.add('p');
+paragraphWhoIam.classList.add('paragraph-who-iam');
+
 paragraphWhoIam.innerText = 'Descubrí que soy un apasionado por la programación, y he estado aprendiendo todo lo posible desde que decidí embarcarme en este camino hace unos meses (Agosto 2022), Aunque aun no tengo experiencia laboral en este sector, he completado cursos y proyectos personales que demuestran mi capacidad para aprender rápidamente. Me considero una persona amable, humilde, buen amigo y enfocado en los objetivos, siempre busco la manera de resolver problemas y aprender nuevas habilidades';
 
 const containerBtns = document.createElement('div');
@@ -36,7 +37,6 @@ redirectToMyGitHub.setAttribute('target' , '_blank')
 const iconGitHub = document.createElement('i');
 iconGitHub.classList.add('fa-brands' , 'fa-github', 'fa-shake' , 'github-aboutme');
 
-
 const btnDownloadCv = document.createElement('button');
 btnDownloadCv.classList.add('btn-download-cv');
 
@@ -47,6 +47,10 @@ textBtnDownloadCv.innerText = 'Descarga mi cv';
 const iconDownload = document.createElement('span');
 iconDownload.classList.add('material-symbols-outlined');
 iconDownload.innerText = 'download';
+
+
+
+
 
 const myInterests = document.createElement('div');
 myInterests.classList.add('my-interests');
@@ -60,8 +64,6 @@ containerInterests.classList.add('container-interests');
 
 const interestsList = [ '📒  Leer' , '🍜  Cocinar' , '⚽  Deportes en Equipo' , '💪  Gimnasio' , '♟️  Juegos de Estrategia' , '🗺️  Viajar' , '☕  Cafe' , '🐶  Perros', '🐱  Gatos' , '🌊  playa', '🎉  Start ups',  '🎉  Tecnologia'];
 
-
-
 for (let i = 0; i< interestsList.length; i++ ){
     const divTagInterests = document.createElement('div');
     divTagInterests.classList.add('div-tag-interests');
@@ -70,9 +72,13 @@ for (let i = 0; i< interestsList.length; i++ ){
 }
 
 
+
+
+
+
 const imgSectionAboutMe = document.createElement('img');
 imgSectionAboutMe.classList.add('img-section-aboutme');
-imgSectionAboutMe.setAttribute('src' , 'https://images.squarespace-cdn.com/content/v1/62ab3f1c9de10370b3c0bc3f/76ea7f9b-0ec8-46d3-a00f-6c22c3e2aded/96b63325-f2f6-45fc-820d-b73249774340_jonconnorfilms_art_in_the_age_of_artificial_intelligence.PNG');
+imgSectionAboutMe.setAttribute('src' , 'https://res.cloudinary.com/dwdzufjyh/image/upload/v1683503735/Personal%20portfolio%20V.01/Banner-portfolio_3_fwoej9.jpg');
 imgSectionAboutMe.setAttribute('alt' , 'Imagen Banner seccion principal about me, enseña el perfil fisico del desarrollador');
 
 
@@ -98,4 +104,6 @@ frameAb.appendChild(imgSectionAboutMe);
 
 btnDownloadCv.addEventListener('click', () => {
     window.open('https://drive.google.com/uc?id=1wP144nEh0m7BiHkPpvNs3FB1_wxj7tvf');
-  });
+});
+
+

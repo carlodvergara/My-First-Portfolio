@@ -177,36 +177,36 @@
 
 
 /*--------------------------------*/
-/*------ Sobre mi Dark Mode  -----*/
+/*------ Abour Me Dark Mode  -----*/
 /*--------------------------------*/
 
 #about-me.dark-mode {
     background-color: #2F3237;
 }
 
-#about-me.dark-mode .frame-1-13 .who-i-am h1,
-#about-me.dark-mode .frame-1-13 .who-i-am h2,
-#about-me.dark-mode .frame-1-13 .who-i-am h3{
+#about-me.dark-mode .frame-3-13 .who-i-am h1,
+#about-me.dark-mode .frame-3-13 .who-i-am h2,
+#about-me.dark-mode .frame-3-13 .who-i-am h3{
     color: rgb(233, 233, 233);
 }
 
-#about-me.dark-mode .frame-1-13 .who-i-am p {
+#about-me.dark-mode .frame-3-13 .who-i-am p {
     color: rgb(255, 255, 255);
 }
 
-#about-me.dark-mode .frame-1-13 .who-i-am a >i {
+#about-me.dark-mode .frame-3-13 .who-i-am a >i {
     color: rgb(255, 255, 255);}
 
-#about-me.dark-mode .frame-1-13 .who-i-am .btn-download-cv{
+#about-me.dark-mode .frame-3-13 .who-i-am .btn-download-cv{
     background-color: #2F3237;
     border: solid 0.02rem rgb(125, 125, 125);
 }
 
-#about-me.dark-mode .frame-1-13 .who-i-am .btn-download-cv span{
+#about-me.dark-mode .frame-3-13 .who-i-am .btn-download-cv span{
     border-left: solid 0.02rem rgb(125, 125, 125);
 }
 
-#about-me.dark-mode .frame-1-13 .who-i-am .div-tag-interests{
+#about-me.dark-mode .frame-3-13 .who-i-am .div-tag-interests{
     background-color: #1c1c1e;
     color: whitesmoke;
     border: solid 0.01rem rgb(125, 125, 125);
@@ -217,20 +217,59 @@
 
 
 
+/*--------------------------------*/
+/*-- About Me Dark Mode  <920px --*/
+/*--------------------------------*/
 
 
+@media (max-width: 920px) {
+
+#about-me.dark-mode {
+    display: grid;
+    background-color: #F5F5F5;
+    width: 100%;
+    height: max-content;
+    transition: background-color 0.5s ease-out;        
+    background-image: linear-gradient(to bottom, rgba(47, 50, 55, 0.999), rgba(47, 50, 55, 0.5)), url('https://res.cloudinary.com/dwdzufjyh/image/upload/v1683503735/Personal%20portfolio%20V.01/Banner-portfolio_3_fwoej9.jpg');
+    filter: brightness(110%) contrast(100%) ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
 
 
+#about-me.dark-mode .frame-3-13 .who-i-am h1,
+#about-me.dark-mode .frame-3-13 .who-i-am h2,
+#about-me.dark-mode .frame-3-13 .who-i-am h3{
+    color: rgb(233, 233, 233);
+}
+
+#about-me.dark-mode .frame-3-13 .who-i-am .btn-download-cv
+{
+    background-color:#2F3237;
+    border: solid 0.02rem rgb(125, 125, 125);
+}
+
+}
 
 
+/*------------------*/
+/*Section Interests PENDIENTE POR REPARAR*/
+/*------------------*/
+
+@media (max-width: 920px) {
+
+    .interest.dark-mode{
+        width: 100%;
+        height: max-content;
+        background-color: #252525;
+        transition: background-color 0.5s ease-out;
+        display: grid;
+        padding-bottom: 2rem;
+    }
 
 
-
-
-
-
-
-
+}
 
 
 
@@ -247,31 +286,50 @@
     color: white;
 }
 
-#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card{
-    background-color: #2A2B2F;
-    border: solid 0.01rem rgb(94, 94, 94);
-}
 
-#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card .title-card{
+#portfolio.dark-mode .container-explorer-nav .title-explore{
     color: white;
 }
 
-#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card p{
-    color: #9fa7b6;
+#portfolio.dark-mode .container-explorer-nav .nav-bar-portfolio .btn-nav-portfolio{
+    color: white;
 }
 
-#portfolio.dark-mode .frame .frame-structure-portfolio .container-cards a .card .box-level{
-    background-color: #32353A;
+#portfolio.dark-mode .container-explorer-nav .nav-bar-portfolio .btn-nav-portfolio:hover{
+    background-color:#2F3237;  
+}
+#portfolio.dark-mode .container-explorer-nav  .nav-bar-portfolio .border-btn-portfolio{
+    background-color:#000000;  
+    border-bottom: 0.02rem solid rgb(76, 76, 76);
+
 }
 
 
+/* SGUNDA AREA */
 
 
+#portfolio.dark-mode .frame .frame-structure-portfolio  .new-container-cards .card-content {
+    background-color: #1C1C1E;
+    border: solid 0.02rem rgb(86, 86, 86);
+}
+
+    
+#portfolio.dark-mode .frame .frame-structure-portfolio  .new-container-cards .card-content:hover {
+    box-shadow: 0 0.2rem 0.5rem rgba(33, 33, 33, 0.1), 0 0.8rem 2rem rgba(60, 60, 60, 0.1);
+}
 
 
+#portfolio.dark-mode .frame .frame-structure-portfolio  .new-container-cards .card-content .title-card-content {
+    color: white;
+}
 
 
+#portfolio.dark-mode .frame .frame-structure-portfolio  .new-container-cards .card-content .box-stack-card .stack-card-content{
+    color: #e3e3e3;
+    background-color: #323232;
+    border: solid 0.1px rgb(30, 30, 30);
 
+}
 
 
 
@@ -350,53 +408,48 @@
 
 
 /*--------------------------------*/
-/*----  My Record Dark Mode  -----*/
+/*-- Modal Record Certificates ---*/
 /*--------------------------------*/
 
-#bg-wall-record.dark-mode .container-record .card-structure-cert{
+#bg-wall-modal-certificates.dark-mode .container-record .card-structure-cert{
     border: solid 1px transparent;
 }
 
-
-#bg-wall-record.dark-mode .container-record .card-structure-cert:hover{
+#bg-wall-modal-certificates.dark-mode .container-record .card-structure-cert:hover{
     background-color: #16181D;
     border: solid 1px #222326 ;
 }
 
-#bg-wall-record.dark-mode .container-record .card-structure-cert .box-btn-download-cert a >span{
+#bg-wall-modal-certificates.dark-mode .container-record .card-structure-cert .box-btn-download-cert a >span{
     border: solid 1px transparent;
 }
 
-
-
-#bg-wall-record.dark-mode .container-record .card-structure-cert:hover .box-btn-download-cert a >span{
+#bg-wall-modal-certificates.dark-mode .container-record .card-structure-cert:hover .box-btn-download-cert a >span{
     border: solid 1px rgb(132, 132, 132);
 }
 
-#bg-wall-record.dark-mode .container-record .header-certif{
+#bg-wall-modal-certificates.dark-mode .container-record .header-certif{
     background-color:#222326 ;
     border-bottom: #16181D;
 }
 
-
-#bg-wall-record.dark-mode .container-record .header-certif .title-certif h3{
+#bg-wall-modal-certificates.dark-mode .container-record .header-certif .title-certif h3{
     color:whitesmoke ;
 }
 
-#bg-wall-record.dark-mode .certificate-list .clase-impar-record{
+#bg-wall-modal-certificates.dark-mode .certificate-list .clase-impar-record{
     background-color:#2F3237;
-
 }
 
-#bg-wall-record.dark-mode .certificate-list .clase-par-record{
+#bg-wall-modal-certificates.dark-mode .certificate-list .clase-par-record{
     background-color:#3A3D43;
 }
 
-#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .title-card-course{
+#bg-wall-modal-certificates.dark-mode .certificate-list .card-structure-cert .box-text .title-card-course{
     color: whitesmoke;
 }
 
-#bg-wall-record.dark-mode .certificate-list .card-structure-cert .box-text .p-tech{
+#bg-wall-modal-certificates.dark-mode .certificate-list .card-structure-cert .box-text .p-tech{
     color: rgb(198, 198, 198);
 }
 
@@ -411,53 +464,52 @@
 
 
 
-
 /*--------------------------------*/
-/*----  My Tools Dark Mode  -----*/
+/*----  Modal Hard Skill     -----*/
 /*--------------------------------*/
 
-#bg-wall-tool.dark-mode .container-tool {
+#bg-wall-modal-hard-skill.dark-mode .container-tool {
     background-color: #2F3237;
 }
 
-#bg-wall-tool.dark-mode .container-tool .header-tool{
+#bg-wall-modal-hard-skill.dark-mode .container-tool .header-tool{
     background-color: #2F3237;
 }
 
-#bg-wall-tool.dark-mode .container-tool .header-tool .bx-img-tool{
+#bg-wall-modal-hard-skill.dark-mode .container-tool .header-tool .bx-img-tool{
     background-color: #2F3237;
 }
 
-#bg-wall-tool.dark-mode .container-tool .header-tool .container-title-tool{
+#bg-wall-modal-hard-skill.dark-mode .container-tool .header-tool .container-title-tool{
     background-color: #2F3237;
     border-bottom: solid 0.1px #3c3c3c;
 }
 
-#bg-wall-tool.dark-mode .container-tool .header-tool .container-title-tool .h3title-tool{
+#bg-wall-modal-hard-skill.dark-mode .container-tool .header-tool .container-title-tool .h3title-tool{
     color: white;
 }
 
-#bg-wall-tool.dark-mode .container-tool .header-tool .container-title-tool .ptitle-tool{
+#bg-wall-modal-hard-skill.dark-mode .container-tool .header-tool .container-title-tool .ptitle-tool{
     color:#919191;
 }
 
-#bg-wall-tool.dark-mode .container-box-skill [class^="box-skill"]{
+#bg-wall-modal-hard-skill.dark-mode .container-box-skill [class^="box-skill"]{
     background-color: #2F3237;
 }
 
-#bg-wall-tool.dark-mode .container-box-skill [class^="box-skill"]>h3{
+#bg-wall-modal-hard-skill.dark-mode .container-box-skill [class^="box-skill"]>h3{
     color: #ffffff;
 }
 
-#bg-wall-tool.dark-mode .container-box-skill [class^="box-skill"]>p{
+#bg-wall-modal-hard-skill.dark-mode .container-box-skill [class^="box-skill"]>p{
     color: #ffffff;
 }
 
-#bg-wall-tool.dark-mode .container-box-skill [class^="box-skill"].tools-tech{
+#bg-wall-modal-hard-skill.dark-mode .container-box-skill [class^="box-skill"].tools-tech{
     background-color: #2F3237;
 }
 
-#bg-wall-tool.dark-mode .container-box-skill [class^="box-skill"]>.tools-tech .div-tools{
+#bg-wall-modal-hard-skill.dark-mode .container-box-skill [class^="box-skill"]>.tools-tech .div-tools{
     background-color: #1c1c1e;
     color: whitesmoke;
     border: solid 0.01rem rgb(125, 125, 125);

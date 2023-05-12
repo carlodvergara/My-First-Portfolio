@@ -2,7 +2,6 @@
 //------------------------------------------------//
 //------------  Section Portfolio ----------------//
 //------------------------------------------------//
-
 const portfolio = document.getElementById('portfolio');
 
 const frame = document.createElement('div');
@@ -26,16 +25,44 @@ explorerNav.classList.add('container-explorer-nav');
 
 const titleExplore = document.createElement('h3');
 titleExplore.classList.add('title-explore')
-titleExplore.innerText = 'Explora'; 
+titleExplore.innerText = 'Destacados'; 
 
 const navBarPortfolio = document.createElement('div');
 navBarPortfolio.classList.add('nav-bar-portfolio');
 navBarPortfolio.setAttribute('id', 'mi-contenedor');
 
+const boxExplorerProjects = document.createElement('div');
+boxExplorerProjects.classList.add('box-explorer-projects');
+
+const anchorageExploreProjects = document.createElement('a');
+anchorageExploreProjects.setAttribute('href' , 'PendienteURL');
+
+const openWebProjects = document.createElement('div');
+openWebProjects.classList.add('open-web-projects');
+
+const iconExploreEmojie = document.createElement('p');
+iconExploreEmojie.classList.add('icon-explore-emojie');
+iconExploreEmojie.textContent = '📂';
+
+const titleExploreProjects = document.createElement('p');
+titleExploreProjects.classList.add('title-explore-projects');
+titleExploreProjects.textContent = 'Explora';
+
+const iconSvgExploreProjects = document.createElement('svg');
+iconSvgExploreProjects.setAttribute('id','svg-arrow-right-circle');
+const useElement = document.createElement('use');
+useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', 'svgfile.svg#arrow-right-circle');
+iconSvgExploreProjects.appendChild(useElement);
+
+window.addEventListener('load', () => {
+    const openWebProjects = document.getElementById('open-web-projects');
+    openWebProjects.appendChild(iconSvgExploreProjects);
+  });
 
 //Container Explorador Containers
 const explorerContainers = document.createElement('div');
 explorerContainers.classList.add('explorer-containers');
+
 
 
 portfolio.appendChild(frame);
@@ -45,10 +72,14 @@ frameStructurePortfolio.appendChild(containerShipPortfolio);
 
 containerShipPortfolio.appendChild(explorerNav);
 containerShipPortfolio.appendChild(explorerContainers);
-
 explorerNav.appendChild(titleExplore);
 explorerNav.appendChild(navBarPortfolio);
-
+explorerNav.appendChild(boxExplorerProjects);
+boxExplorerProjects.appendChild(anchorageExploreProjects);
+anchorageExploreProjects.appendChild(openWebProjects);
+openWebProjects.appendChild(iconExploreEmojie);
+openWebProjects.appendChild(titleExploreProjects);
+openWebProjects.appendChild(iconSvgExploreProjects);
 
 
 const iconLevel = ['🙈', '🙉', '🙊'];
@@ -66,7 +97,7 @@ cardListPortfolio.push({
     urlgithub:'https://github.com/carlodvergara/404-Not-Found',
     date:'23 agosto 2023',
     text: 'Este es un proyecto que tiene como objetivo brindar una experiencia de usuario más agradable y personalizada al momento de mostrar el error 404 de un sitio web. En lugar de mostrar la página de error genérica, este proyecto ofrece una página personalizada y atractiva que hará que los usuarios se sientan más cómodos al momento de encontrar una página que no existe en tu sitio web.',
-    stack: ['css', 'html']
+    stack: ['css', 'html' , 'Javascript', 'node.js' , 'Expres.js'  ]
 }
 )
 cardListPortfolio.push({  
@@ -149,14 +180,14 @@ cardListPortfolio.push({
 cardListPortfolio.push({  
     category:'Apis',
     typeCard: 'empty',
-    background:'https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?w=2000',
+    background:'https://cdn.leonardo.ai/users/ca98bb2b-92d0-4c68-9cbe-79380a76edb1/generations/a49f312e-0bee-4821-b405-29fef5bbef70/Leonardo_Diffusion_I_want_a_hyperrealistic_8K_highresolution_i_1.jpg',
     title:''
 }
 )
 cardListPortfolio.push({  
     category:'Fulls Stack',
     typeCard: 'empty',
-    background:'https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?w=2000',
+    background:'https://cdn.leonardo.ai/users/ca98bb2b-92d0-4c68-9cbe-79380a76edb1/generations/a49f312e-0bee-4821-b405-29fef5bbef70/Leonardo_Diffusion_I_want_a_hyperrealistic_8K_highresolution_i_1.jpg',
     title:''
 }
 )
@@ -169,7 +200,7 @@ const objNewCards = {};
 const objNewContainers = {};
 
 
-// Estructura portfolio
+// Contructor de portafolio
 function portfolioConstructor(){
     let value;
     let counterCard = 0; 
@@ -197,7 +228,13 @@ function portfolioConstructor(){
                 const imgEmptyCard = document.createElement('img');
                 imgEmptyCard.classList.add('img-empty-card');
                 imgEmptyCard.setAttribute('src', card.background);
-                
+
+                const textEmptyCard = document.createElement('h1');
+                textEmptyCard.classList.add('text-empty-card');
+                textEmptyCard.innerText = '💻 ';
+                newCard.appendChild(textEmptyCard);
+
+
                 newCard.appendChild(imgEmptyCard);
                 
                     if (!arrCategories.includes(card.category)) {
@@ -218,6 +255,7 @@ function portfolioConstructor(){
                 const newCardId = "contentCard-"+ counterCard + '-' + card.title;
                 newCard.setAttribute('id', newCardId);
                     
+                newCard.setAttribute('data-image', card.image);
                 newCard.setAttribute('data-category', card.category);
                 newCard.setAttribute('data-typecard' , card.typeCard)
                 newCard.setAttribute('data-title', card.title);
@@ -245,6 +283,7 @@ function portfolioConstructor(){
                         
                 const boxStackCards = document.createElement('div');
                 boxStackCards.classList.add('box-stack-card');
+                boxStackCards.setAttribute('id' , 'mi-contenedor');
         
                     for (let stack of card.stack) {
                         const stackContent = document.createElement('div');
@@ -334,10 +373,13 @@ function portfolioConstructor(){
 
             // Crear el nuevo contendor solo si existe la card.category que esta recibiendo en el array de categorias y si no existe ningun contenedor con esa categoria en explorerContainers.
 
+         
+
             if (arrCategories.includes(value.category) && !exist) { 
 
                 const newContainer = document.createElement('div')
-                newContainer.classList.add('new-container-cards');
+                newContainer.classList.add('new-container-cards');   
+                newContainer.setAttribute('id' , 'mi-contenedor')           
                 newContainer.style.display = 'grid';
 
                 const newId = "containerId-" + counterContainer + value.category;
@@ -398,6 +440,8 @@ function portfolioConstructor(){
 
 portfolioConstructor() 
 
+
+
 // Seleccionar el primer botón y aplicarle la clase por defecto
 navBarPortfolio.children[0].classList.add('border-btn-portfolio');
 
@@ -430,237 +474,53 @@ for (let i = 0; i < navBarPortfolio.children.length; i++) {
     });
 }
 
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
     
-    const explorerContainers = document.getElementById('explorer-containers');
-
-    for (let i = 0; i < explorerContainers.children.length; i++) {
+for (let i = 0; i < explorerContainers.children.length; i++) {
     const container = explorerContainers.children[i];
 
     for (let j = 0; j < container.children.length; j++) {
         const card = container.children[j];
-        
 
         if (!card.classList.contains('empty-card')) {
-            
 
             card.addEventListener('click', (event) => {
-            const image = event.target.dataset.image;
-            const category = event.target.dataset.category;
-            const title = event.target.dataset.title;
-            const openRepo = event.target.dataset.urlgithub;
-            const openWeb = event.target.dataset.urlweb;
-            const date = event.target.dataset.date;
-            const text = event.target.dataset.text;
-            const icon = event.target.dataset.icon;
-            const level = event.target.dataset.level;
-            const stack = event.target.dataset.stack.split(',');
+                const image = event.currentTarget.dataset.image;
+                const category = event.currentTarget.dataset.category;
+                const title = event.currentTarget.dataset.title;
+                const openRepo = event.currentTarget.dataset.urlgithub;
+                const openWeb = event.currentTarget.dataset.urlweb;
+                const date = event.currentTarget.dataset.date;
+                const text = event.currentTarget.dataset.text;
+                const icon = event.currentTarget.dataset.icon;
+                const level = event.currentTarget.dataset.level;
+                const stack = event.currentTarget.dataset.stack;
 
-            
-            const selectedCard = { image, category, title, openRepo, openWeb, date, text, icon, level, stack,};
+                const selectedCard = { image, category, title, openRepo, openWeb, date, text, icon, level, stack };
 
-            // Almacenar en localStorage
-            localStorage.setItem('selectedCard', JSON.stringify(selectedCard));
-            
-            mostrarModal();
-        });
+                // Almacenar en localStorage
+                document.dispatchEvent(new CustomEvent('cardSelected', { detail: selectedCard }));
+
+                console.log('Datos despachados en Evento Especial:', selectedCard);
+            });
         }
     }
-    }
-});
-
-
-
-function mostrarModal(){
-    
-    const modal = document.querySelector('.bg-wallPortfolio');
-    modal.classList.contains('close-all');
-
-    modal.classList.remove('close-all');
-    modal.classList.add('open-all');
-    
-
-// Obtener la información de localStorage
-selectedCard = JSON.parse(localStorage.getItem('selectedCard'));
-
-
-
-const image = localStorage.getItem('image');
-const category = localStorage.getItem('category');
-const title = localStorage.getItem('title');
-const urlgithub = localStorage.getItem('urlgithub');
-const urlweb = localStorage.getItem('urlweb');
-const date = localStorage.getItem('date');
-const text = localStorage.getItem('text');
-const icon = localStorage.getItem('icon')
-const level = localStorage.getItem('level');
-const stack = localStorage.getItem('stack').split(',');
-
-const bgWallPortFolio = document.querySelector('.bg-wallPortfolio');
-
-const containerPortfolio = document.createElement('div');
-containerPortfolio.classList.add('container-portfolio');
-
-
-//--------------------------------------
-const headerPortfolio = document.createElement('div');
-headerPortfolio.classList.add('header-portfolio');
-
-const boxImgPortfolio = document.createElement('div');
-boxImgPortfolio.classList.add('box-img-portfolio');
-
-const imgPortfolio = document.createElement('img');
-imgPortfolio.classList.add('img-portfolio');
-imgPortfolio.setAttribute('src' , image );
-
-
-//--------------------------------------
-const boxNavHeader = document.createElement('div');
-boxNavHeader.classList.add('box-nav-header');
-
-const tagCategory = document.createElement('div');
-tagCategory.classList.add('tag');
-tagCategory.textContent = category;
-
-const tagIconAndLevel = document.createElement('div');
-tagIconAndLevel.classList.add('tag');
-tagIconAndLevel.textContent = icon + '' + level;
-
-const boxBtnsNavHeader = document.createElement('div');
-boxBtnsNavHeader.classList.add('box-btns-nav-header');
-
-const anchorageRepo = document.createElement('a');
-anchorageRepo.setAttribute('href' , urlgithub);
-anchorageRepo.setAttribute('target' , '_blank');
-
-const boxIconRepo = document.createElement('div');
-boxIconRepo.classList.add('box-icon-repo');
-
-const iconGitHubPortFolio = document.createElement('i');
-iconGitHubPortFolio.classList.add('fa-brands' , 'fa-github' , 'icongithub-portfolio');
-
-
-
-//--------------------------------------------
-const anchorageOpenWeb = document.createElement('a');
-anchorageOpenWeb.classList.add('anchorage-web');
-anchorageOpenWeb.setAttribute('href' , urlweb);
-
-const boxIconWeb = document.createElement('div');
-boxIconWeb.classList.add('box-icon-web');
-
-const iconOpenWeb = document.createElement('i');
-iconOpenWeb.classList.add('fa-solid' , 'fa-arrow-up-right-from-square');
-
-
-
-//--------------------------------------
-const dataProject = document.createElement('div');
-dataProject.classList.add('data-project');
-
-const titleProject = document.createElement('h3');
-titleProject.classList.add('title-project');
-titleProject.textContent = title;
-
-
-
-//--------------------------------------
-const boxDate = document.createElement('div');
-boxDate.classList.add('box-date');
-
-const iconDate = document.createElement('i');
-iconDate.classList.add('fa-regular' , 'fa-calendar');
-
-const dateProject = document.createElement('p');
-dateProject.classList.add('date-project');
-dateProject.textContent = date;
-
-
-
-//--------------------------------------
-const bodyProject = document.createElement('div');
-bodyProject.classList.add('body-project');
-
-const textBodyProject = document.createElement('p');
-textBodyProject.classList.add('text-body-project');
-textBodyProject.textContent = text;
-
-
-
-
-//--------------------------------------
-// Aqui creo que tengo que crear u nciclo for que haga recorrido de todos los tag y los incluya
-const projectStack = document.createElement('div');
-projectStack.classList.add('project-box');
-
-const titleStack = document.createElement('h3');
-titleStack.classList.add('title-area');
-titleStack.textContent = stack;
-
-const containerStack = document.createElement('div');
-containerStack.classList.add('container-tags');
-
-
-
-
-stack.forEach(function(stack) {
-    const tagStack = document.createElement('div');
-    tagStack.classList.add('tag');
-    tagStack.textContent = stack;
-    containerStack.appendChild(tagStack);
-});
-
-
-
-//--------------------------------------
-bgWallPortFolio.appendChild(containerPortfolio);
-containerPortfolio.appendChild(headerPortfolio);
-headerPortfolio.appendChild(boxImgPortfolio);
-boxImgPortfolio.appendChild(imgPortfolio);
-
-boxImgPortfolio.appendChild(boxNavHeader);
-boxNavHeader.appendChild(tagCategory);
-
-boxNavHeader.appendChild(boxBtnsNavHeader);
-boxBtnsNavHeader.appendChild(anchorageRepo);
-anchorageRepo.appendChild(boxIconRepo);
-boxIconRepo.append(iconGitHubPortFolio)
-
-boxBtnsNavHeader.appendChild(anchorageOpenWeb);
-anchorageOpenWeb.appendChild(boxIconWeb);
-boxIconWeb.appendChild(iconOpenWeb);
-
-headerPortfolio.appendChild(dataProject);
-dataProject.appendChild(titleProject);
-
-headerPortfolio.appendChild(boxDate);
-boxDate.appendChild(iconDate)
-boxDate.appendChild(dateProject)
-
-containerPortfolio.appendChild(bodyProject);
-
-bodyProject.appendChild(textBodyProject)
-
-bodyProject.appendChild(projectStack);
-projectStack.appendChild(titleStack);
-bodyProject.appendChild(containerStack);
-
-bodyProject.appendChild(tagIconAndLevel);
-
 }
 
+document.addEventListener('cardSelected', (event) => {
+    console.log('Evento personalizado recibido:', event.detail);
+    // Abrir modal aquí
+    const modal = document.getElementById('bg-wallPortfolio');
+    modal.style.display = 'grid';
+    document.body.style.overflow = 'hidden';
 
-//--------------------------------------------
-const bgWallPortFolio = document.querySelector('.bg-WallPortFolio')
-
-bgWallPortFolio.addEventListener('click', () => {
-    const modal = bgWallPortFolio;
-    if (modal.classList.contains('open-all')) {
-        modal.classList.remove('open-all');
-        modal.classList.add('close-all');
-    }
-    localStorage.removeItem('selectedCard');
 });
+
+
+
+
+
+
+
+
+
+
