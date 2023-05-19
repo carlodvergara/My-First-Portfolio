@@ -2227,168 +2227,333 @@ overflow-y: scroll;
 
 
 
+
+
+
 /*----------------------------------------- */
 /*----------- Section Contact   ----------- */
 /*----------------------------------------- */
 
 #contact{
-    background-color: #d8d8d8;
+    background-color: #ffffff;
     width: auto;
     height: max-content;
-    padding-bottom: 5rem;
+
     transition: background-color 0.5s ease-out;
 }
 
-.title-contact{
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+.frame-contac{
+    grid-column: 3 / 13;    
 }
 
 .frame-structure-contact{
     display: grid;
-    grid-template-rows: row;
-    grid-template-rows: max-content auto;
-}
-
-.container-contact{
-    height: max-content;
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
-    row-gap: 5rem;
-    column-gap: 3rem;
-}
-
-.container-form{
-    width: max-content;
-    height: max-content;
-    display: flex;
-    flex-direction: column;    
-    width: auto;
-}
-
-.form{
-    max-width: 60rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    align-content: center;
-}
-
-.input-name{
-    font-family: 'Montserrat';
-    font-size: 1.4rem;
-    max-width: 60rem;
-    height: 4rem;
-    border: solid 0.5px rgb(218, 218, 218);
-    border-radius: 0.4rem;
-    padding-left: 1rem;
-    color:rgb(0, 0, 0);
-    background-color: #f3f3f3;
-}
-
-.input-name::placeholder{
-    font-family: 'Montserrat';
-    color: #3f3f3f;
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-
-.input-email{
-    font-family: 'Montserrat';
-    font-size: 1.4rem;
-    max-width: 60rem;
-    height: 4rem;
-    border: solid 0.5px rgb(218, 218, 218);
-    border-radius: 0.4rem;
-    padding-left: 1rem;
-    color:rgb(0, 0, 0);
-    background-color: #f3f3f3;
-}
-
-.input-email::placeholder{
-    font-family: 'Montserrat';
-    color: #3f3f3f;
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-
-textarea{
-    font-family: 'Montserrat';
-    font-size: 1.4rem;
-    font-weight: 400;
-    max-width: 60rem;
-    min-height: 20rem;
-    max-height: max-content;
-    border: solid 0.5px rgb(218, 218, 218);
-    border-radius: 0.4rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    background-color: #f3f3f3;
-}
-
-.btn-send-form{
-    align-self:auto;
-    width: clamp(100%, 6vw, 100%);
-    align-self: start;
-    max-width: 12rem;
-    height: 5rem;
-    font-family: 'Montserrat';
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    border: solid 1px rgb(0, 0, 0);
-    border-radius: 0.6rem;
-    cursor: pointer;    
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
 }
 
 
-
-
-.extra-info{
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    row-gap: 6rem;
-}
-
-.direct-info{
-    width: auto;
+/*----------------------------*/
+/*------ Area Contacto -------*/
+/*----------------------------*/
+.data-contact{
+    background-color: #ededed;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
-    
+    padding-left: 2rem;
 }
 
-[class^="data-contact"]{
+.title-contact{
+    width: max-content;
+    padding-bottom: 3rem;
+    padding-top: 10rem;
+}
+
+[class^="gnral-div-c"]{
+    width: 100%;
+    height: 15rem ;
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.02rem solid rgb(213, 213, 213);
+ 
+}
+
+[class^="gnral-div-c"]:last-child{
+    width: 100%;
+    border-bottom: none;
+}
+
+[class^="block-icon-c"]{
+    width: auto;
+    background-color: white;
+    display: flex;
+}
+
+[class^="box-icon-c"]{
     display: flex;
     align-items: center;
-    column-gap: 1rem;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 0.6rem;
+}
+
+[class^="text-content-c"]{
+    max-width: 42rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+[class^="text-content-c"]>h3{
+    font-weight: 700;
+    color: black;
+}
+
+[class^="text-content-c"]>p{
+    font-size: var(--step--1);
+    font-weight: 400;
+    color: rgb(116, 116, 116);
+}
+
+
+
+
+/*----------------------------*/
+/*------   Area Form   -------*/
+/*----------------------------*/
+.data-form{
+    max-width: 100%;
+    height: max-content;
+    padding-top: 18rem ;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 2rem;
+}
+
+.gnral-div-f-form{
+max-width: 100%;
+height: max-content ;
+display: flex;
+column-gap: 3rem;
+justify-content: center;
+align-items: center;
+border-bottom: none;
+}
+
+.block-icon-f{
+    width: auto;
+    background-color: white;
+    display: flex;
+    align-self: center;
+}
+
+.box-icon-f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border: solid 1px rgb(193, 193, 193);
+    border-radius: 0.6rem;
+}
+
+.text-content-f{
+    width: auto;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.text-content-f>div{
+    width: 100%;
+    height: max-content;
+}
+
+.text-content-f p{
+    font-size: var(--step--2);
+    font-weight: 400;
+    color: rgb(68, 68, 68);
+}
+
+
+form{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+label{
+    width: auto;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    font-size: var(--step--2);
+    font-weight: 600;
+}
+
+input{
+    padding-left: 1rem;
+    height: 4rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    border: solid 0.02rem rgb(215, 215, 215);
+    outline:none;
+}
+
+textarea{
+    width: 100%;
+    height: 15rem;
+    padding-left: 1rem;
     padding-top: 1.5rem;
-    white-space:nowrap;
-    overflow: hidden;
-    text-overflow:ellipsis;
+    border-radius: 0.4rem;
+    border: solid 0.02rem rgb(215, 215, 215);
+    outline:none;
+}
+
+
+.order-inputs{
+    width:100%;
+    height: max-content;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit , minmax(20rem, 1fr));
+  
+}
+
+.text-stack{
+    width: 100%;
+    position: relative;
+}
+
+
+/*Especial Blocke Check Box css*/
+
+.interest-stack{
+    width: 100%;
+    height: max-content;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    position: relative;
+    border: solid 0.02rem rgb(215, 215, 215);
+}
+
+.title-box-checks{
+    font-size: var(--step--2);
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.order-checks-one{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(16rem, 1fr));
+    grid-auto-flow: row;
+}
+
+.order-checks-two{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(16rem, 1fr));
     
 }
 
-.fa-square-whatsapp{
-    font-size: 3.5rem;
-    color: #000000;
+[class^="order-checks"]>div{
+    height: 4rem;
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
 }
 
-.fa-square-envelope{
-    font-size: 3.5rem;
-    color: #000000;
+
+[class^="order-checks"] div >input{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: solid 3px red;
 }
 
-[class^="data-contact"]i>p{
-    width: var(--step-0);
-    font-size: 2rem;
-    font-weight: 700;
-    color: #6b6b6b;
+
+[class^="order-checks"] div > p{
+    font-size: var(--step--2);
+    color:rgb(115, 115, 115);
+}
+
+
+.input-send{
+    width: 100%;
+    height: 5rem;
+    border-radius: 0.6rem;
+    background-color: #434DE7;
+    color: white;
+    cursor:pointer;
+}
+
+.input-send[value="Enviar"]{
+    color:rgb(255, 255, 255);
+    font-size: var(--step--2);
+    font-weight: 500;
+    font-family: "poppins";
+}
+
+
+/*---------------------------------*/
+/*------ Area Preguntas FQA -------*/
+/*---------------------------------*/
+.data-fqa{
+    width: 100%;
+    background-color: rgb(179, 136, 136);
+}
+
+@media (max-width: 920px) {
+
+    .frame-contac{
+        grid-column: 2 / 12;    
+    }
+
+    .frame-structure-contact{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+        row-gap: 2rem;
+    }
+
+    .data-form{
+        padding-top: 2rem ;
+    }
+
+    .data-fqa{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        background-color: rgb(123, 123, 123);
+        align-self: center;
+    }
+
 }
 
 
