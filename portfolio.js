@@ -5,7 +5,7 @@
 const portfolio = document.getElementById('portfolio');
 
 const frame = document.createElement('div');
-frame.classList.add('frame');
+frame.classList.add('frame-port');
 
 const frameStructurePortfolio = document.createElement('div');
 frameStructurePortfolio.classList.add('frame-structure-portfolio');

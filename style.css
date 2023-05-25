@@ -418,7 +418,7 @@ a{
 
 .frame-3-13{
     display:grid;
-    grid-column:  3 / 13;
+    grid-column:  2 / 13;
     grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
     grid-auto-flow: row;
     column-gap: 1.5rem;
@@ -724,8 +724,8 @@ padding-top: 5rem;
     transition: background-color 0.5s ease-out;
 }
 
-.frame{
-    grid-column: 3 / 12;
+.frame-port{
+    grid-column: 2 / 12;
 
 }
 
@@ -1483,7 +1483,7 @@ overflow-y: scroll;
  
 .frame-ed{
     display: grid;
-    grid-column: 3 / 13;
+    grid-column: 2 / 13;
     grid-template-columns: repeat(auto-fit, minmax(38rem,1fr));
     column-gap: 3rem;
     row-gap: 2rem;
@@ -2235,33 +2235,34 @@ overflow-y: scroll;
 /*----------------------------------------- */
 
 #contact{
-    background-color: #ffffff;
+    background: #f8f8f8;
     width: auto;
     height: max-content;
-
     transition: background-color 0.5s ease-out;
 }
 
 .frame-contac{
-    grid-column: 3 / 13;    
+    grid-column: 2 / 13;    
 }
 
 .frame-structure-contact{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 }
+
+
+
 
 
 /*----------------------------*/
 /*------ Area Contacto -------*/
 /*----------------------------*/
 .data-contact{
-    background-color: #ededed;
+    background-color: #f8f8f8;
     width: 100%;
-    height: 100%;
+    height: max-content;
     display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
+    flex-direction: column;  
 }
 
 .title-contact{
@@ -2272,13 +2273,14 @@ overflow-y: scroll;
 
 [class^="gnral-div-c"]{
     width: 100%;
-    height: 15rem ;
+    height: 10rem ;
     display: flex;
+    padding-left: 1rem;
     column-gap: 3rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    border-bottom: 0.02rem solid rgb(213, 213, 213);
- 
+    border-bottom: 0.02rem solid rgb(235, 235, 235);
+    position: relative;
 }
 
 [class^="gnral-div-c"]:last-child{
@@ -2288,8 +2290,12 @@ overflow-y: scroll;
 
 [class^="block-icon-c"]{
     width: auto;
-    background-color: white;
     display: flex;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    border: solid 0.5px rgb(210, 210, 210);
+    border-radius: 100%;
+
 }
 
 [class^="box-icon-c"]{
@@ -2298,52 +2304,173 @@ overflow-y: scroll;
     justify-content: center;
     width: 5rem;
     height: 5rem;
-    border: solid 1px rgb(193, 193, 193);
-    border-radius: 0.6rem;
+    border-radius: 100%;
 }
 
 [class^="text-content-c"]{
-    max-width: 42rem;
+    max-width: 50%;
+
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
 
 [class^="text-content-c"]>h3{
+    font-size: var(--step--1);
     font-weight: 700;
     color: black;
 }
 
 [class^="text-content-c"]>p{
-    font-size: var(--step--1);
+    font-size: var(--step--2);
     font-weight: 400;
-    color: rgb(116, 116, 116);
+    color: rgb(68, 68, 68);
+}
+
+
+.box-icon-go-email{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-left: 0.02rem solid rgb(235, 235, 235);
+    border-right: 0.02rem solid rgb(235, 235, 235);
+    border-top: 0.02rem solid rgb(235, 235, 235);
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+
+.box-icon-go-email i{
+
+}
+
+
+
+.container-icons-go-followme{
+    max-width: max-content;
+    height: 100%;
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-left: 0.02rem solid rgb(235, 235, 235);
+    border-right: 0.02rem solid rgb(235, 235, 235);
+    border-top: 0.02rem solid rgb(235, 235, 235);
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.container-icons-go-followme >i{
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-left: 0.02rem solid rgb(235, 235, 235);
+    border-right: 0.02rem solid rgb(235, 235, 235);
+    border-top: 0.02rem solid rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+.container-icons-go-followme i:hover{
+    background-color: #434DE7;
+    color: rgb(255, 255, 255);
+}
+
+[class^="box-icon-go-"]:hover{
+    background-color: #434DE7;
+    color: rgb(255, 255, 255);
+}
+
+.map-quilla{
+    max-width: 100%;
+    height: 30rem;
+    object-fit: cover;
 }
 
 
 
 
 /*----------------------------*/
-/*------   Area Form   -------*/
+/*------ Area Botones  -------*/
+/*----------------------------*/
+
+.btns-contact{
+    width: 100%;
+    height: 10rem;
+    border-bottom: 0.02rem solid rgb(231, 231, 231);
+    display: flex;
+    column-gap: 2rem;
+    justify-content: end;
+    align-items: end;
+}
+
+.btns-contact p{
+    width: max-content;
+    font-size: var(--step--2);
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btns-contact p:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+
+
+/*----------------------------*/
+/*----  Area data Form    ----*/
 /*----------------------------*/
 .data-form{
+    padding-top: 8.2rem;
     max-width: 100%;
-    height: max-content;
-    padding-top: 18rem ;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    height: 100%;
     background-color: white;
+    
     display: flex;
+    justify-self: right;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    row-gap: 2rem;
+
+
+}
+
+
+/*----------------------------*/
+/*- Area data Form structure -*/
+/*----------------------------*/
+
+.data-form-structure{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.form-structure{
+    margin: auto;
+    max-width: 70rem;
+    padding: 2rem;
+    justify-self: center;
+    
 }
 
 .gnral-div-f-form{
 max-width: 100%;
 height: max-content ;
 display: flex;
+padding-left: 3rem;
 column-gap: 3rem;
 justify-content: center;
 align-items: center;
@@ -2354,7 +2481,7 @@ border-bottom: none;
     width: auto;
     background-color: white;
     display: flex;
-    align-self: center;
+    align-self: start;
 }
 
 .box-icon-f{
@@ -2364,7 +2491,7 @@ border-bottom: none;
     width: 5rem;
     height: 5rem;
     border: solid 1px rgb(193, 193, 193);
-    border-radius: 0.6rem;
+    border-radius: 100%;  
 }
 
 .text-content-f{
@@ -2395,9 +2522,10 @@ form{
     row-gap: 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;    
     justify-content: center;
     align-items: center;
-
 }
 
 label{
@@ -2430,7 +2558,6 @@ textarea{
     border: solid 0.02rem rgb(215, 215, 215);
     outline:none;
 }
-
 
 .order-inputs{
     width:100%;
@@ -2489,7 +2616,6 @@ textarea{
     align-items: center;
 }
 
-
 [class^="order-checks"] div >input{
     width: 2rem;
     height: 2rem;
@@ -2502,7 +2628,6 @@ textarea{
     font-size: var(--step--2);
     color:rgb(115, 115, 115);
 }
-
 
 .input-send{
     width: 100%;
@@ -2521,13 +2646,21 @@ textarea{
 }
 
 
-/*---------------------------------*/
-/*------ Area Preguntas FQA -------*/
-/*---------------------------------*/
-.data-fqa{
-    width: 100%;
-    background-color: rgb(179, 136, 136);
+/*----------------------------*/
+/*--- image Form structure ---*/
+/*----------------------------*/
+
+.img-form{
+    max-width: 20%;
+    height: auto;
+    object-fit: cover;
+
 }
+
+
+
+
+
 
 @media (max-width: 920px) {
 
@@ -2554,14 +2687,39 @@ textarea{
         align-self: center;
     }
 
+    .btns-contact{
+        height: 5rem;
+    }
+
+    .img-form{
+        display: none;
+     }
+ 
+
+
 }
 
+@media (max-width: 420px) {
+    .frame-structure-contact{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        row-gap: 2rem;
+    }
 
+    .frame-contac{
+        grid-column: 2 / 12;    
+    }
 
+    .btns-contact{
+        height: 5rem;
+    }
 
+    .img-form{
+       display: none;
+    }
 
-
-
+    
+}
 
 
 
