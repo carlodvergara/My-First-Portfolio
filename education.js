@@ -97,15 +97,16 @@ containerMoreInfo.classList.add('container-more-info');
 
 function createBtnsModalMorInfo() { 
 
+
 const modalCertificates = document.getElementById('bg-wall-modal-certificates');
 const modalSoftSkills = document.getElementById('bg-wall-modal-certificates');
 const modalHardSkills = document.getElementById('bg-wall-modal-hard-skill');
 
 const objMoreInfo = [];
 
-objMoreInfo.push({emojie:'🎓' , bgcolor:'#FDC95C', textinfo: 'Certificados' , icon: '▶' , modalId:modalCertificates});
-objMoreInfo.push({emojie:'🍦'  , bgcolor:'#F28C8F', textinfo: 'Soft Skills' , icon: '▶' , modalId:modalSoftSkills});
-objMoreInfo.push({emojie:'🧠' , bgcolor:'#CFCFCF', textinfo: 'Hard Skills' , icon: '▶' , modalId:modalHardSkills});
+objMoreInfo.push({emojie:'🎓' , bgcolor:'#FDC95C', textinfo: 'Certificados' , modalId:modalCertificates});
+objMoreInfo.push({emojie:'🍦'  , bgcolor:'#F28C8F', textinfo: 'Soft Skills' , modalId:modalSoftSkills});
+objMoreInfo.push({emojie:'🧠' , bgcolor:'#CFCFCF', textinfo: 'Hard Skills' , modalId:modalHardSkills});
 
 
 
@@ -133,9 +134,8 @@ objMoreInfo.push({emojie:'🧠' , bgcolor:'#CFCFCF', textinfo: 'Hard Skills' , i
         const boxIcon = document.createElement('div');
         boxIcon.classList.add('box-icon-arrow');
 
-        const icon = document.createElement('p');
-        icon.classList.add('icon-web');
-        icon.textContent = position.icon;
+        const icon = document.createElement('i');
+        icon.classList.add('fa-solid' , 'fa-square-caret-right' , 'fa-2xl', 'arrow-go-ed'); 
 
         // Inserciones
         containerMoreInfo.appendChild(container);

@@ -346,44 +346,23 @@
 
 #education.dark-mode{
     background-color: #2F3237;
-    color: white;
+    background-image: url('https://res.cloudinary.com/dwdzufjyh/image/upload/v1685578492/Personal%20portfolio%20V.01/Frame_1_1_uz3kce.png');
 }
 
-#education.dark-mode .frame .frame-structure-education .my-formation .title-education{
-    color: white;
+#education.dark-mode .frame-ed{
+    background-color: rgba(42, 43, 47, 0.7); 
 }
 
-#education.dark-mode .frame .frame-structure-education .my-formation .text-my-formation >h3{
-    color: white;
-}
-
-#education.dark-mode .frame .frame-structure-education .my-formation .text-my-formation >p{
-    color: white;
-}
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certified .title-certified >h3{
-    color: white;
-}
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education{
-    background-color: rgb(33, 34, 36);
-    border: solid 0.01rem rgb(94, 94, 94);
-}
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .title-card{
-    color: white;
-}
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .box-level-certicate-cards .box-btn-download-cert-ed {
-    border: solid 0.01rem rgb(94, 94, 94);
-    border-radius: 0.5rem;
-}
-
-#education.dark-mode .frame .frame-structure-education .my-formation .container-certificate-cards .card-education .box-level-certicate-cards .btn-record{
-    border: solid 0.01rem rgb(94, 94, 94);
+#education.dark-mode .title-education{
     color: whitesmoke;
-    background-color:rgb(33, 34, 36);
+}
 
+#education.dark-mode .subtitle-education{
+    color: whitesmoke;
+}
+
+#education.dark-mode [class^='text-education']{
+    color: rgb(172, 172, 172);
 }
 
 
@@ -391,10 +370,46 @@
 
 
 
+/*-----------------------------------------*/
+/*-- Btns and Deploy Modals More Info    --*/
+/*-----------------------------------------*/
 
 
 
 
+#education.dark-mode .container-content-info{
+    background-color: rgb(35, 35, 35);
+    border: solid 0.02rem rgb(25, 25, 25);
+}
+
+#education.dark-mode .container-content-info:hover{
+    background-color: rgb(0, 0, 0);
+    border: solid 0.02rem rgb(25, 25, 25);
+}
+
+#education.dark-mode .text-skill{
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+#education.dark-mode .arrow-go-ed{
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+#education.dark-mode .arrow-go-ed:hover>{
+    color:red;
+}
+
+#education.dark-mode .more-info{
+    color: whitesmoke;
+
+}
+
+
+#education.dark-mode .box-icon-arrow{
+    border-left: solid 0.02rem rgb(72, 72, 72);
+}
 
 
 
@@ -540,27 +555,86 @@
     transition: background-color 0.5s ease-out;
 }
 
-#contact.dark-mode .frame .title-contact{
+#contact.dark-mode .frame-contac .title-contact{
     color: whitesmoke;
 }
 
-#contact.dark-mode .frame .frame-structure-contact .container-contact .container-form form p{
+#contact.dark-mode .frame-contac .frameStructureContact{
+    color: whitesmoke;
+    background-color: #3a3d43;
+}
+
+#contact.dark-mode .frame-contac .frame-structure-contact {
+    color: whitesmoke;
+    background-color: #3a3d43;
+}
+
+#contact.dark-mode [class^="block-contact-"]{
+    background-color: #3a3d43;
+}
+
+#contact.dark-mode [class^="gnral-div-c"]{
+    background-color: #282a2d;
+    border-top: 0.02rem solid #1a1b1d;
+    border-left: 0.02rem solid #1a1b1d;
+}
+
+#contact.dark-mode [class^="block-icon-c"]{
+    background-color: #000000;
+    border: solid 0.02rem  rgb(57, 57, 57);
+}   
+
+#contact.dark-mode [class^="text-content-c"]>h3{
     color: whitesmoke;
 }
 
-#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info .title-information-d{
+#contact.dark-mode [class^="text-content-c"]>p{
+    color: rgb(168, 168, 168);
+}
+
+#contact.dark-mode .image-contact-ubication{
+    background-image: url('https://res.cloudinary.com/dwdzufjyh/image/upload/v1684527330/Personal%20portfolio%20V.01/snazzy-image_7_q6kfvs.png');
+}
+
+#contact.dark-mode [class^="box-icon-go-"]{
+    background-color: #000000;
+    border-left: 0.02rem solid #000000;
+    border-right: 0.02rem solid #000000;
+    border-top: 0.02rem solid #000000;
+}
+
+#contact.dark-mode .arrow-go-contact{
+    background-color: #343434;
     color: whitesmoke;
 }
 
-#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  .data-contact-w i{
-    color: rgb(255, 255, 255);
+#contact.dark-mode .arrow-go-contact:hover{
+    background-color: #000000;
+    color: #DFA800;
 }
 
-#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  .data-contact-e i {
-    color: rgb(255, 255, 255);
+#contact.dark-mode .gnral-div-c-followme{
+    border-bottom: solid 1px #343434;
+    border-left: solid 1px #343434;
 }
 
-#contact.dark-mode .frame .frame-structure-contact .container-contact .extra-info .direct-info div  p{
-    color: rgb(255, 255, 255);
+#contact.dark-mode .icons-c-followme{
+    border-bottom: solid 0.02rem #343434;
+    border-left: solid 0.02rem #343434;
+    border-right: solid 0.02rem #343434;
 }
 
+#contact.dark-mode [class^="open-follow-"]{
+    background-color: #343434;
+    border-left: solid 0.02rem  #343434;
+}
+
+#contact.dark-mode [class^="open-follow-"]:hover{
+    background-color: #000000;
+    border-left: solid 0.02rem  #343434;
+}
+
+#contact.dark-mode  [class^="open-follow-"]>i{
+    color: #ffffff;
+    font-size: var(--step-0);
+}
