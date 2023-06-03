@@ -3,11 +3,8 @@ const education = document.getElementById('education');
 const frameEd = document.createElement('div');
 frameEd.classList.add('frame-ed');
 
-
-
 const formation = document.createElement('div');
 formation.classList.add('formation');
-
 
 const titleEducation = document.createElement('h2');
 titleEducation .classList.add('title-education');
@@ -37,50 +34,111 @@ imageInstituteGeneral.classList.add('image-institute-general')
 imageInstituteGeneral.setAttribute('src' , 'https://res.cloudinary.com/dwdzufjyh/image/upload/v1683855074/Personal%20portfolio%20V.01/img-institute_skkatz.png');
 
 
+const bodyInstituteGeneral = document.createElement('div');
+bodyInstituteGeneral.classList.add('body-institute-general');
+
 const navInstituteGeneral = document.createElement('div');
-navInstituteGeneral.classList.add('nav-institute-general')
-navInstituteGeneral.setAttribute('id' , 'mi-contenedor');
+navInstituteGeneral.classList.add('nav-institute-general');
 
 const titleInstitutes = document.createElement('h3');
 titleInstitutes.classList.add('title-institutes');
-titleInstitutes.textContent = 'Institutos Online'
+titleInstitutes.textContent = 'Plataformas Online'
 
-navInstituteGeneral.appendChild(titleInstitutes);
-
-
-    const objInstitutes = []
-
-    objInstitutes.push({ 'https://play-lh.googleusercontent.com/miagFY2NtUmdu3Uy7o2bDDSL4pewRPa9k5PBa_EE7IlSHh8DZ4cV2ZvTi72cBMAo8o0': 'Platzi'})
-    objInstitutes.push({'https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png': 'Harvard'})
-    objInstitutes.push({'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CxIwdP8u4cH-kKfNNolKpffKGZoZuSfP3Q&usqp=CAU': 'FrecodeCamp'})
-    objInstitutes.push({'https://media.licdn.com/dms/image/C4E0BAQEim9dRy6sgKQ/company-logo_200_200/0/1610844887806?e=2147483647&v=beta&t=hq-X23S9k0tbZ-VRXljt7bcl40TfS0ICcUHRKP_jRdU': 'devChallenge'})
-    objInstitutes.push({'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMOC8qM6pbs1gB3ZzqHFmwyIj8IoSEJXi9cQ&usqp=CAU': 'IBM'})
-    objInstitutes.push({'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yHz5K-aXKzW8kpwZUAV_cEFuJIibkQeETg&usqp=CAU': 'Microsoft  '})
-    objInstitutes.push({'https://cdn-icons-png.flaticon.com/512/2504/2504739.png': 'Google'})
-    objInstitutes.push({'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKYiBpnRkLg_7lm1ecwMAoJqYlBgfSNs-zJg&usqp=CAU': 'Apple'})
+const areaTransitionInstitutes = document.createElement('div');
+areaTransitionInstitutes.classList.add('area-transition-institutes');
 
 
-    for (let i = 0; i < objInstitutes.length ; i++){
-
-        const btnNavInstitutes = document.createElement('div');
-        btnNavInstitutes.classList.add('btn-nav-institutes');
-
-        const imgLogosInstitutes = document.createElement('img');
-        imgLogosInstitutes.classList.add('img-logos-lnstitutes');
-        imgLogosInstitutes.setAttribute('src', Object.keys(objInstitutes[i])[0]);
-        imgLogosInstitutes.setAttribute('alt', Object.values(objInstitutes[i])[0]);
 
 
-        const nameInstitute = document.createElement('p');
-        nameInstitute.classList.add('institute-name');
+const objInstitutes = []
 
-        nameInstitute.appendChild(document.createTextNode(Object.values(objInstitutes[i])[0]));
+objInstitutes.push({'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CxIwdP8u4cH-kKfNNolKpffKGZoZuSfP3Q&usqp=CAU': 'FrecodeCamp'});
 
-        navInstituteGeneral.appendChild(btnNavInstitutes);
-        btnNavInstitutes.appendChild(imgLogosInstitutes);
-        btnNavInstitutes.appendChild(nameInstitute);
+objInstitutes.push({'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CxIwdP8u4cH-kKfNNolKpffKGZoZuSfP3Q&usqp=CAU': 'FrecodeCamp'});
 
-    }
+objInstitutes.push({'https://cdn-icons-png.flaticon.com/512/2504/2504739.png': 'Google'});
+
+objInstitutes.push({'https://cdn-icons-png.flaticon.com/512/2504/2504739.png': 'Google'});
+
+objInstitutes.push({'https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png': 'Harvard'});
+
+objInstitutes.push({'https://media.licdn.com/dms/image/C4E0BAQEim9dRy6sgKQ/company-logo_200_200/0/1610844887806?e=2147483647&v=beta&t=hq-X23S9k0tbZ-VRXljt7bcl40TfS0ICcUHRKP_jRdU': 'devChallenge'});
+
+objInstitutes.push({'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CxIwdP8u4cH-kKfNNolKpffKGZoZuSfP3Q&usqp=CAU': 'FrecodeCamp'});
+
+objInstitutes.push({'https://cdn-icons-png.flaticon.com/512/2504/2504739.png': 'Google'});
+
+objInstitutes.push({'https://cdn-icons-png.flaticon.com/512/2504/2504739.png': 'Google'});
+
+objInstitutes.push({'https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png': 'Harvard'});
+
+objInstitutes.push({'https://media.licdn.com/dms/image/C4E0BAQEim9dRy6sgKQ/company-logo_200_200/0/1610844887806?e=2147483647&v=beta&t=hq-X23S9k0tbZ-VRXljt7bcl40TfS0ICcUHRKP_jRdU': 'devChallenge'});
+
+objInstitutes.push({'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CxIwdP8u4cH-kKfNNolKpffKGZoZuSfP3Q&usqp=CAU': 'FrecodeCamp'});
+
+objInstitutes.push({'https://cdn-icons-png.flaticon.com/512/2504/2504739.png': 'Google'});
+
+objInstitutes.push({'https://cdn-icons-png.flaticon.com/512/2504/2504739.png': 'Google'});
+
+objInstitutes.push({'https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png': 'Harvard'});
+
+objInstitutes.push({'https://media.licdn.com/dms/image/C4E0BAQEim9dRy6sgKQ/company-logo_200_200/0/1610844887806?e=2147483647&v=beta&t=hq-X23S9k0tbZ-VRXljt7bcl40TfS0ICcUHRKP_jRdU': 'devChallenge'});
+
+objInstitutes.push({'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4CxIwdP8u4cH-kKfNNolKpffKGZoZuSfP3Q&usqp=CAU': 'FrecodeCamp'});
+
+objInstitutes.push({'https://cdn-icons-png.flaticon.com/512/2504/2504739.png': 'Google'});
+
+objInstitutes.push({'https://cdn-icons-png.flaticon.com/512/2504/2504739.png': 'Google'});
+
+objInstitutes.push({'https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png': 'Harvard'});
+
+objInstitutes.push({'https://media.licdn.com/dms/image/C4E0BAQEim9dRy6sgKQ/company-logo_200_200/0/1610844887806?e=2147483647&v=beta&t=hq-X23S9k0tbZ-VRXljt7bcl40TfS0ICcUHRKP_jRdU': 'devChallenge'});
+
+
+const elementosPorFila = 20; // Número de elementos deseados por fila
+const filasDeseadas = 3; // Número de filas deseadas
+
+const totalElementos = objInstitutes.length;
+const filas = Math.ceil(totalElementos / elementosPorFila); // Calcular el número de filas necesarias
+
+
+// Ajustar el número de filas según el número deseado
+const filasAjustadas = Math.min(filas, filasDeseadas);
+
+const contenedoresFila = []; // Array para almacenar los contenedores de fila
+
+// Crear contenedores de fila y agregar clases
+for (let i = 0; i < filas; i++) {
+  const fila = document.createElement('div');
+  fila.classList.add('fila-institutes');
+  contenedoresFila.push(fila);
+  areaTransitionInstitutes.appendChild(fila);
+}
+
+
+
+
+for (let i = 0; i < objInstitutes.length ; i++){
+
+const btnNavInstitutes = document.createElement('div');
+btnNavInstitutes.classList.add('btn-nav-institutes');
+
+const imgLogosInstitutes = document.createElement('img');
+imgLogosInstitutes.classList.add('img-logos-lnstitutes');
+imgLogosInstitutes.setAttribute('src', Object.keys(objInstitutes[i])[0]);
+imgLogosInstitutes.setAttribute('alt', Object.values(objInstitutes[i])[0]);
+
+const nameInstitute = document.createElement('p');
+nameInstitute.classList.add('institute-name');
+
+nameInstitute.appendChild(document.createTextNode(Object.values(objInstitutes[i])[0]));
+
+const filaIndex = i % filasAjustadas; // Obtener el índice de fila utilizando el operador módulo
+
+contenedoresFila[filaIndex].appendChild(btnNavInstitutes);
+btnNavInstitutes.appendChild(imgLogosInstitutes);
+btnNavInstitutes.appendChild(nameInstitute);
+}
 
 
 
@@ -164,7 +222,6 @@ objMoreInfo.push({emojie:'🧠' , bgcolor:'#CFCFCF', textinfo: 'Hard Skills' , m
 
         };
 
-
 }
 
 createBtnsModalMorInfo()
@@ -223,7 +280,11 @@ containerTextformation.appendChild(textEducation1);
 containerTextformation.appendChild(textEducation2);
 formation.appendChild(containterInstitutes);
 containterInstitutes.appendChild(imageInstituteGeneral);
-containterInstitutes.appendChild(navInstituteGeneral);
+containterInstitutes.appendChild(bodyInstituteGeneral);
+bodyInstituteGeneral.appendChild(navInstituteGeneral);
+navInstituteGeneral.appendChild(titleInstitutes);
+bodyInstituteGeneral.appendChild(areaTransitionInstitutes);
+
 formation.appendChild(moreInfo);
 formation.appendChild(containerMoreInfo);
 

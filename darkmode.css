@@ -230,8 +230,8 @@
     width: 100%;
     height: max-content;
     transition: background-color 0.5s ease-out;        
-    background-image: linear-gradient(to bottom, rgba(47, 50, 55, 0.999), rgba(47, 50, 55, 0.5)), url('https://res.cloudinary.com/dwdzufjyh/image/upload/v1683503735/Personal%20portfolio%20V.01/Banner-portfolio_3_fwoej9.jpg');
-    filter: brightness(110%) contrast(100%) ;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.999), rgba(47, 50, 55, 0.5)), url('https://res.cloudinary.com/dwdzufjyh/image/upload/v1683503735/Personal%20portfolio%20V.01/Banner-portfolio_3_fwoej9.jpg');
+    filter: brightness(100%) ;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
@@ -250,26 +250,34 @@
     border: solid 0.02rem rgb(125, 125, 125);
 }
 
+
+
+/*--------------------------*/
+/*Section Interests <920px */
+/*-------------------------*/
+.interests.dark-mode{
+    width: 100%;
+    height: max-content;
+    background-color: #252525;
+    transition: background-color 0.5s ease-out;
+    display: grid;
+    padding-bottom: 2rem;
+}
+.interests.dark-mode h3{
+ color: whitesmoke ;
 }
 
 
-/*------------------*/
-/*Section Interests PENDIENTE POR REPARAR*/
-/*------------------*/
-
-@media (max-width: 920px) {
-
-    .interest.dark-mode{
-        width: 100%;
-        height: max-content;
-        background-color: #252525;
-        transition: background-color 0.5s ease-out;
-        display: grid;
-        padding-bottom: 2rem;
-    }
+.interests.dark-mode .div-tag-interests{
+    background-color: #1c1c1e;
+    color: whitesmoke;
+    border: solid 0.01rem rgb(125, 125, 125);
+}
 
 
 }
+
+
 
 
 
@@ -282,13 +290,13 @@
     background-color: #3a3d43;
 }
 
-#portfolio.dark-mode .frame .frame-structure-portfolio h2 {
-    color: white;
+#portfolio.dark-mode  h2 {
+    color: whitesmoke;
 }
 
 
-#portfolio.dark-mode .container-explorer-nav .title-explore{
-    color: white;
+#portfolio.dark-mode .title-explore{
+    color: whitesmoke;
 }
 
 #portfolio.dark-mode .container-explorer-nav .nav-bar-portfolio .btn-nav-portfolio{
@@ -305,10 +313,8 @@
 }
 
 
-/* SGUNDA AREA */
 
-
-#portfolio.dark-mode .frame .frame-structure-portfolio  .new-container-cards .card-content {
+#portfolio.dark-mode .card-content {
     background-color: #1C1C1E;
     border: solid 0.02rem rgb(86, 86, 86);
 }
@@ -319,12 +325,12 @@
 }
 
 
-#portfolio.dark-mode .frame .frame-structure-portfolio  .new-container-cards .card-content .title-card-content {
+#portfolio.dark-mode .title-card-content {
     color: white;
 }
 
 
-#portfolio.dark-mode .frame .frame-structure-portfolio  .new-container-cards .card-content .box-stack-card .stack-card-content{
+#portfolio.dark-mode .stack-card-content{
     color: #e3e3e3;
     background-color: #323232;
     border: solid 0.1px rgb(30, 30, 30);
@@ -367,15 +373,51 @@
 
 
 
+/*---------------------------*/
+/*---Instituttes Aninamtion--*/
+/*---------------------------*/
+
+#education.dark-mode .containter-institutes{
+    background-color:#2A2B2F;
+}
+
+#education.dark-mode .body-institute-general{
+    background-color: #2A2B2F;
+}
+
+#education.dark-mode .nav-institute-general{
+    background-color: #2A2B2F;
+}
+
+#education.dark-mode .title-institutes{
+    color: whitesmoke;
+    background-color:#2A2B2F;
+}
+
+#education.dark-mode .area-transition-institutes{
+    color: whitesmoke;
+    background: linear-gradient(to right, #000000 0%, rgba(42, 43, 47, 0) 20%),
+    linear-gradient(to left, #000000 0%, rgba(42, 43, 47, 0) 20%);
+}
+
+
+#education.dark-mode .btn-nav-institutes{
+    color: whitesmoke;
+    background-color: #2F3237;
+    border: 0.02rem solid rgb(78, 78, 78);
+}
+
+
+#education.dark-mode .institute-name{
+    color: whitesmoke;
+    background-color: #2F3237;
+}
 
 
 
 /*-----------------------------------------*/
 /*-- Btns and Deploy Modals More Info    --*/
 /*-----------------------------------------*/
-
-
-
 
 #education.dark-mode .container-content-info{
     background-color: rgb(35, 35, 35);
@@ -405,7 +447,6 @@
     color: whitesmoke;
 
 }
-
 
 #education.dark-mode .box-icon-arrow{
     border-left: solid 0.02rem rgb(72, 72, 72);

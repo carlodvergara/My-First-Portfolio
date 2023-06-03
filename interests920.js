@@ -8,7 +8,7 @@ const sectionInterests = document.querySelector('.interests');
         myInterests2.classList.add('my-interests2');
         
         const InterestsTitle2 = document.createElement('h3');
-        InterestsTitle2.classList.add('h3');
+        InterestsTitle2.classList.add('h3');    
         InterestsTitle2.innerText = 'INTERESES';
         
         const containerInterests2 = document.createElement('div');
