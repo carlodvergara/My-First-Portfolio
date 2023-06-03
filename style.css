@@ -855,13 +855,6 @@ overflow-y: scroll;
         font-weight: 700;
 }
 
-#svg-arrow-right-circle{
-    fill:black;
-    width: 1.6rem;
-    height: 1.6rem;
-}
-
-
 .number-projects{
         color: rgb(92, 92, 92);
         font-weight: 400;
