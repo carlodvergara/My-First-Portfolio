@@ -7,8 +7,10 @@ const navHorizontal = document.getElementById('nav-horizontal');
 const containerLogoBtnIconMenu = document.createElement('div');
 containerLogoBtnIconMenu.classList.add('container-logo-btn-icon-menu');
 
+//Barras Menu Vertical
 const btnIconMenu = document.createElement('i');
 btnIconMenu.classList.add('fa-solid' , 'fa-bars');
+
 
 const logoPortfolioH = document.createElement('img');
 logoPortfolioH.classList.add('logo-portfolio');
@@ -18,20 +20,16 @@ logoPortfolioH.setAttribute('alt', 'Logo del Portafolio Web');
 const boxBtnsMenuhorizontal = document.createElement('div');
 boxBtnsMenuhorizontal.classList.add('box-btns-menu-horizontal');
 
-
-
-
-const divToggleDarkMode = document.createElement('div');
-divToggleDarkMode.classList.add('dark-mode');
-
 const toggleDarkMode = document.createElement('i');
 toggleDarkMode.classList.add('fa-solid' , 'fa-circle-half-stroke');
 
+
 // Crear un array con el nombre de cada sección del sitio web
-const sectionNavHorizontal = ['about-me', 'portfolio', 'education', 'contact'];
+const sectionNavHorizontal = ['home', 'about-me', 'portfolio', 'education', 'contact'];
 
 // Crear un objeto que contiene el nombre de cada sección en el sitio web, 
 const namesNavHorizontal = {
+    'home': 'HOME',
     'about-me': 'SOBRE MI',
     'portfolio': 'PORTAFOLIO',
     'education': 'EDUCACIÓN',
@@ -69,12 +67,12 @@ for (let i = 0; i < sectionNavHorizontal.length; i++) {
 // Insercion total
 
 
-    navHorizontal.appendChild(containerLogoBtnIconMenu);
-    containerLogoBtnIconMenu.appendChild(btnIconMenu);
-    containerLogoBtnIconMenu.appendChild(logoPortfolioH);
-    navHorizontal.appendChild(boxBtnsMenuhorizontal);
-    boxBtnsMenuhorizontal.appendChild(ulMenuHorizontal);
-    boxBtnsMenuhorizontal.appendChild(toggleDarkMode);
+  navHorizontal.appendChild(containerLogoBtnIconMenu);
+  containerLogoBtnIconMenu.appendChild(btnIconMenu);
+  containerLogoBtnIconMenu.appendChild(logoPortfolioH);
+  navHorizontal.appendChild(boxBtnsMenuhorizontal);
+  boxBtnsMenuhorizontal.appendChild(ulMenuHorizontal);
+  boxBtnsMenuhorizontal.appendChild(toggleDarkMode);
   
       
         //Open

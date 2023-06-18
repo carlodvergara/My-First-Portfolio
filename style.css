@@ -176,7 +176,6 @@ a{
 .ul-menu-horizontal{
     width: auto;
     height: max-content;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -191,7 +190,6 @@ a{
 }
 
 .li-menu-horizontal:last-child{
-
     border-right: solid 0.5px rgb(231, 231, 231);
 }
 
@@ -204,8 +202,6 @@ a{
     height: 5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,6 +214,13 @@ a{
 .a-menu-horizontal:hover{
     color: black;
 }
+
+
+
+
+
+
+
 
 
 @media (max-width: 800px){
